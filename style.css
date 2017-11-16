@@ -1083,7 +1083,7 @@ a.border-btn {
 	color: #fff;
 	font-size: 16px;
 	border: 2px solid #fff;
-	padding: 10px 52px;
+	padding: 13px 52px;
 	border-radius: 4px;
 	box-shadow: 0 0 1px #f4ecec;
 	-webkit-transition: width 0.5s;
@@ -1192,9 +1192,9 @@ section#meet-us {
     overflow: hidden;
 }
 .background-image-div:hover{
-	 -moz-transform: scale(2,2);
-    -webkit-transform: scale(2,2);
-    transform: scale(2,2);
+	 -moz-transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
 }
 .background-image-div.diff{
 	background: url('./assets/images/3.jpg');
@@ -1387,9 +1387,9 @@ section#our-client .image-overlay {
     overflow: hidden;
 }
 .clients-background-image-div:hover{
-	 -moz-transform: scale(2,2);
-    -webkit-transform: scale(2,2);
-    transform: scale(2,2);
+	 -moz-transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
 }
 section#our-client .overflow-hidden {
     overflow: hidden;
@@ -1458,11 +1458,12 @@ div#gotop {
     position: fixed;
     right: 12px;
     cursor: pointer;
+     -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 div#gotop i{
 	padding: 15px;
 	background: #2a80b9;
 	font-size: 15px;
-
-
 }

@@ -68,13 +68,13 @@
 			<div class="banner-slider">
 				<div class="overlay">
 					<h1 class="sec-title">Wel come <span>to our business theme</span></h1>
-					<a class="border-btn" href="#">buy now</a>
+					<a class="border-btn" href="#">buy this now</a>
 				</div><!-- overlay -->
 			</div><!-- slider content -->		
 			<div class="banner-slider slide1">
 				<div class="overlay">
 					<h1 class="sec-title">Wel come <span>to our business theme</span></h1>
-					<a class="border-btn" href="#">buy now</a>
+					<a class="border-btn" href="#">buy this now</a>
 				</div><!-- overlay -->
 			</div><!-- slider content -->		
 		</div><!-- wrapper -->
