@@ -48,6 +48,16 @@
         }
       ]
     }); 
+
+
+     // image change on hover 
+    
+    // chane image on hover tab
+      $(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
+      $(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {
+        $(this).tab('show');
+      });
+
    $( "#header-search" ).click(function() {
       $( "div#top-search" ).toggle( "1000", function() {
         // Animation complete.

@@ -55,10 +55,21 @@
 							) );
 						?>						
 					</nav><!-- #site-navigation -->
-					<i class="fa fa-search" id="header-search"></i>
+					<div class="top-header-search-share">
+					   <i class="fa fa-share share" id="header-share"></i>
+						<i class="fa fa-search" id="header-search"></i>
+					</div>
 					<div class="search-form-nav" id="top-search">
 		                <?php get_search_form();?>
 		            </div><!-- top-search -->
+		            <div class="social-widget salient-social-section social-icon-only top-tooltip">
+		            	<?php
+							wp_nav_menu( array(
+								'theme_location' => 'menu-2',
+								'menu_id'        => 'social-menu',
+							) );
+						?>		
+		            </div>
 				</div><!-- col -->
 			</div><!-- wrapper-->
 		</div><!-- container -->

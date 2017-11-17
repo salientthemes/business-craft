@@ -297,7 +297,7 @@ h6,
 
 p {
 	margin-bottom: 1.5em;
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -611,15 +611,17 @@ a:active {
 }
 
 .main-navigation a,
-#header-search {
+#header-search,
+.share {
 	display: block;
 	text-decoration: none;
-	font-size: 16px;
 	padding: 34px 10px;
-	text-transform: capitalize;
 	-webkit-transition: width 0.5s;
 	transition: width 0.5s;
 	color: #484848;
+	font-size: 13px;
+    text-transform: capitalize;
+    font-weight: bold;
 }
 
 .main-navigation a:hover,
@@ -976,14 +978,15 @@ header#masthead {
 
 p.site-title,
 .site-branding h1 {
-	font-size: 44px;
+	font-size: 32px;
 	font-weight: 600;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	color: #000000;
 	line-height: 1.3em;
 	margin: 0;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
+	padding-top: 10px;
 }
 
 p.site-title a:hover,
@@ -1014,11 +1017,432 @@ body header.site-header.fixed {
 }
 body header.site-header.fixed p.site-title,
 body header.site-header.fixed  .site-branding h1 {
-    font-size: 30px;   
+    font-size: 28px; 
+    padding-top: 0;  
 }
 body header.site-header.fixed .main-navigation a,
-body header.site-header.fixed  #header-search {   
+body header.site-header.fixed  #header-search,
+body header.site-header.fixed .share {   
     padding: 22px 10px;   
+}
+
+/* social nav css */
+.social-widget.salient-social-section.social-icon-only.top-tooltip {
+  text-align: center;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    border-top: 2px solid #2a80b9;
+    max-width: 200px;
+}
+
+.social-menu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-branding {
+    padding: 0 0 15px 0;
+  }
+  .salient-social-section ul {
+    padding-left: 0;
+    text-align: center;
+  }
+  .salient-social-section ul li {
+    display: inline-block;
+  }
+}
+
+.salient-social-section ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin:0;
+}
+
+.salient-social-section ul li {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+  width:50px;
+}
+
+.salient-social-section ul a {
+  position: relative;
+  color: #fff;
+}
+
+.salient-social-section ul a span,
+.salient-social-section ul a .page-links a,
+.page-links .salient-social-section ul a a {
+  bottom: 0;
+  background-color: #333333;
+  display: inline-block;
+  min-height: 30px;
+  position: absolute;
+  padding: 7px 10px 8px;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  font-size: 0px;
+  font-size: 0rem;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: font-size 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -moz-transition: font-size 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -ms-transition: font-size 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  -o-transition: font-size 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.salient-social-section ul a span:after,
+.salient-social-section ul a .page-links a:after,
+.page-links .salient-social-section ul a a:after {
+  border-left: 6px solid #333333;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 6px;
+}
+
+.salient-social-section ul a:after {
+  border: 2px solid white;
+  color: #fff;
+  display: inline-block;
+  font-family: "FontAwesome";
+  font-weight: 400;
+  margin-left: 5px;
+  margin-right: 5px;
+  line-height: 46px;
+  text-align: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  font-size: 22px;
+  font-size: 2.5rem;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-background-color: rgba(0, 0, 0, 0.5);
+  -moz-background-color: rgba(0, 0, 0, 0.5);
+  -ms-background-color: rgba(0, 0, 0, 0.5);
+  -o-background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 767px) {
+  .salient-social-section ul a:after {
+    background-color: transparent;
+    color: #cccccc;
+  }  
+}
+
+.salient-social-section ul a:hover span,
+.salient-social-section ul a:hover .page-links a,
+.page-links .salient-social-section ul a:hover a,
+.salient-social-section ul a:focus span,
+.salient-social-section ul a:focus .page-links a,
+.page-links .salient-social-section ul a:focus a,
+.salient-social-section ul a:active span,
+.salient-social-section ul a:active .page-links a,
+.page-links .salient-social-section ul a:active a {
+  bottom: 0;
+  right: 100%;
+  top: 0;
+  font-size: 13.008px;
+  font-size: 0.813rem;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.salient-social-section ul a:hover:after,
+.salient-social-section ul a:focus:after,
+.salient-social-section ul a:active:after {
+  border-color: #999999;
+  background-color: #fff;
+}
+
+.salient-social-section ul a[href*="facebook.com"]:after {
+  content: "\f09a";
+  color: #3C579E !important;
+}
+
+.salient-social-section ul a[href*="twitter.com"]:after {
+  content: "\f099";
+  color: #01BBF6 !important;
+}
+
+.salient-social-section ul a[href*="linkedin.com"]:after {
+  content: "\f0e1";
+  color: #1484C3 !important;
+}
+
+.salient-social-section ul a[href*="instagram.com"]:after {
+  content: "\f16d";
+  color: #2D6A93 !important;
+}
+
+.salient-social-section ul a[href*="youtube.com"]:after {
+  content: "\f167";
+  color: #c4302b !important;
+}
+
+.salient-social-section ul a[href*="plus.google.com"]:after {
+  content: "\f0d5";
+  color: #D73D32 !important;
+}
+
+.salient-social-section ul a[href*="pinterest.com"]:after {
+  content: "\f0d2";
+  color: #BD2126 !important;
+}
+
+.salient-social-section ul a[href*="flickr.com"]:after {
+  content: "\f16e";
+  color: #FD0083 !important;
+}
+
+.salient-social-section ul a[href*="tumblr.com"]:after {
+  content: "\f173";
+  color: #34465D !important;
+}
+
+.salient-social-section ul a[href*="wordpress.org"]:after {
+  content: "\f19a";
+  color: #3480A4 !important;
+}
+
+.salient-social-section ul a[href*="wordpress.com"]:after {
+  content: "\f19a";
+  color: #3480A4 !important;
+}
+
+.salient-social-section ul a[href*="soundcloud.com"]:after {
+  content: "\f1be";
+}
+
+.salient-social-section ul a[href*="dribbble.com"]:after {
+  content: "\f17d";
+}
+
+.salient-social-section ul a[href*="digg.com"]:after {
+  content: "\f1a6";
+}
+
+.salient-social-section ul a[href*="behance.net"]:after {
+  content: "\f1b4";
+}
+
+.salient-social-section ul a[href*="vine.co"]:after {
+  content: "\f1ca";
+}
+
+.salient-social-section ul a[href*="snapchat.com"]:after {
+  content: "\f2ab";
+}
+
+.salient-social-section ul a[href*="reddit.com"]:after {
+  content: "\f1a1";
+}
+
+.salient-social-section ul a[href*="medium.com"]:after {
+  content: "\f23a";
+}
+
+.salient-social-section ul a[href*="whatsapp.com"]:after {
+  content: "\f232";
+}
+
+.salient-social-section ul a[href*="slack.com"]:after {
+  content: "\f198";
+  color: #56B68B !important;
+}
+
+.salient-social-section ul a[href*="vk.com"]:after {
+  content: "\f189";
+}
+
+.salient-social-section ul a:hover[href*="facebook.com"]:after {
+  color: #3C579E !important;
+}
+
+.salient-social-section ul a:hover[href*="twitter.com"]:after {
+  color: #01BBF6 !important;
+}
+
+.salient-social-section ul a:hover[href*="linkedin.com"]:after {
+  color: #1484C3 !important;
+}
+
+.salient-social-section ul a:hover[href*="instagram.com"]:after {
+  color: #2D6A93 !important;
+}
+
+.salient-social-section ul a:hover[href*="youtube.com"]:after {
+  color: #D62424 !important;
+}
+
+.salient-social-section ul a:hover[href*="pinterest.com"]:after {
+  color: #BD2126 !important;
+}
+
+.salient-social-section ul a:hover[href*="plus.google.com"]:after {
+  color: #D73D32 !important;
+}
+
+.salient-social-section ul a:hover[href*="flickr.com"]:after {
+  color: #FD0083 !important;
+}
+
+.salient-social-section ul a:hover[href*="tumblr.com"]:after {
+  color: #34465D !important;
+}
+
+.salient-social-section ul a:hover[href*="wordpress.org"]:after {
+  color: #3480A3 !important;
+}
+
+.salient-social-section ul a:hover[href*="wordpress.com"]:after {
+  color: #3480A4 !important;
+}
+
+.salient-social-section ul a:hover[href*="soundcloud.com"]:after {
+  color: #FF4E00 !important;
+}
+
+.salient-social-section ul a:hover[href*="dribbble.com"]:after {
+  color: #EE6D9E !important;
+}
+
+.salient-social-section ul a:hover[href*="digg.com"]:after {
+  color: #000000 !important;
+}
+
+.salient-social-section ul a:hover[href*="behance.net"]:after {
+  color: #131418 !important;
+}
+
+.salient-social-section ul a:hover[href*="vine.co"]:after {
+  color: #00BF8F !important;
+}
+
+.salient-social-section ul a:hover[href*="snapchat.com"]:after {
+  color: #FF5500 !important;
+}
+
+.salient-social-section ul a:hover[href*="reddit.com"]:after {
+  color: #CEE3F8 !important;
+}
+
+.salient-social-section ul a:hover[href*="medium.com"]:after {
+  color: #02B875 !important;
+}
+
+.salient-social-section ul a:hover[href*="whatsapp.com"]:after {
+  color: #4EC65A !important;
+}
+
+.salient-social-section ul a:hover[href*="slack.com"]:after {
+  color: #56B68B !important;
+}
+
+.salient-social-section ul a:hover[href*="vk.com"]:after {
+  color: #537599 !important;
+}
+
+.salient-social-section.top-tooltip a span,
+.salient-social-section.top-tooltip a .page-links a,
+.page-links .salient-social-section.top-tooltip a a,
+.salient-social-section.top-tooltip a:visited span,
+.salient-social-section.top-tooltip a:visited .page-links a,
+.page-links .salient-social-section.top-tooltip a:visited a {
+  background-color: #1a1a1a;
+  height: 20px;
+  top: -100px;
+  left: -40%;
+  right: 0;
+  width: 180%;
+  line-height: 1;
+}
+
+.salient-social-section.top-tooltip a span:after,
+.salient-social-section.top-tooltip a .page-links a:after,
+.page-links .salient-social-section.top-tooltip a a:after,
+.salient-social-section.top-tooltip a:visited span:after,
+.salient-social-section.top-tooltip a:visited .page-links a:after,
+.page-links .salient-social-section.top-tooltip a:visited a:after {
+  border-top: 6px solid #1a1a1a;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  top: 40px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  left: 0;
+  width: 6px;
+  height: 6px;
+}
+
+.salient-social-section.top-tooltip a:after,
+.salient-social-section.top-tooltip a:visited:after {
+  border: none;
+  color: #fff;
+  font-family: "FontAwesome";
+  background-color: transparent;
+}
+
+.salient-social-section.top-tooltip a:after:hover,
+.salient-social-section.top-tooltip a:visited:after:hover {
+  background-color: transparent;
+}
+
+.salient-social-section.top-tooltip a:hover span,
+.salient-social-section.top-tooltip a:hover .page-links a,
+.page-links .salient-social-section.top-tooltip a:hover a,
+.salient-social-section.top-tooltip a:focus span,
+.salient-social-section.top-tooltip a:focus .page-links a,
+.page-links .salient-social-section.top-tooltip a:focus a,
+.salient-social-section.top-tooltip a:active span,
+.salient-social-section.top-tooltip a:active .page-links a,
+.page-links .salient-social-section.top-tooltip a:active a,
+.salient-social-section.top-tooltip a:visited:hover span,
+.salient-social-section.top-tooltip a:visited:hover .page-links a,
+.page-links .salient-social-section.top-tooltip a:visited:hover a,
+.salient-social-section.top-tooltip a:visited:focus span,
+.salient-social-section.top-tooltip a:visited:focus .page-links a,
+.page-links .salient-social-section.top-tooltip a:visited:focus a,
+.salient-social-section.top-tooltip a:visited:active span,
+.salient-social-section.top-tooltip a:visited:active .page-links a,
+.page-links .salient-social-section.top-tooltip a:visited:active a {
+  background-color: #1a1a1a;
+  top: -100px;
+  display: none;
+}
+
+ul#social-menu li a {
+  border-bottom: none !important;
+}
+
+footer#colophon .menu-socialnav-container ul li {
+  padding-bottom: 0;
 }
 /*top search */
 
@@ -1041,7 +1465,10 @@ i#header-search {
 i#header-search:hover {
 	color: #817979;
 }
-
+.top-header-search-share {
+    width: 20px;
+    display: flex;
+}
 
 /* banner section */
 
@@ -1081,13 +1508,13 @@ i#header-search:hover {
 
 a.border-btn {
 	color: #fff;
-	font-size: 16px;
-	border: 2px solid #fff;
-	padding: 13px 52px;
-	border-radius: 4px;
-	box-shadow: 0 0 1px #f4ecec;
-	-webkit-transition: width 0.5s;
-	transition: width 0.5s;
+    font-size: 18px;
+    border: 2px solid #fff;
+    padding: 12px 55px;
+    border-radius: 4px;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    text-transform: uppercase;
 }
 
 a.border-btn:hover,
@@ -1103,9 +1530,9 @@ a.border-btn:active {
 
 /* home page sections */
 .sec-title h2 {
-    font-size: 44px;
-    font-weight: 800;
-    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
     padding-bottom: 10px;
     color: #000000;
     line-height: 1.3em;
@@ -1238,8 +1665,10 @@ a.call-to-action-btn {
     padding: 12px 46px;
     background: #fff;
     -webkit-transition: all 1s;
-	transition: all 1s;
-	position: relative;
+    transition: all 1s;
+    position: relative;
+	box-shadow: 0 0 2px #797979;
+    text-transform: uppercase;
 }
 a.call-to-action-btn:hover,
 a.call-to-action-btn:focus,
@@ -1258,7 +1687,7 @@ a.call-to-action-btn:after {
     background: #ffffff;
      border-top: 2px solid #b3b3b3;
     border-bottom: 2px solid #b3b3b3;
-    left: 253px;
+    left: 102%;
     top: 50%;
     transform: translate(0,-50%);
 }
@@ -1270,7 +1699,7 @@ a.call-to-action-btn:before {
     background: #ffffff;
     border-top: 2px solid #b3b3b3;
     border-bottom: 2px solid #b3b3b3;
-    right: 253px;
+    right: 102%;
     top: 50%;
     transform: translate(0,-50%);
 }
@@ -1316,18 +1745,79 @@ p.name:after {
 
 /* from our blog */
 .blog-content {
-    text-align: center;
+    text-align: left;
     -webkit-transition: all 0.5s;
 	transition: all 0.5s;
-	padding: 15px 5px 5px 5px;  
 }
-.blog-content:hover {
-    background: #f8f8f8;
-    box-shadow: 0 0 2px #b9b9b9;
+
+.right-sect .blog-content{
+	border: 1px solid #ececec;
+	display: list-item;
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+.right-sect h4{
+	font-size: 18px;
+}
+.right-sect .blog-meta {
+    background: #2a80c6;
+    width: 60px;
+    column-count: 1;
+    text-align: center;
+    padding-top: 24px;
+}
+span.comments {
+    padding-left: 10px;
+}
+p.by-line:before {
+    content: "\f007";
+    font-family: fontAwesome;
+    padding-right: 5px;
+}
+span.comments:before {
+    content: "\f075";
+    font-family: fontAwesome;
+    padding-right: 5px;
+}
+.right-wrap p.by-line {
+    width: 100%;
+    opacity: 0.7;
+    padding-bottom: 10px;
+}
+.right-wrap a.read-more-text {
+    float: left;
+    font-size: 14px;
+    color: #acacac;
+    text-transform: uppercase;
+}
+.blog-meta p a span {
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.right-wrap {
+   width: calc(100% - 60px);
+    float: right;
+   padding: 10px 10px;
+}
+.right-wrap p {
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+}
+section#blog-section .meet-us-content.clearfix {
+    padding: 0;
+    border: 1px solid #ececec;
+    margin-bottom: 40px;
+}
+section#blog-section .overflow-hidden {
+    padding: 0;
 }
 .blog-meta {
     column-count: 2;
-    padding: 10px 0;
+    padding: 8px 0;
 }
 .blog-meta p a,
 a.read-more-text{
@@ -1343,9 +1833,9 @@ a.read-more-text {
 }
 p.blog-category a {
     font-weight: 600;
-    color: #a4a4a4;
     margin: 0;
     padding-bottom: 15px;
+    opacity: 0.7;
 }
 a.read-more-text:after {
     content: "\f101";
@@ -1358,7 +1848,7 @@ a.read-more-text:active {
     color: #fff;
     background: #2a80b9;
     text-decoration: none;
-    padding: 2px 10px;
+    padding: 0 10px;
 }
 .overflow-hidden {
     overflow: hidden;
@@ -1466,4 +1956,50 @@ div#gotop i{
 	padding: 15px;
 	background: #2a80b9;
 	font-size: 15px;
+}
+
+
+/* about us section */
+#tab-1{
+ text-align: center;
+    background: url('./assets/images/1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#tab-2 {
+  text-align: center;
+    background: url('./assets/images/2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#tab-3 {
+    text-align: center;
+    background: url('./assets/images/3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.imgchangeabale-div-wrap {
+    display: flex;
+}
+.tab-content,
+.tab-pane{
+	height: 100%
+}
+.tab-content {
+    padding-bottom: 40px;
+}
+.icon-left a {
+    color: #000;
+    cursor: default;
+}
+.icon-left i {
+    border: none;
+}
+
+/* newsletter section*/
+.suscribe-email{
+    background: url('./assets/images/email.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100px;
 }
