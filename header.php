@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package business
+ * @package business-craft
  */
 
 ?>
@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'business' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'business-craft' ); ?></a>
 
 	<header id="masthead" class="site-header">
 		<div class="container">
@@ -47,7 +47,7 @@
             <div class="nav-wrapper clearfix">
 	            <div class="col-md-9 col-sm-9 col-xs-12">
 					<nav id="site-navigation" class="col-md-11 main-navigation clearfix">
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'business' ); ?></button>
+						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'business-craft' ); ?></button>
 						<?php
 							wp_nav_menu( array(
 								'theme_location' => 'menu-1',
@@ -78,13 +78,13 @@
 		<div class="banner-wrapper">
 			<div class="banner-slider">
 				<div class="overlay">
-					<h1 class="sec-title">Wel come <span>to our business theme</span></h1>
+					<h1 class="sec-title">Wel come <span>to our business-craft theme</span></h1>
 					<a class="border-btn" href="#">buy this now</a>
 				</div><!-- overlay -->
 			</div><!-- slider content -->		
 			<div class="banner-slider slide1">
 				<div class="overlay">
-					<h1 class="sec-title">Wel come <span>to our business theme</span></h1>
+					<h1 class="sec-title">Wel come <span>to our business-craft theme</span></h1>
 					<a class="border-btn" href="#">buy this now</a>
 				</div><!-- overlay -->
 			</div><!-- slider content -->		
