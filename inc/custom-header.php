@@ -14,27 +14,27 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses business-craft_craft_header_style()
+ * @uses business_craft_header_style()
  */
-function business-craft_craft_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'business-craft_craft_custom_header_args', array(
+function business_craft_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'business_craft_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'business-craft_craft_header_style',
+		'wp-head-callback'       => 'business_craft_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'business-craft_craft_custom_header_setup' );
+add_action( 'after_setup_theme', 'business_craft_custom_header_setup' );
 
-if ( ! function_exists( 'business-craft_craft_header_style' ) ) :
+if ( ! function_exists( 'business_craft_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see business-craft_craft_custom_header_setup().
+	 * @see business_craft_custom_header_setup().
 	 */
-	function business-craft_craft_header_style() {
+	function business_craft_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

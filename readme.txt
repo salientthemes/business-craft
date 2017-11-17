@@ -1,19 +1,24 @@
 === business-craft ===
 
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Contributors: salientthemes
+Tags: full-width-template, portfolio, left-sidebar, one-column, custom-header, right-sidebar, theme-options, threaded-comments, translation-ready, two-columns, custom-background, custom-menu, flexible-header, editor-style, footer-widgets, custom-logo
 
 Requires at least: 4.0
 Tested up to: 4.8
 Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 A starter theme called business-craft.
 
 == Description ==
 
 Description
+
+== Copyright ==
+
+Business Craft WordPress Theme, Copyright 2014-2015 salientthemes
+Business Craft is distributed under the terms of the GNU GPL
 
 == Installation ==
 
@@ -25,7 +30,7 @@ Description
 
 = Does this theme support any plugins? =
 
-business-craft includes support for Infinite Scroll in Jetpack.
+Business Craft includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
