@@ -1,8 +1,8 @@
 <?php
 /**
- * business Theme Customizer
+ * business-craft Theme Customizer
  *
- * @package business
+ * @package business-craft
  */
 
 /**
@@ -10,7 +10,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function business_customize_register( $wp_customize ) {
+function business-craft_craft_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -18,22 +18,22 @@ function business_customize_register( $wp_customize ) {
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',
-			'render_callback' => 'business_customize_partial_blogname',
+			'render_callback' => 'business-craft_craft_customize_partial_blogname',
 		) );
 		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
 			'selector'        => '.site-description',
-			'render_callback' => 'business_customize_partial_blogdescription',
+			'render_callback' => 'business-craft_craft_customize_partial_blogdescription',
 		) );
 	}
 }
-add_action( 'customize_register', 'business_customize_register' );
+add_action( 'customize_register', 'business-craft_craft_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function business_customize_partial_blogname() {
+function business-craft_craft_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -42,14 +42,14 @@ function business_customize_partial_blogname() {
  *
  * @return void
  */
-function business_customize_partial_blogdescription() {
+function business-craft_craft_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function business_customize_preview_js() {
-	wp_enqueue_script( 'business-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+function business-craft_craft_customize_preview_js() {
+	wp_enqueue_script( 'business-craft-craft-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'business_customize_preview_js' );
+add_action( 'customize_preview_init', 'business-craft_craft_customize_preview_js' );

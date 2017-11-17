@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package business
+ * @package business-craft
  */
 
 get_header(); ?>

@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package business
+ * @package business-craft
  */
 
 ?>
@@ -40,14 +40,14 @@
 			</div>
 		</div>
 		<div class="site-info col-md-12">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'business' ) ); ?>"><?php
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'business-craft' ) ); ?>"><?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'business' ), 'WordPress' );
+				printf( esc_html__( 'Proudly powered by %s', 'business-craft' ), 'WordPress' );
 			?></a>
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'business' ), 'business', '<a href="#">business</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'business-craft' ), 'business-craft', '<a href="#">business-craft</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
