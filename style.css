@@ -1408,6 +1408,7 @@ body header.site-header.fixed .share {
   color: #fff;
   font-family: "FontAwesome";
   background-color: transparent;
+  margin-top: -20px;
 }
 
 .salient-social-section.top-tooltip a:after:hover,

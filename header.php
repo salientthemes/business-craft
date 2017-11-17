@@ -62,7 +62,7 @@
 					<div class="search-form-nav" id="top-search">
 		                <?php get_search_form();?>
 		            </div><!-- top-search -->
-		            <div class="social-widget salient-social-section social-icon-only top-tooltip">
+		            <div id="social-header" class="social-widget salient-social-section social-icon-only top-tooltip">
 		            	<?php
 							wp_nav_menu( array(
 								'theme_location' => 'menu-2',
