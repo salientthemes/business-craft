@@ -7,7 +7,7 @@
  * @package business-craft
  */
 
-if ( ! function_exists( 'business-craft_craft_setup' ) ) :
+if ( ! function_exists( 'business_craft_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'business-craft_craft_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function business-craft_craft_setup() {
+	function business_craft_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -61,7 +61,7 @@ if ( ! function_exists( 'business-craft_craft_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'business-craft_craft_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'business_craft_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -82,7 +82,7 @@ if ( ! function_exists( 'business-craft_craft_setup' ) ) :
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'business-craft_craft_setup' );
+add_action( 'after_setup_theme', 'business_craft_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -91,17 +91,17 @@ add_action( 'after_setup_theme', 'business-craft_craft_setup' );
  *
  * @global int $content_width
  */
-function business-craft_craft_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'business-craft_craft_content_width', 640 );
+function business_craft_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'business_craft_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'business-craft_craft_content_width', 0 );
+add_action( 'after_setup_theme', 'business_craft_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function business-craft_craft_widgets_init() {
+function business_craft_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'business-craft' ),
 		'id'            => 'sidebar-1',
@@ -112,7 +112,7 @@ function business-craft_craft_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'business-craft_craft_widgets_init' );
+add_action( 'widgets_init', 'business_craft_widgets_init' );
 /* register foote */
 	register_sidebar( array(
 	'name' => 'Footer Sidebar 1',
@@ -146,9 +146,9 @@ add_action( 'widgets_init', 'business-craft_craft_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function business-craft_craft_scripts() {
-	wp_enqueue_style( 'business-craft-craft-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'business-craft-craft-google-fonts', '//fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i,900,900i');
+function business_craft_scripts() {
+	wp_enqueue_style( 'business-craft-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'business-craft-google-fonts', '//fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i,900,900i');
 	//css
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.css');/*bootstrap css*/
 	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/css/bootstrap/slick.css');/*slick css*/
@@ -164,15 +164,15 @@ function business-craft_craft_scripts() {
 	/* custom js */
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/assets/js/custom.js');
 
-	wp_enqueue_script( 'business-craft-craft-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'business-craft-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'business-craft-craft-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'business-craft-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'business-craft_craft_scripts' );
+add_action( 'wp_enqueue_scripts', 'business_craft_scripts' );
 
 /**
  * Implement the Custom Header feature.
