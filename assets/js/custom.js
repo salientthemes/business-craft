@@ -63,6 +63,12 @@
         // Animation complete.
       });
     });
+
+   $( "i#header-share" ).click(function() {
+      $( "div#social-header" ).toggle( "1000", function() {
+        // Animation complete.
+      });
+    });
    // back to top animation
 
   $('#gotop').click(function () {

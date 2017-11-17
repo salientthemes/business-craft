@@ -1456,10 +1456,10 @@ div#top-search {
 	display: none;
 }
 
-i#header-search {
+i#header-search,
+i#header-share {
 	cursor: pointer;
-	-webkit-transition: width 0.5s;
-	transition: width 0.5s;
+	
 }
 
 i#header-search:hover {
@@ -1469,7 +1469,9 @@ i#header-search:hover {
     width: 20px;
     display: flex;
 }
-
+div#social-header{
+	display: none;
+}
 /* banner section */
 
 .banner-slider {
