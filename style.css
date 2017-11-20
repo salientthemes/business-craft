@@ -1748,6 +1748,14 @@ p.name:after {
     -webkit-transition: all 0.5s;
 	transition: all 0.5s;
 }
+.blog-content a {
+    color: #000;
+}
+.blog-content a:hover {
+    color: #2a80c6;
+    text-decoration: none;
+
+}
 
 .right-sect .blog-content{
 	border: 1px solid #ececec;
@@ -1822,7 +1830,6 @@ section#blog-section .overflow-hidden {
 a.read-more-text{
 	font-size: 12px;
 	color: #909090;
-	font-weight: 600;
 }
 a.read-more-text {
     float: right;
@@ -1891,6 +1898,32 @@ section#our-client .slick-dots li {
   opacity: 0.6;
   background: #2a80b9;
 }
+
+/*page template with sidebar and no sidebar */
+
+div#primary {
+    width: 70%;
+    padding-right: 5%;
+    float: left;
+}
+aside#secondary {
+    width: 30%;
+    float: right;
+    background: #00000003;
+    padding: 10px;
+}
+header.entry-header h1,
+aside#secondary h2 {
+    margin: 0;
+}
+
+@media screen and (max-width:767px) {
+  div#primary,
+  aside#secondary {
+  	width: 100%;
+  }
+}
+
 
 /* footer */
 footer#colophon {
