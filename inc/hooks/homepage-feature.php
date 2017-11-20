@@ -126,7 +126,7 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
                                     ?>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="feature-items clearfix">
-                                        <i class="fa fa-mobile"></i>
+                                        <i class="fa <?php echo esc_attr( $business_craft_service_array['business-craft-home-service-page-icon'] ); ?>"></i>
                                         <div class="texts">
                                             <h4><?php echo esc_html( $business_craft_feature_array['business-craft-home-feature-title'] );?></h4>
                                             <p><?php echo wp_kses_post( $business_craft_feature_array['business-craft-home-feature-content'] );?></p>
