@@ -1478,17 +1478,10 @@ div#social-header{
 
 .banner-slider {
 	text-align: center;
-	background: url('./assets/images/bg1.jpg');
 	background-size: cover;
 	color: #fff;
 	background-repeat: no-repeat;
 	background-position: center, center;
-}
-
-.banner-slider.slide1 {
-	background: url('./assets/images/bg2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 .sec-title {

@@ -8,6 +8,7 @@
  */
 
 if ( ! function_exists( 'business_craft_setup' ) ) :
+	require get_template_directory() . '/inc/init.php';
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -115,31 +116,31 @@ function business_craft_widgets_init() {
 add_action( 'widgets_init', 'business_craft_widgets_init' );
 /* register foote */
 	register_sidebar( array(
-	'name' => 'Footer Sidebar 1',
-	'id' => 'footer-sidebar-1',
-	'description' => 'Appears in the footer area',
-	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-	'after_widget' => '</aside>',
-	'before_title' => '<h3 class="widget-title">',
-	'after_title' => '</h3>',
+		'name' => 'Footer Sidebar 1',
+		'id' => 'footer-sidebar-1',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-	'name' => 'Footer Sidebar 2',
-	'id' => 'footer-sidebar-2',
-	'description' => 'Appears in the footer area',
-	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-	'after_widget' => '</aside>',
-	'before_title' => '<h3 class="widget-title">',
-	'after_title' => '</h3>',
+		'name' => 'Footer Sidebar 2',
+		'id' => 'footer-sidebar-2',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	) );
 	register_sidebar( array(
-	'name' => 'Footer Sidebar 3',
-	'id' => 'footer-sidebar-3',
-	'description' => 'Appears in the footer area',
-	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-	'after_widget' => '</aside>',
-	'before_title' => '<h3 class="widget-title">',
-	'after_title' => '</h3>',
+		'name' => 'Footer Sidebar 3',
+		'id' => 'footer-sidebar-3',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget' => '</aside>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
 	) );
 
 
@@ -155,9 +156,6 @@ function business_craft_scripts() {
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.css');/*font-awesome css*/
 	wp_enqueue_style( 'lato-font', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.css');/*font-awesome css*/
     /* js file */
-
-   /*temp jquery added*/
-   wp_enqueue_script( 'jQuery', '//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js');
 
 	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap/bootstrap.js');
 	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/bootstrap/slick.js');
@@ -192,7 +190,7 @@ require get_template_directory() . '/inc/template-functions.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/inc/customizer/customizer.php';
 
 /**
  * Load Jetpack compatibility file.
