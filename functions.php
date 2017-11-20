@@ -151,6 +151,8 @@ function business_craft_scripts() {
 	wp_enqueue_style( 'business-craft-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'business-craft-google-fonts', '//fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i,900,900i');
 	//css
+	wp_enqueue_script( 'jquery-modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array('jquery'), '2.8.3', true );
+
 	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.css');/*bootstrap css*/
 	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/css/bootstrap/slick.css');/*slick css*/
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.css');/*font-awesome css*/
