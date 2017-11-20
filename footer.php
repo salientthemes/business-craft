@@ -10,7 +10,9 @@
  */
 
 ?>
-
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
@@ -19,21 +21,21 @@
 				<div class="col-sm-4 col-md-4 col-xs-12" id="footer-sidebar1">
 					<?php
 					if(is_active_sidebar('footer-sidebar-1')){
-					dynamic_sidebar('footer-sidebar-1');
+						dynamic_sidebar('footer-sidebar-1');
 					}
 					?>
 					</div>
 					<div class="col-sm-4 col-md-4 col-xs-12" id="footer-sidebar2">
 					<?php
 					if(is_active_sidebar('footer-sidebar-2')){
-					dynamic_sidebar('footer-sidebar-2');
+						dynamic_sidebar('footer-sidebar-2');
 					}
 					?>
 					</div>
 					<div class="col-sm-4 col-md-4 col-xs-12" id="footer-sidebar3">
 					<?php
 					if(is_active_sidebar('footer-sidebar-3')){
-					dynamic_sidebar('footer-sidebar-3');
+						dynamic_sidebar('footer-sidebar-3');
 					}
 					?>
 				</div>
@@ -47,7 +49,7 @@
 			<span class="sep"> | </span>
 			<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'business-craft' ), 'business-craft', '<a href="#">business-craft</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'business-craft' ), 'Business Craft', '<a href="#">Salient Themes</a>' );
 			?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

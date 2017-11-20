@@ -8,7 +8,22 @@
  *
  * @package business-craft
  */
-
+if ( ! function_exists( 'business_craft_set_global' ) ) :
+/**
+ * Setting global values for all saved customizer values
+ *
+ * @since Business Craft 1.0.0
+ *
+ * @param null
+ * @return null
+ *
+ */
+function business_craft_set_global() {
+    /*Getting saved values start*/
+    $GLOBALS['business_craft_customizer_all_values'] = business_craft_get_all_options(1);
+}
+endif;
+business_craft_set_global();
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -74,21 +89,8 @@
 			</div><!-- wrapper-->
 		</div><!-- container -->
 	</header><!-- #masthead -->
-	<section id="banner-section" class="banner-section"><!-- banner section -->
-		<div class="banner-wrapper">
-			<div class="banner-slider">
-				<div class="overlay">
-					<h1 class="sec-title">Wel come <span>to our business-craft theme</span></h1>
-					<a class="border-btn" href="#">buy this now</a>
-				</div><!-- overlay -->
-			</div><!-- slider content -->		
-			<div class="banner-slider slide1">
-				<div class="overlay">
-					<h1 class="sec-title">Wel come <span>to our business-craft theme</span></h1>
-					<a class="border-btn" href="#">buy this now</a>
-				</div><!-- overlay -->
-			</div><!-- slider content -->		
-		</div><!-- wrapper -->
-	</section><!-- section -->
+	<?php if (is_front_page()) {
+		do_action( 'business_craft_homepage_slider' );
+	} ?>
 
 	<div id="content" class="site-content">
