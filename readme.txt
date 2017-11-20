@@ -5,7 +5,7 @@ Tags: full-width-template, portfolio, left-sidebar, one-column, custom-header, r
 
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.0.0
+Stable tag: 0.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -39,7 +39,7 @@ Business Craft includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 0.0.1 =
 * Initial release
 
 == Credits ==
