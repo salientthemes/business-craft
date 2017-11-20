@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+<div class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -21,12 +21,16 @@ get_header(); ?>
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'business-craft' ); ?></p>
 
 					<?php
-						get_search_form();
+						get_search_form();					
+					?>				
 
-						the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->           
+		</main><!-- #main -->
+	</div><!-- #primary -->
+	 <aside id="secondary" class="widget-area">
+            	<div class="widget widget_categories">
+            		<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'business-craft' ); ?></h2>
 						<ul>
 						<?php
@@ -50,11 +54,8 @@ get_header(); ?>
 						the_widget( 'WP_Widget_Tag_Cloud' );
 					?>
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+            </aside><!-- side bar -->
+	</div><!-- container -->
 
 <?php
 get_footer();
