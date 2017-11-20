@@ -24,7 +24,7 @@ if ( ! function_exists( 'business_craft_home_feature_array' ) ) :
         $business_craft_icons_array = array('business-craft-home-feature-page-icon');
         $business_craft_home_feature_page = array('business-craft-home-feature-pages-ids');
 
-        $business_craft_icons_arrays = salient_customizer_get_repeated_all_value(3 , $business_craft_icons_array);
+        $business_craft_icons_arrays = salient_customizer_get_repeated_all_value(6 , $business_craft_icons_array);
 
         if ( 'from-category' ==  $from_feature ){
             $business_craft_home_feature_category = $business_craft_customizer_all_values['business-craft-home-feature-category'];
@@ -36,7 +36,7 @@ if ( ! function_exists( 'business_craft_home_feature_array' ) ) :
                 );
             }
         }else {
-                $business_craft_home_feature_posts = salient_customizer_get_repeated_all_value(3 , $business_craft_home_feature_page);
+                $business_craft_home_feature_posts = salient_customizer_get_repeated_all_value(6 , $business_craft_home_feature_page);
                 $business_craft_home_feature_posts_ids = array();
                 if( null != $business_craft_home_feature_posts ) {
                     foreach( $business_craft_home_feature_posts as $business_craft_home_feature_post ) {
