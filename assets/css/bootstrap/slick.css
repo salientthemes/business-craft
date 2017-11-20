@@ -138,7 +138,6 @@
     padding-left: 5px;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.89);
-    border: 1px solid #fff;
     background: rgba(0, 0, 0, 0.52);
     padding: 14px 10px; 
 }
@@ -148,14 +147,19 @@
     padding-left: 5px;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.89);
-    border: 1px solid #fff;
     background: rgba(0, 0, 0, 0.52);
     padding: 14px 10px; 
 }
 .slick-prev:before, .slick-next:before {
     color: #fff;
     font-size: 32px;
-    background: transparent;
+    background: #000000b0;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.slick-prev:hover:before, .slick-next:hover:before{
+    background: #2a80b9;
 }
 .slick-next {
     position: absolute;
