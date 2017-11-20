@@ -71,7 +71,7 @@ business_craft_set_global();
 						?>						
 					</nav><!-- #site-navigation -->
 					<div class="top-header-search-share">
-					   <i class="fa fa-share share" id="header-share"></i>
+					   <i class="fa fa-share-alt share" id="header-share"></i>
 						<i class="fa fa-search" id="header-search"></i>
 					</div>
 					<div class="search-form-nav" id="top-search">

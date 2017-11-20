@@ -1029,13 +1029,14 @@ body header.site-header.fixed .share {
 
 /* social nav css */
 .social-widget.salient-social-section.social-icon-only.top-tooltip {
-  text-align: center;
+    text-align: center;
     background: #fff;
     position: absolute;
     z-index: 999;
-    right: 0;
     border-top: 2px solid #2a80b9;
     max-width: 200px;
+    margin-top: 4px;
+    right: 55px;
 }
 
 .social-menu {
@@ -1061,6 +1062,7 @@ body header.site-header.fixed .share {
   margin-bottom: 0;
   padding-left: 0;
   margin:0;
+  box-shadow: 0 0 1px #646060;
 }
 
 .salient-social-section ul li {
