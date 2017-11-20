@@ -26,6 +26,11 @@ Business Craft is distributed under the terms of the GNU GPL
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+== Image used in screenshot ==
+
+1) https://pixabay.com/en/sport-fly-paragliding-paraglider-2808563/
+5) https://pixabay.com/en/cup-drinks-business-coffee-shop-2884023/
+
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =
