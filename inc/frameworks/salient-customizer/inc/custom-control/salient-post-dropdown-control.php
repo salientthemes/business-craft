@@ -45,7 +45,7 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
                         else{
                             $default_selected = 0;
                         }
-                        printf('<option value="-1" %s>%s</option>',selected($default_selected, 1, false),esc_html__('Select','boost'));
+                        printf('<option value="-1" %s>%s</option>',selected($default_selected, 1, false),esc_html__('Select','business-craft'));
                         foreach ( $salient_posts as $salient_post ) {
                             printf('<option value="%s" %s>%s</option>', $salient_post->ID, selected($this->value(), $salient_post->ID, false), $salient_post->post_title);
                         }

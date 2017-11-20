@@ -4,7 +4,7 @@
  * @param  array $reset_options
  * @return void
  *
- * @since boost 1.0.2
+ * @since business-craft 1.0.2
  */
 if ( ! function_exists( 'salient_customizer_get_repeated_all_value' ) ) :
     function salient_customizer_get_repeated_all_value ( $repeated, $repeated_saved_values_name ) {

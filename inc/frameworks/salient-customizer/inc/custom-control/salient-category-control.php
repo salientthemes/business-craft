@@ -31,7 +31,7 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
                 array(
                     'name'              => $name,
                     'echo'              => 0,
-                    'show_option_none'  =>esc_html__('Select','boost'),
+                    'show_option_none'  =>esc_html__('Select','business-craft'),
                     'option_none_value' => '0',
                     'selected'          => $this->value(),
                 )

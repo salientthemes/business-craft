@@ -14,7 +14,7 @@ if (!function_exists('business_craft_home_testimonial_array')) :
         $business_craft_home_testimonial_single_words = absint( $business_craft_customizer_all_values['business-craft-home-testimonial-single-words'] );
 
         $business_craft_home_testimonial_contents_array = array();
-        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-title'] = __('John Doe','flare');
+        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-title'] = __('John Doe','business-craft');
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-content'] = '';
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/img/no-img.png";
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-link'] = '#';
