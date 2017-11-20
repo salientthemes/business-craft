@@ -51,7 +51,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="meet-us-content clearfix"> 
                                             <div class="col-sm-12 col-md-6 col-xs-12 overflow-hidden">                  
-                                                <div class="background-image-div">
+                                                <div class="background-image-div" style="background-image: url('<?php echo esc_url( $url )?>');">
                                                     <div class="image-overlay"></div>
                                                 </div>  <!-- background image -->
                                             </div>  
