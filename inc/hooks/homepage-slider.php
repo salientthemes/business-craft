@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
     /**
      * Featured Slider array creation
      *
-     * @since Flare 1.0.0
+     * @since business-craft 1.0.0
      *
      * @param string $from_slider
      * @return array
