@@ -89,7 +89,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                             ?>                                                     
                         </div><!-- blog wrapper -->
                     </div><!-- col-6 -->
-                   <div class="col-md-4 col-xs-12 col-sm-4">
+                   <div class="col-md-4 col-xs-12 col-sm-4 pdr">
                      <div class="right-sect">
                         <?php
                         $business_craft_home_blog_args = array(
@@ -134,6 +134,9 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                         wp_reset_postdata(); 
                         endif; ?>         
                      </div>
+                   </div>
+                    <div class="col-md-12 clearfix col-sm-12 col-xs-12 btn-more">
+                       <a href="#" class="border-btn view-more">View More </a>
                    </div>
                 </div><!-- row -->
             </div><!-- container -->

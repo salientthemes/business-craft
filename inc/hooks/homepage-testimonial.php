@@ -136,6 +136,8 @@ if ( ! function_exists( 'business_craft_home_testimonial' ) ) :
                             </div>
                         </div>
                     </div>
+                    <div class="mooving"></div>
+                     <div class="mooving mooving-2"></div>
                 </section><!-- testimonials section -->
             <?php
             }

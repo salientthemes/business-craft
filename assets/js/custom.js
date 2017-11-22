@@ -1,7 +1,8 @@
 //scroll down
 (function ($) {
   $(document).ready(function () {
-    //slick slider 
+
+   //slick slider 
     $('.banner-wrapper').slick({
       slidesToShow: 1,
       dots: true,
@@ -49,9 +50,11 @@
       ]
     }); 
 
+     $("button.menu-toggle").click(function(){
+        $("ul.menu").slideToggle("fast");
+    });
 
-     // image change on hover 
-    
+   
     // chane image on hover tab
       $(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
       $(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {

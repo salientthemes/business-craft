@@ -128,6 +128,10 @@ if ( ! function_exists( 'business_craft_featured_home_slider' ) ) :
                 }
                 ?>   
         </div><!-- wrapper -->
+        <div class="ocean">
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
     </section><!-- section -->
     <?php
         }

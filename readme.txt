@@ -29,7 +29,8 @@ Business Craft is distributed under the terms of the GNU GPL
 == Image used in screenshot ==
 
 1) https://pixabay.com/en/sport-fly-paragliding-paraglider-2808563/
-5) https://pixabay.com/en/cup-drinks-business-coffee-shop-2884023/
+2) https://pixabay.com/en/cup-drinks-business-coffee-shop-2884023/
+3) https://pixabay.com/en/colour-smoke-rainbow-color-design-1885352/
 
 == Frequently Asked Questions ==
 
