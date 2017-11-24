@@ -659,6 +659,9 @@ a:active {
 	text-decoration: none;
 }
 
+.main-navigation ul ul li{
+	border-bottom: 1px solid #efefef;
+}
 
 /* Small menu. */
 
@@ -727,7 +730,7 @@ button.menu-toggle {
 		padding: 15px 10px;
 		border-bottom: 1px solid #737373;
 		color: #fff;
-		background: #1b1b1bb8;
+		background: #000;
 		box-shadow: 0 0 1px #fff;
 		margin: 3px;
 	}
@@ -1111,6 +1114,22 @@ body header.site-header.fixed .main-navigation a,
 body header.site-header.fixed #header-search,
 body header.site-header.fixed .share {
 	padding: 22px 10px;
+}
+@media screen and (max-width: 767px) {
+	body header.site-header.fixed,
+	.main-navigation ul ul{
+		position: inherit !important;
+	}
+	body .main-navigation ul ul{
+		display: block;
+		box-shadow: none;
+		border: none;
+		border-top: 0;
+		background: #000;
+	}
+	.main-navigation ul ul li {
+	    border-bottom: 0;
+	}
 }
 
 
@@ -2608,7 +2627,7 @@ section#about-section i {
 
 @keyframes border-pulsate {
 	0% {
-		border-color: #000;
+		border-color: #2a80b9;
 	}
 	50% {
 		border-color: #f6f6f6;
