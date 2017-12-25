@@ -24,7 +24,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 # Normalize
 # Typography
@@ -300,6 +300,23 @@ h6,
 	clear: both;
 	font-family: 'Lato', sans-serif !important;
 }
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.h1 a:hover,
+.h2 a:hover,
+.h3 a:hover,
+.h4 a:hover,
+.h5 a:hover,
+.h6 a:hover {
+	clear: both;
+	text-decoration: none;
+}
+
 
 p {
 	margin-bottom: 1.5em;
@@ -1770,11 +1787,21 @@ a.border-btn:active {
 	width: calc(100% - 86px);
 	float: right;
 	padding-left: 18px;
-	padding-right: 34px;
 }
 
 .feature-items {
-	padding-bottom: 40px;
+	margin-bottom: 40px;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+
+.wrapper-feature-content.col-md-12 .feature-items {
+    border: 1px solid #f6f6f6;
+    margin-bottom: 40px;
+    padding: 20px 10px;
 }
 
 .icon-section.clearfix {
@@ -1784,10 +1811,10 @@ a.border-btn:active {
 .feature-items.clearfix:hover i {
 	background: #2a80b9;
 	color: #fff;
-	border: 5px solid;
-	-webkit-box-shadow: 0px 0px 0px 9px rgb(42, 128, 185);
-	-moz-box-shadow: 0px 0px 0px 9px rgb(42, 128, 185);
-	box-shadow: 0px 0px 0px 9px rgb(42, 128, 185);
+}
+
+.feature-items.clearfix:hover {
+    box-shadow: 0 3px 2px #bbbbbb;
 }
 
 .feature-items.clearfix h4 {
@@ -1824,25 +1851,12 @@ section#meet-us {
 	background-position: center, center;
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
-	transition: all .5s;
-	-moz-transform: scale(1, 1);
-	-webkit-transform: scale(1, 1);
-	transform: scale(1, 1);
+	transition: all .5s;	
 	overflow: hidden;
 }
 
-.background-image-div:hover {
-	-moz-transform: scale(1.5, 1.5);
-	-webkit-transform: scale(1.5, 1.5);
-	transform: scale(1.5, 1.5);
-}
-
-.background-image-div.diff {
-	/*background: url('./assets/images/3.jpg');*/
-	background-size: 100%, 100%;
-	;
-	background-repeat: no-repeat;
-	background-position: center, center;
+.col-md-6.col-sm-6.col-xs-12.overflow-hidden{
+	padding: 0;
 }
 
 .image-overlay {
@@ -1850,30 +1864,37 @@ section#meet-us {
 	padding: 100px;
 }
 
-.meet-us-text.texts {
-	width: 100%;
-	padding: 0;
-	text-align: center;
-	padding-top: 20px;
-	-moz-transition: all .5s;
-	-webkit-transition: all .5s;
-	transition: all .5s;
-	padding-left: 5px;
-	padding-right: 5px;
+section#meet-us .image-overlay{
+  padding: 150px;
 }
+
 
 .meet-us-content.clearfix {
 	padding: 0 17px;
 }
 
-.meet-us-text.texts:hover {
+.meet-us-text.texts{
 	background: #fff;
 	box-shadow: 0 0 2px #c7c3c3;
+	padding: 10px;
+	position: relative;
 }
 
 @media screen and (max-width: 767px) {
 	.meet-us-content.clearfix {
 		margin-bottom: 15px;
+	}
+}
+@media screen and (min-width: 767px) {
+	.meet-us-content.clearfix {
+		display: flex;
+	}
+	.text-centre {
+	    position: absolute;
+	    top: 50%;
+	    transform: translate(0,-50%);
+	    padding: 15px;
+	    width: 100%;
 	}
 }
 
@@ -2030,13 +2051,13 @@ p.name:after {
 	height: 100px;
 	transform-origin: 200% center;
 	position: absolute;
-	animation: rotate 10s linear infinite;
+	animation: rotate 20s linear infinite;
 	top: 50%;
 }
 
 .mooving-2 {
 	right: 12%;
-	animation: rotate 13s linear infinite;
+	animation: rotate 25s linear infinite;
 }
 
 .mooving:before {
@@ -2241,7 +2262,7 @@ section#our-client .image-overlay {
 }
 
 .clients-background-image-div {
-	/*background: url('./assets/images/logo1.jpg');*/
+	background: url('./assets/images/logo.jpg');
 	background-size: 100%, 100%;
 	background-repeat: no-repeat;
 	background-position: center, center;
@@ -2725,4 +2746,67 @@ section#about-section i {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 50px 0;
+}
+
+/* business craft contact section */
+section.bc-contact-section{
+	background: url('./assets/images/bg2.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+.overlay-contact {
+    background: #00000096;
+    padding: 40px 0;
+    margin-bottom: 10px;
+}
+.overlay-contact h2{
+	color: #fff;
+}
+.content-contact {
+   	background: #fff;
+    box-shadow: 0 0 13px #6f6f6f;
+    padding: 10px;
+    display: grid;
+    height: 350px;
+    margin-bottom: 20px;
+    border: 2px solid #e4e4e4;
+    border-radius: 6px;
+}
+.address i {
+    border: 1px solid #a8a8a8;
+    padding: 7px;
+    float: left;
+    font-size: 18px;
+    color: #2a80b9;
+    height: 32px;
+    -moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	transition: all .5s;
+}
+.address:hover i{
+	background: #2a80b9;
+	color: #fff;
+}
+.address .title {
+    width: calc(100% - 47px);
+    float: right;
+    text-align: left;
+    padding-left: 20px;
+}
+.address {
+    display: flex;
+    padding: 15px 0;
+}
+.address h4{
+	margin-top: 0;
+	font-weight: 600;
+}
+
+.form-sect{
+	background: url(./assets/images/form.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 131px;
 }

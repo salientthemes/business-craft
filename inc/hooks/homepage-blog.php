@@ -140,7 +140,8 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                    </div>
                 </div><!-- row -->
             </div><!-- container -->
-        </section><!-- blog section -->
+        </section><!-- blog section -->       
+
         <?php
     }
 endif;
