@@ -65,6 +65,15 @@ require get_template_directory().'/inc/customizer/home-testimonial-panel.php';
 /*customizer homepage blog section*/
 require get_template_directory().'/inc/customizer/home-blog-panel.php';
 
+/*customizer about us section*/
+require get_template_directory().'/inc/customizer/home-about-us/panel.php';
+
+/*customizer single button section*/
+require get_template_directory().'/inc/customizer/home-single-button/panel.php';
+
+/*customizer design develop section*/
+require get_template_directory().'/inc/customizer/home-design-develop/panel.php';
+
 /**
  * business-craft Theme Customizer
  *

@@ -20,7 +20,7 @@ $business_craft_customizer_defaults['business-craft-home-feature-pages'] = 0;
 $business_craft_sections['business-craft-home-feature'] =
     array(
         'title'          => __( 'Home Page Feature Section', 'business-craft' ),
-        'priority'       => 160
+        'priority'       => 260
    	);
 
 $business_craft_settings_controls['business-craft-home-feature-enable'] =

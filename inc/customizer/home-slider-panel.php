@@ -17,7 +17,7 @@ $business_craft_customizer_defaults['business-craft-fs-button-text'] = __('View 
 
 $business_craft_sections['business-craft-featured-slider'] =
     array(
-        'priority'       => 150,
+        'priority'       => 250,
         'title'          => __( 'Home Page Slider Section', 'business-craft' ),
    	);
 

@@ -19,7 +19,7 @@ $business_craft_customizer_defaults['business-craft-home-testimonial-pages'] = 0
 $business_craft_sections['business-craft-home-testimonial'] =
     array(
         'title'          => __( 'Home Page Testimonial Section', 'business-craft' ),
-        'priority'       => 160
+        'priority'       => 300
    	);
 
 $business_craft_settings_controls['business-craft-home-testimonial-enable'] =

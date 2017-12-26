@@ -15,7 +15,7 @@ $business_craft_customizer_defaults['business-craft-home-blog-button-link'] = ho
 
 $business_craft_sections['business-craft-home-blog-panel'] =
     array(
-        'priority'       => 190,
+        'priority'       => 310,
         'title'          => __( 'Home Page Blog Section', 'business-craft' ),
    	);
 
