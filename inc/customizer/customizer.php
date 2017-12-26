@@ -74,6 +74,9 @@ require get_template_directory().'/inc/customizer/home-single-button/panel.php';
 /*customizer design develop section*/
 require get_template_directory().'/inc/customizer/home-design-develop/panel.php';
 
+/*customizer theme option's section*/
+require get_template_directory().'/inc/customizer/theme-options/panel.php';
+
 /**
  * business-craft Theme Customizer
  *
