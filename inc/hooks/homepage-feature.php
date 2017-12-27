@@ -142,55 +142,6 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
                     </div><!-- row -->
                 </div><!-- container -->
             </section><!-- feature section -->
-            <section class="meet-us wrapper" id="meet-us"><!-- meet us section -->
-                <div class="container">
-                    <div class="row">
-                        <div class="wrapper-meet-us">
-                            <div class="sec-title centre">
-                                <h2>meet us in personal</h2>
-                            </div>
-                            <div class="icon-section clearfix">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="meet-us-content clearfix">  
-                                        <div class="col-md-6 col-sm-6 col-xs-12 overflow-hidden">
-                                            <div class="background-image-div">
-                                                <div class="image-overlay"></div>
-                                            </div>  <!-- background image -->
-                                        </div>  
-                                        <div class="col-md-6 col-sm-6 col-xs-12 meet-us-text texts">
-                                           <div class="text-centre">
-                                                 <h4><a href="#">ultra responsive design</a></h4>
-                                                <p>WordPress is an award-winning web software, used by millions of webmasters worldwide for building their website or blog. SiteGround is proud to host this particular WordPress installation and provide users with multiple resources to facilitate the management of their WP</p>
-                                            </div><!-- text centre -->
-                                        </div><!-- text content -->
-                                    </div><!--meet-us content -->
-                                </div><!-- col md -->
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                    <div class="meet-us-content clearfix">  
-                                        <div class="col-md-6 col-sm-6 col-xs-12 meet-us-text texts">
-                                            <div class="text-centre">
-                                                <h4><a href="#">ultra responsive design</a></h4>
-                                                <p>WordPress is an award-winning web software, used by millions of webmasters worldwide for building their website or blog. SiteGround is proud to host this particular WordPress installation and provide users with multiple resources to facilitate the management of their WP</p>
-                                            </div><!-- text centre -->
-                                        </div><!-- text content -->
-                                        <div class="col-md-6 col-sm-6 col-xs-12 overflow-hidden second-page">
-                                            <div class="background-image-div">
-                                                <div class="image-overlay"></div>
-                                            </div>  <!-- background image -->
-                                        </div> 
-                                    </div><!--meet-us content -->
-                                </div><!-- col md -->                    
-                            </div><!-- icon section -->
-                        </div>  <!-- wrapper -->
-                    </div><!-- row -->
-                </div> <!-- container -->
-            </section><!-- section -->
-
-            <section class="call-to-action" id="call-to-action"><!-- call to action section -->
-                <div class="image-overlay">
-                    <a href="#" class="call-to-action-btn">Im going to buy this product</a>
-                </div>
-           </section><!-- call to action section -->
 
            <section class="about-section wrapper" id="about-section">
                 <div class="container">

@@ -5,10 +5,9 @@ global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
-$business_craft_customizer_defaults['business-craft-select-page-from'] = 2;
-$business_craft_customizer_defaults['business-craft-about-us-page'] = 3;
-$business_craft_customizer_defaults['business-craft-about-us-title'] = __('Ultra Responsive Design','business_craft');
-$business_craft_customizer_defaults['business-craft-about-us-content'] = __('','business_craft');
+$business_craft_customizer_defaults['business-craft-page-selection'] = 2;
+$business_craft_customizer_defaults['business-craft-about-us-page'] = 0;
+$business_craft_customizer_defaults['business-craft-about-us-single-word'] = 30;
 
 // section about us from page
 $business_craft_sections['business-craft-about-us-setting'] = 
@@ -17,10 +16,11 @@ $business_craft_sections['business-craft-about-us-setting'] =
 		'panel'			=>'business_craft_about_panel',
 		'priority'		=>10
 	);
-$business_craft_settings_controls['business-craft-select-page-from'] =
+
+$business_craft_settings_controls['business-craft-page-selection'] =
 	array(
 		'setting'				=>	array(
-			'default'			=>$business_craft_customizer_defaults['business-craft-select-page-from']
+			'default'			=>$business_craft_customizer_defaults['business-craft-page-selection']
 		),
 		'control'				=>array(
 			'label'				=>__('Select Number Of Page','business_craft'),
@@ -35,6 +35,20 @@ $business_craft_settings_controls['business-craft-select-page-from'] =
 		)
 	);
 
+$business_craft_settings_controls['business-craft-about-us-single-word'] =
+	array(
+		'setting'				=>	array(
+			'default'			=>$business_craft_customizer_defaults['business-craft-about-us-single-word']
+		),
+		'control'				=>array(
+			'label'				=>__('Select Number Of Page','business_craft'),
+			'section'			=>'business-craft-about-us-setting',
+			'type'				=> 'number',
+			'priority'			=> 20,
+			'input_attrs'		=>array('min' =>1,'max' =>200),
+			'active_callback' =>''
+		)
+	);
 
 $business_craft_repeated_settings_controls['business-craft-about-us-page'] =
 array(
@@ -47,7 +61,7 @@ array(
             'label'                 =>  __( 'Select Page  %s', 'business_craft' ),
             'section'               => 'business-craft-about-us-setting',
             'type'                  => 'dropdown-pages',
-            'priority'              => 50,
+            'priority'              => 25,
         )
     ),
 );
