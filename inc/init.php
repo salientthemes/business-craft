@@ -22,3 +22,6 @@
 
  require get_template_directory().'/inc/hooks/home-our-service.php';
 
+ require get_template_directory().'/inc/hooks/excerpt.php';
+
+

@@ -6,11 +6,12 @@
 global $business_craft_customizer_all_values;
 
 get_header();
-if ( 'posts' == get_option( 'show_on_front' ) ) {
+if ( 'posts' == get_option( 'show_on_front' ) )
+{
     include( get_home_template() );
-    }
-
-    else{
+}
+    else
+    {
 		/**
 		 * business_craft_homepage hook
 		 * @since business-craft 1.0.0
@@ -22,8 +23,8 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		 */
         do_action( 'business_craft_homepage' );
 
-        // $business_craft_static_page = absint($business_craft_customizer_all_values['business-craft-enable-static-page']);
-        $business_craft_static_page = 1;
+        $business_craft_static_page = absint($business_craft_customizer_all_values['business-craft-enable-static-page']);
+        // $business_craft_static_page = 1;
         if ($business_craft_static_page == 1) { ?>
             <div id="content" class="site-content container">
                 <div id="primary" class="content-area col-sm-8">
@@ -50,5 +51,5 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
                 
             </div>
         <?php }
-}
+    }
 get_footer();
