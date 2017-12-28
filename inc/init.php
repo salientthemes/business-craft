@@ -19,3 +19,6 @@
  require get_template_directory().'/inc/hooks/home-aboutus.php';
 
  require get_template_directory().'/inc/hooks/home-single-button.php';
+
+ require get_template_directory().'/inc/hooks/home-our-service.php';
+

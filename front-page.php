@@ -17,7 +17,8 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 		 *
 		 * @hooked business_craft_homepage -  10
 		 * @sub_hooked business_craft_homepage -  30
-         * @hooked busine_Craft_aboutus _page -25
+         * @hooked busine_Craft_aboutus _page -16
+         * @hooked business_craft_our_service -21
 		 */
         do_action( 'business_craft_homepage' );
 

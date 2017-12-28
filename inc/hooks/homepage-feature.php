@@ -143,61 +143,7 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
                 </div><!-- container -->
             </section><!-- feature section -->
 
-           <section class="about-section wrapper" id="about-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="sec-title centre">
-                            <h2>DESIGN. DEVELOP. DEDICATE.</h2>
-                        </div>
-                        <div class="col-md-12 imgchangeabale-div-wrap">
-                            <div class="col-md-6 col-xs-hidden col-sm-6">
-                                 <div class="tab-content">
-                                     <div class="tab-pane active" id="tab-1"></div>
-                                     <div class="tab-pane" id="tab-2"> </div>
-                                     <div class="tab-pane " id="tab-3"></div>
-                                 </div><!-- tab content -->
-                            </div><!-- xs-hdden -->
-                            <div class="col-md-6 col-xs-12 col-sm-6">
-                                <div class="icon-left">
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <a href="#tab-1" data-toggle="tab">
-                                            <div class="feature-items clearfix">
-                                                <i class="fa fa-search"></i>
-                                                <div class="texts">
-                                                    <h4>Accountability</h4>
-                                                    <p>WordPress is an award-winning web software WordPress is an award-winning web software</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!-- col-md-4 -->
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <a href="#tab-2" data-toggle="tab">
-                                            <div class="feature-items clearfix">
-                                                <i class="fa fa-briefcase"></i>
-                                                <div class="texts">
-                                                    <h4>Expertise</h4>
-                                                    <p>WordPress is an award-winning web software WordPress is an award-winning web software</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!-- col-md-4 -->
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <a href="#tab-3" data-toggle="tab">
-                                            <div class="feature-items clearfix">
-                                                <i class="fa fa-plane"></i>
-                                                <div class="texts">
-                                                    <h4>Speed</h4>
-                                                    <p>WordPress is an award-winning web software WordPress is an award-winning web software</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div><!-- col-md-4 -->                             
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row -->
-                </div><!-- container -->
-            </section> <!-- about section -->
+       
 
             <?php
         }

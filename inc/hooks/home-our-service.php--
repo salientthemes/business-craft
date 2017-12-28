@@ -1,0 +1,167 @@
+<?php
+if (!function_exists('business_craft_our_service_array') ) :
+  	/**
+    * Our Service array creation
+    *
+    * @since Busniess_Craft 1.0.0
+    *
+    * @param null
+    * @return null
+    */
+  function business_craft_our_service_array() 
+  {
+  	global $business_craft_customizer_all_values;
+
+  	$business_craft_number_of_word = absint( $business_craft_customizer_all_values['business-craft-number-of-word'] );
+  	$business_craft_home_service_contents_array = array();
+	$business_craft_service_content_array[0]['business-craft-our-service-title'] = __('Our Service','business_craft');
+	$business_craft_service_content_array[0]['business-craft-our-service-content'] = __('WordPress is an award-winning web software WordPress is an award-winning web software','business_craft');
+	$business_craft_service_content_array[0]['business-craft-our-service-image'] = get_template_directory_uri().'/assets/images/bg1.jpg';
+	$business_craft_service_content_array[0]['business-craft-our-service-link'] = "#";
+	$business_craft_service_content_array[0]['business-craft-our-service-icon'] = __('fa fa-desktop','business_craft');
+	$business_craft_icons_arrays = array();
+    $business_craft_home_service_args = array();
+
+	$repeated = array('business-craft-our-service-pages-icon','business-craft-desgin-develop-pages-ids');
+
+    $business_craft_home_service_posts =salient_customizer_get_repeated_all_value(3, $repeated);
+    $business_craft_home_service_posts_ids = array();
+
+	if ( null != $business_craft_home_service_posts )
+	{
+		foreach ( $business_craft_home_service_posts as $business_craft_home_service_post )
+		{
+			if (isset($business_craft_home_service_post['business-craft-desgin-develop-pages-ids'] ) && 0 !=  $business_craft_home_service_post['business-craft-desgin-develop-pages-ids'])
+			{
+				$business_craft_services_posts_ids[] = $business_craft_home_service_post['business-craft-desgin-develop-pages-ids'];
+				if (isset( $business_craft_home_service_post['business-craft-our-service-pages-icon'] ))
+				{
+					$business_craft_services_icon = $business_craft_home_service_post['business-craft-our-service-pages-icon'];
+				}
+				else
+				{
+					$business_craft_services_icon = 'fa fa-desktop';
+				}
+				$business_craft_icon_array[] = $business_craft_services_icon;
+			}	
+		}
+		if (!empty( $business_craft_home_service_posts_ids ))
+		{
+			$business_craft_service_arg = array(
+				'post_type' 		=>'post',
+				'post__in'			=>'business_craft_home_service_posts_ids',
+				'post_per_page'		=>3,
+				'order_by'			=>'post__in'
+
+			);
+		}
+	}
+
+	if ( !empty($business_craft_service_arg) )
+	{
+		$business_craft_service_content_array  = array(); //again create a empty array
+
+		$business_craft_service_post_query = new WP_Query( $business_craft_service_arg );
+		if( $business_craft_service_post_query->have_posts() ) :
+			$i= 0;
+			while( $business_craft_service_post_query->have_posts() ):
+				$business_craft_service_post_query->the_post();
+				$url = "";
+				if (has_post_thumbnail() )
+				{
+					$thumb = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ),'business-craft-our-service-image' );
+					$url = $thumb[0];
+				}
+				$business_craft_service_content_array[$i]['business-craft-our-service-title'] = get_the_title();
+				$business_craft_service_content_array[$i]['business-craft-our-service-content'] = get_the_content();
+				$business_craft_service_content_array[$i]['business-craft-our-service-image']  = $url;
+				$business_craft_service_content_array[$i]['business-craft-our-service-link']  = get_permalink();
+				if ( isset($business_craft_icon_array) )
+				{
+					$business_craft_service_content_array[$i]['business-craft-our-service-icon'] = $business_craft_icon_array[$i];
+				}
+				else
+				{
+					$business_craft_service_content_array[$i]['business-craft-our-service-icon'] = 'fa fa-desktop';
+				}
+			endwhile;	
+			wp_reset_postdata();
+		endif;	
+	}
+	return $business_craft_service_content_array;
+  }
+endif;
+
+if ( ! function_exists( 'business_craft_home_service_section' ) ) :
+    /**
+     * Featured Slider
+     *
+     * @since Chrimbo 1.0.0
+     *
+     * @param null
+     * @return null
+     *
+     */
+    function business_craft_home_service_section()
+    {
+        global $business_craft_customizer_all_values;
+        if( 1 != $business_craft_customizer_all_values['business-craft-our-service-enable'] )
+        {
+            return null;
+        }
+        $business_craft_service_arrays = business_craft_our_service_array( );
+        if( is_array( $business_craft_service_arrays ))
+        {
+            $business_craft_service_mian_title = $business_craft_customizer_all_values['business-craft-main-title-text'];
+            ?>
+            <section class="about-section wrapper" id="about-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="sec-title centre">
+                            <h2><?php echo esc_html($business_craft_service_mian_title); ?></h2>
+                        </div>
+                        <div class="col-md-12 imgchangeabale-div-wrap">
+                            <div class="col-md-6 col-xs-hidden col-sm-6">
+                                 <div class="tab-content">
+                                     <div class="tab-pane active" id="tab-1"></div>
+                                     <div class="tab-pane" id="tab-2"> </div>
+                                     <div class="tab-pane " id="tab-3"></div>
+                                 </div><!-- tab content -->
+                            </div><!-- xs-hdden -->
+                            <div class="col-md-6 col-xs-12 col-sm-6">
+                                <div class="icon-left">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <a href="#tab-1" data-toggle="tab">
+                                            <div class="feature-items clearfix">
+                                                <?php
+                                                $i =0;
+                                                foreach( $business_craft_service_arrays as $business_craft_service_array )
+                                                {
+                                                    if (3 < $i )
+                                                    {
+                                                        break;
+                                                    }
+                                                    
+                                                    ?>
+                                                    <i class="fa <?php echo esc_attr( $business_craft_service_array['business-craft-our-service-pages-icon'] ); ?>"></i>
+                                                    <div class="texts">
+                                                        <h4><?php echo esc_attr( $business_craft_service_array['business-craft-our-service-title'] ); ?></h4>
+                                                        <p><?php echo wp_kses_post( $business_craft_service_array['business-craft-our-service-content'] );?></p>
+                                                    </div>
+                                                    <?php
+                                                    }?>
+                                            </div>
+                                        </a>
+                                    </div><!-- col-md-4 -->
+                                                             
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </section> <!-- about section -->
+            <?php
+        }
+    }
+endif;
+add_action( 'business_craft_homepage', 'business_craft_home_service_section', 21);

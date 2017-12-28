@@ -5,9 +5,9 @@ global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
 
 // create panel for singele button
-$business_craft_panels['business-craft-design-develop-panel'] = 
+$business_craft_panels['business-craft-our-service-panel'] = 
 	array(
-		'title'   	=>__('Design And Develop Section','business_craft'),
+		'title'   	=>__('Home Our Service  Section','business_craft'),
 		'priority'	=>290
 	);
 
