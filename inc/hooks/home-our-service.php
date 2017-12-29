@@ -135,7 +135,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                             } 
                             ${'about_title_'.$i} = esc_html( $business_craft_service_array['business-craft-our-service-title'] );
                             ${'about_content_'.$i} =  wp_kses_post( $business_craft_service_array['business-craft-our-service-content'] );
-                            ${'about_icon_'.$i} =  esc_attr( $business_craft_service_array['business-craft-our-service-icon'] );
+                            ${'about_icon_'.$i} =  esc_attr( $business_craft_service_array['business-craft-our-service-pages-icon'] );
                             ${'about_image_'.$i} =  esc_url( $business_craft_service_array['business-craft-our-service-image'] );
                             $i++;
                         }

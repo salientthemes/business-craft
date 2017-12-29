@@ -7,6 +7,7 @@ global $business_craft_customizer_defaults;
 
 $business_craft_customizer_defaults['business-craft-select-number-footer'] = 3;
 $business_craft_customizer_defaults['business-craft-copy-right-text'] = __('Copyright © All right reserved','business_craft');
+$business_craft_customizer_defaults['business-craft-enable-theme-option'] = 1;
 
 
 // created theme layout footer section
@@ -38,6 +39,21 @@ $business_craft_settings_controls['business-craft-select-number-footer'] =
 			'active_callback'			=>''
 		)
 	);
+// enable theme name 
+$business_craft_settings_controls['business-craft-enable-theme-option']  = 
+	array(
+		'setting'						=>array(
+			'default' 					=>$business_craft_customizer_defaults['business-craft-enable-theme-option']
+		),
+		'control'						=>array(
+			'label'						=>__('Enable Theme Name','business_craft'),
+			'section'					=>'business-craft-footer-section',
+			'type'						=>'checkbox',
+			'priority'					=>20,
+			'active_callback'			=>''
+		)
+	);
+
 
 //for text section
 $business_craft_settings_controls['business-craft-copy-right-text'] = 
@@ -49,7 +65,7 @@ $business_craft_settings_controls['business-craft-copy-right-text'] =
 			'label'						=>__('Copy Right Footer Text','business_craft'),
 			'section'					=>'business-craft-footer-section',
 			'type'						=>'text',
-			'priority'					=>20,
+			'priority'					=>30,
 			'active_callback'			=>''
 		)
 	);
