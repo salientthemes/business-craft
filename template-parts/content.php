@@ -13,17 +13,20 @@ global $business_craft_customizer_all_values;
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php
-			if ( is_single() ) {
-			} else {
+			if ( is_single() )
+			{
+			}
+			else
+			{
 				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 			}
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php business_craft_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+			if ( 'post' === get_post_type() ) : ?>
+				<div class="entry-meta">
+					<?php business_craft_posted_on(); ?>
+				</div><!-- .entry-meta -->
+				<?php
+			endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -68,15 +71,18 @@ global $business_craft_customizer_all_values;
 		}
 		else
 		{
-			if( 'left' == $business_craft_archive_image_align ){
+			if( 'left' == $business_craft_archive_image_align )
+			{
 				echo "<div class='image-left'>";
 				the_post_thumbnail('medium');
 			}
-			elseif( 'right' == $business_craft_archive_image_align ){
+			elseif( 'right' == $business_craft_archive_image_align )
+			{
 				echo "<div class='image-right'>";
 				the_post_thumbnail('medium');
 			}
-			else{
+			else
+			{
 				echo "<div class='image-full'>";
 				the_post_thumbnail('full');
 			}
