@@ -77,6 +77,10 @@ require get_template_directory().'/inc/customizer/home-our-service/panel.php';
 /*customizer theme option's section*/
 require get_template_directory().'/inc/customizer/theme-options/panel.php';
 
+/* customizer site identity options */
+require get_template_directory().'/inc/customizer/site-identity/site-identity.php';
+
+
 /**
  * business-craft Theme Customizer
  *

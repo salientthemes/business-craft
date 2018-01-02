@@ -95,4 +95,4 @@ business_craft_set_global();
 		do_action( 'business_craft_homepage_slider' );
 	} ?>
 
-	<div id="content" class="site-content">
+	<!-- <div id="content" class="site-content"> -->

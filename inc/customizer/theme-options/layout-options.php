@@ -1,19 +1,20 @@
 <?php
-global $business_craft_panels;
 global $business_craft_sections;
 global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
-global $business_craft_customizer_defults;
+global $business_craft_customizer_defaults;
 
 /*defaults values*/
-$business_craft_customizer_defults['business-craft-enable-static-page'] = 1;
+$business_craft_customizer_defaults['business-craft-enable-static-page'] = 1;
 
-$business_craft_customizer_defults['business-craft-default-layout'] = 'right-sidebar';
-$business_craft_customizer_defults['business-craft-number-of-words'] = 30;
-$business_craft_customizer_defults['business-craft-archive-layout'] = 'thumbnail-and-excerpt';
-$business_craft_customizer_defults['business-craft-archive-image-align'] = 'full';
-$business_craft_customizer_defults['business-craft-single-post-image-align'] = 'full';
-$business_craft_customizer_defults['business-craft-single-post-image'] = '';
+$business_craft_customizer_defaults['business-craft-default-layout'] = 'right-sidebar';
+$business_craft_customizer_defaults['business-craft-number-of-words'] = 30;
+$business_craft_customizer_defaults['business-craft-archive-layout'] = 'thumbnail-and-excerpt';
+$business_craft_customizer_defaults['business-craft-archive-image-align'] = 'full';
+$business_craft_customizer_defaults['business-craft-single-post-image-align'] = 'full';
+$business_craft_customizer_defaults['business-craft-single-post-image'] = '';
+
+
 
 $business_craft_sections['business-craft-layout-options'] =
     array(
@@ -27,7 +28,7 @@ $business_craft_sections['business-craft-layout-options'] =
 $business_craft_settings_controls['business-craft-enable-static-page'] =
     array(
         'setting' =>     array(
-            'default'              => $business_craft_customizer_defults['business-craft-enable-static-page'],
+            'default'              => $business_craft_customizer_defaults['business-craft-enable-static-page'],
         ),
         'control' => array(
             'label'                 =>  __( 'Enable Static Front Page', 'business-craft' ),
@@ -42,7 +43,7 @@ $business_craft_settings_controls['business-craft-enable-static-page'] =
 $business_craft_settings_controls['business-craft-default-layout'] =
     array(
         'setting' =>     array(
-            'default'              => $business_craft_customizer_defults['business-craft-default-layout'],
+            'default'              => $business_craft_customizer_defaults['business-craft-default-layout'],
         ),
         'control' => array(
             'label'                 =>  __( 'Default Layout', 'business-craft' ),
@@ -62,7 +63,7 @@ $business_craft_settings_controls['business-craft-default-layout'] =
 $business_craft_settings_controls['business-craft-archive-layout'] =
     array(
         'setting' =>     array(
-            'default'              => $business_craft_customizer_defults['business-craft-archive-layout'],
+            'default'              => $business_craft_customizer_defaults['business-craft-archive-layout'],
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Archive Layout', 'business-craft' ),
@@ -80,7 +81,7 @@ $business_craft_settings_controls['business-craft-archive-layout'] =
 $business_craft_settings_controls['business-craft-archive-image-align'] =
     array(
         'setting' =>     array(
-            'default'              => $business_craft_customizer_defults['business-craft-archive-image-align'],
+            'default'              => $business_craft_customizer_defaults['business-craft-archive-image-align'],
         ),
         'control' => array(
             'label'                 =>  esc_html__( 'Archive Image Alignment', 'business-craft' ),
@@ -98,7 +99,7 @@ $business_craft_settings_controls['business-craft-archive-image-align'] =
 $business_craft_settings_controls['business-craft-number-of-words'] =
     array(
         'setting' =>     array(
-            'default'              => $business_craft_customizer_defults['business-craft-number-of-words']
+            'default'              => $business_craft_customizer_defaults['business-craft-number-of-words']
         ),
         'control' => array(
             'label'                 =>  __( 'Number Of Words For Excerpt', 'business-craft' ),
@@ -115,7 +116,7 @@ $business_craft_settings_controls['business-craft-number-of-words'] =
 $business_craft_settings_controls['business-craft-single-post-image-align'] =
     array(
         'setting' =>     array(
-            'default'              => $business_craft_customizer_defults['business-craft-single-post-image-align'],
+            'default'              => $business_craft_customizer_defaults['business-craft-single-post-image-align'],
         ),
         'control' => array(
             'label'                 =>  __( 'Alignment Of Image In Single Post/Page', 'business-craft' ),

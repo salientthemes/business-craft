@@ -1,15 +1,13 @@
 <?php
 /**
- * Template part for displaying page content in page.php.
+ * Template part for displaying single posts.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package business_craft
+ * @package Business_craft
  */
 
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
 		<?php
 		$business_craft_single_post_image_align = business_craft_single_post_image_align(get_the_ID());
@@ -33,27 +31,18 @@
 			echo "</div>";/*div end*/
 		}
 		?>
-		<?php
-			the_content();
 
+		<?php the_content(); ?>
+		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business_craft' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'eboost' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'business_craft' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
+		<?php business_craft_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
