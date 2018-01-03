@@ -37,7 +37,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business_craft' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business-craft' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -48,7 +48,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'business_craft' ),
+					esc_html__( 'Edit %s', 'business-craft' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',

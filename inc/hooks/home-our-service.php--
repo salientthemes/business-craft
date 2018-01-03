@@ -14,8 +14,8 @@ if (!function_exists('business_craft_our_service_array') ) :
 
   	$business_craft_number_of_word = absint( $business_craft_customizer_all_values['business-craft-number-of-word'] );
   	$business_craft_home_service_contents_array = array();
-	$business_craft_service_content_array[0]['business-craft-our-service-title'] = __('Our Service','business_craft');
-	$business_craft_service_content_array[0]['business-craft-our-service-content'] = __('WordPress is an award-winning web software WordPress is an award-winning web software','business_craft');
+	$business_craft_service_content_array[0]['business-craft-our-service-title'] = __('Our Service','business-craft');
+	$business_craft_service_content_array[0]['business-craft-our-service-content'] = __('WordPress is an award-winning web software WordPress is an award-winning web software','business-craft');
 	$business_craft_service_content_array[0]['business-craft-our-service-image'] = get_template_directory_uri().'/assets/images/bg1.jpg';
 	$business_craft_service_content_array[0]['business-craft-our-service-link'] = "#";
 	$business_craft_service_content_array[0]['business-craft-our-service-icon'] = __('fa fa-desktop','business_craft');
@@ -96,7 +96,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
     /**
      * Featured Slider
      *
-     * @since Chrimbo 1.0.0
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return null

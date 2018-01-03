@@ -16,7 +16,8 @@ if ( ! function_exists( 'business_craft_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function business_craft_setup() {
+	function business_craft_setup()
+	{
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -81,6 +82,11 @@ if ( ! function_exists( 'business_craft_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		if( is_admin() )
+		{
+			require( get_template_directory() . '/updater/theme-updater.php' );
+		}
 	}
 endif;
 add_action( 'after_setup_theme', 'business_craft_setup' );

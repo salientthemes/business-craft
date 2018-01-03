@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
     /**
      * Featured Slider array creation
      *
-     * @since Chrimbo 1.0.0
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return array
@@ -96,7 +96,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
     /**
      * Featured Slider
      *
-     * @since Chrimbo 1.0.0
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return null

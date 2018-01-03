@@ -15,8 +15,8 @@ if ( ! function_exists( 'business_craft_about_us_array' ) ) :
         $business_craft_aboutus_number = absint( $business_craft_customizer_all_values['business-craft-page-selection'] );
         $business_craft_aboutus_single_words = absint( $business_craft_customizer_all_values['business-craft-about-us-single-word'] );
         
-        $business_craft_aboutus_contents_array[0]['business-craft-about-us-title'] = __('Ultra Responsive Design','business_craft');
-        $business_craft_aboutus_contents_array[0]['business-craft-about-us-content'] =  __('WordPress is an award-winning web software, used by millions of webmasters worldwide for building their website or blog','business_craft');
+        $business_craft_aboutus_contents_array[0]['business-craft-about-us-title'] = __('Ultra Responsive Design','business-craft');
+        $business_craft_aboutus_contents_array[0]['business-craft-about-us-content'] =  __('WordPress is an award-winning web software, used by millions of webmasters worldwide for building their website or blog','business-craft');
         $business_craft_aboutus_contents_array[0]['business-craft-about-us-link'] = '#';
         $business_craft_aboutus_contents_array[0]['business-craft-about-us-image'] = get_template_directory_uri ().'/assets/images/bg2.jpg';
         $repeated_page = array('business-craft-about-us-pages-id');
@@ -75,7 +75,7 @@ if ( ! function_exists( 'business_craft_aboutus_section' ) ) :
     /**
     * Featured Slider
     *
-    * @since Chrimbo 1.0.0
+    * @since business-craft 1.0.0
     *
     * @param null
     * @return null

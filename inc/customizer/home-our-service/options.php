@@ -7,12 +7,12 @@ global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
 $business_craft_customizer_defaults['business-craft-our-service-enable'] = 1;
-$business_craft_customizer_defaults['business-craft-main-title-text'] = __('DESIGN. DEVELOP. DEDICATE','business_craft');
+$business_craft_customizer_defaults['business-craft-main-title-text'] = __('DESIGN. DEVELOP. DEDICATE','business-craft');
 
 // create panel for singele button
 $business_craft_sections['business-craft-our-service-section'] = 
 	array(
-		'title'   	=>__('Our Service','business_craft'),
+		'title'   	=>__('Our Service','business-craft'),
 		'panel'		=>'business-craft-our-service-panel',
 		'priorty'	=>10
 	);
@@ -24,7 +24,7 @@ $business_craft_settings_controls['business-craft-our-service-enable'] =
 			'default'			=>$business_craft_customizer_defaults['business-craft-our-service-enable']
 		),
 		'control'				=>array(
-			'label' 			=>__('Enable Our Service ','business_craft'),
+			'label' 			=>__('Enable Our Service ','business-craft'),
 			'section'			=>'business-craft-our-service-section',
 			'type'				=>'checkbox',
 			'priority'			=>10,
@@ -39,7 +39,7 @@ $business_craft_settings_controls['business-craft-main-title-text'] =
 			'default'			=>$business_craft_customizer_defaults['business-craft-main-title-text']
 		),
 		'control'				=>array(
-			'label' 			=>__('Main Title Text Here','business_craft'),
+			'label' 			=>__('Main Title Text Here','business-craft'),
 			'section'			=>'business-craft-our-service-section',
 			'type'				=>'text',
 			'priority'			=>20,

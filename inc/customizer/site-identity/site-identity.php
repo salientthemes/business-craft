@@ -9,7 +9,7 @@ global $wp_version;
 if (version_compare($wp_version, '4.5', '<')) {
     /*defaults values*/
     $business_craft_customizer_defaults['business-craft-logo'] = '';
-    $business_craft_customizer_defaults['business-craft-title-tagline-message'] = sprintf( __( '%$1s If you do not have a logo %$2s', 'business_craft' ), '<span class="customize-control-title">','</span>' );
+    $business_craft_customizer_defaults['business-craft-title-tagline-message'] = sprintf( __( '%$1s If you do not have a logo %$2s', 'business-craft' ), '<span class="customize-control-title">','</span>' );
     $business_craft_customizer_defaults['business-craft-enable-title'] = 1;
     $business_craft_customizer_defaults['business-craft-enable-tagline'] = 1;
 
@@ -20,11 +20,11 @@ if (version_compare($wp_version, '4.5', '<')) {
                 'default'              => $business_craft_customizer_defaults['business-craft-logo'],
             ),
             'control' => array(
-                'label'                 =>  __( 'Logo', 'business_craft' ),
+                'label'                 =>  __( 'Logo', 'business-craft' ),
                 'section'               => 'title_tagline',
                 'type'                  => 'image',
                 'priority'              => 70,
-                'description'           =>  __( 'Recommended logo size 165*50', 'business_craft' ),
+                'description'           =>  __( 'Recommended logo size 165*50', 'business-craft' ),
                 'active_callback'       => ''
             )
         );
@@ -47,7 +47,7 @@ if (version_compare($wp_version, '4.5', '<')) {
                 'default'              => $business_craft_customizer_defaults['business-craft-enable-title'],
             ),
             'control' => array(
-                'label'                 =>  __( 'Enable Title', 'business_craft' ),
+                'label'                 =>  __( 'Enable Title', 'business-craft' ),
                 'section'               => 'title_tagline',
                 'type'                  => 'checkbox',
                 'priority'              => 80,
@@ -60,7 +60,7 @@ if (version_compare($wp_version, '4.5', '<')) {
                 'default'              => $business_craft_customizer_defaults['business-craft-enable-tagline'],
             ),
             'control' => array(
-                'label'                 =>  __( 'Enable Tagline', 'business_craft' ),
+                'label'                 =>  __( 'Enable Tagline', 'business-craft' ),
                 'section'               => 'title_tagline',
                 'type'                  => 'checkbox',
                 'priority'              => 90,

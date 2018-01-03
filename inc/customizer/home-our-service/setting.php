@@ -10,7 +10,7 @@ $business_craft_customizer_defaults['business-craft-select-number-page'] = 3;
 // create panel for singele button
 $business_craft_sections['business-craft-our-service-section'] = 
 	array(
-		'title'   	=>__('Our Service Setting','business_craft'),
+		'title'   	=>__('Our Service Setting','business-craft'),
 		'panel'		=>'business-craft-our-service-panel',
 		'priorty'	=>10
 	);

@@ -5,15 +5,16 @@ global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
+$business_craft_customizer_defaults['business-craft-enable-breadcrumb'] = 1;
 $business_craft_customizer_defaults['business-craft-select-number-footer'] = 3;
-$business_craft_customizer_defaults['business-craft-copy-right-text'] = __('Copyright © All right reserved','business_craft');
+$business_craft_customizer_defaults['business-craft-copy-right-text'] = __('Copyright © All right reserved','business-craft');
 $business_craft_customizer_defaults['business-craft-enable-theme-option'] = 1;
 
 
 // created theme layout footer section
 $business_craft_sections['business-craft-footer-section'] = 
 	array(
-		'title'				=>__('Footer Section','business_craft'),
+		'title'				=>__('Footer Section','business-craft'),
 		'panel'				=>'business-craft-theme-panel',
 		'priority'			=>10
 	);
@@ -25,14 +26,14 @@ $business_craft_settings_controls['business-craft-select-number-footer'] =
 			'default'					=>$business_craft_customizer_defaults['business-craft-select-number-footer']
 		),
 		'control'						=>array(
-			'label'						=>__('Select Number Of Siderbar In Footer','business_craft'),
+			'label'						=>__('Select Number Of Siderbar In Footer','business-craft'),
 			'section'					=>'business-craft-footer-section',
 			'type'						=>'select',
 			'choices'					=>array(
-				0						=>__('Desabal sidebar footer area','business_craft'),
-				1						=>__('1','business_craft'),
-				2 						=>__('2','business_craft'),
-				3						=>__('3','business_craft')
+				0						=>__('Desabal sidebar footer area','business-craft'),
+				1						=>__('1','business-craft'),
+				2 						=>__('2','business-craft'),
+				3						=>__('3','business-craft')
 
 			),
 			'priority'					=>10,
@@ -46,7 +47,7 @@ $business_craft_settings_controls['business-craft-enable-theme-option']  =
 			'default' 					=>$business_craft_customizer_defaults['business-craft-enable-theme-option']
 		),
 		'control'						=>array(
-			'label'						=>__('Enable Theme Name','business_craft'),
+			'label'						=>__('Enable Theme Name','business-craft'),
 			'section'					=>'business-craft-footer-section',
 			'type'						=>'checkbox',
 			'priority'					=>20,
@@ -62,7 +63,7 @@ $business_craft_settings_controls['business-craft-copy-right-text'] =
 			'default'					=>$business_craft_customizer_defaults['business-craft-copy-right-text']
 		),
 		'control'						=>array(
-			'label'						=>__('Copy Right Footer Text','business_craft'),
+			'label'						=>__('Copy Right Footer Text','business-craft'),
 			'section'					=>'business-craft-footer-section',
 			'type'						=>'text',
 			'priority'					=>30,

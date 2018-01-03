@@ -41,7 +41,7 @@ global $business_craft_customizer_all_values;
 		{
 			the_content( sprintf(
 			/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'business_craft' ), array( 'span' => array( 'class' => array() ) ) ),
+				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'business-craft' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 		}
@@ -65,7 +65,7 @@ global $business_craft_customizer_all_values;
 			echo "</div>";/*div end*/
 			the_content( sprintf(
 			/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'business_craft' ), array( 'span' => array( 'class' => array() ) ) ),
+				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'business-craft' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
 		}
@@ -92,7 +92,7 @@ global $business_craft_customizer_all_values;
 		?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business_craft' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business-craft' ),
 				'after'  => '</div>',
 			) );
 		?>

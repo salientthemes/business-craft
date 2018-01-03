@@ -8,7 +8,7 @@ global $business_craft_customizer_defults;
 // crate a panle for baout us
 $business_craft_panels['business_craft_about_panel'] = 
 	array(
-		'title'		=>__('Home About Us','business_craft'),
+		'title'		=>__('Home About Us','business-craft'),
 		'priority'  =>270
 	);
 

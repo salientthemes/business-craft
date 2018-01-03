@@ -12,7 +12,7 @@ $business_craft_customizer_defaults['business-craft-about-us-single-word'] = 30;
 // section about us from page
 $business_craft_sections['business-craft-about-us-setting'] = 
 	array(
-		'title'			=>__('From Page','business_craft'),
+		'title'			=>__('From Page','business-craft'),
 		'panel'			=>'business_craft_about_panel',
 		'priority'		=>10
 	);
@@ -23,12 +23,12 @@ $business_craft_settings_controls['business-craft-page-selection'] =
 			'default'			=>$business_craft_customizer_defaults['business-craft-page-selection']
 		),
 		'control'				=>array(
-			'label'				=>__('Select Number Of Page','business_craft'),
+			'label'				=>__('Select Number Of Page','business-craft'),
 			'section'			=>'business-craft-about-us-setting',
 			'type'				=> 'select',
 			'choices'			=>array(
-				1				=> __('1','business_craft'),
-				2 				=> __('2','business_craft')
+				1				=> __('1','business-craft'),
+				2 				=> __('2','business-craft')
 			),
 			'priority'			=> 15,
 			'active_callback' =>''
@@ -41,7 +41,7 @@ $business_craft_settings_controls['business-craft-about-us-single-word'] =
 			'default'			=>$business_craft_customizer_defaults['business-craft-about-us-single-word']
 		),
 		'control'				=>array(
-			'label'				=>__('Select Number Of Page','business_craft'),
+			'label'				=>__('Select Number Of Page','business-craft'),
 			'section'			=>'business-craft-about-us-setting',
 			'type'				=> 'number',
 			'priority'			=> 20,
@@ -58,7 +58,7 @@ array(
             'default'              => $business_craft_customizer_defaults['business-craft-about-us-page'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Select Page  %s', 'business_craft' ),
+            'label'                 =>  __( 'Select Page  %s', 'business-craft' ),
             'section'               => 'business-craft-about-us-setting',
             'type'                  => 'dropdown-pages',
             'priority'              => 25,
