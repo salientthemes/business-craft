@@ -34,7 +34,7 @@ add_action( 'wp_head', 'business_craft_pingback_header' );
 /**
 * Returns word count of the sentences.
 *
-* @since @since business_craft 1.0.0
+* @since @since business_craft 0.0.1
 */
 if ( ! function_exists( 'business_craft_words_count' ) ) :
 	function business_craft_words_count( $length = 25, $business_craft_content = null ) {

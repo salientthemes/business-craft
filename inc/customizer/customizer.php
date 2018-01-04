@@ -4,7 +4,7 @@
  *
  * @package salient themes
  * @subpackage business-craft
- * @since business-craft 1.0.0
+ * @since business-craft 0.0.1
  */
 add_filter('salient_customizer_framework_url', 'business_craft_customizer_framework_url');
 

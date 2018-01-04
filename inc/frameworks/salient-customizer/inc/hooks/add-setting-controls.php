@@ -7,7 +7,7 @@ if ( ! function_exists( 'salient_customizer_add_setting_control_callback' ) ) :
      * Function to add customizer setting and controls
      *
      * @access public
-     * @since 1.0.0
+     * @since 0.0.1
      *
      * @param object $salient_customizer_wp_customize
      * @param string $salient_customizer_customizer_name common name for all setting and controls

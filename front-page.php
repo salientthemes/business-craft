@@ -14,7 +14,7 @@ if ( 'posts' == get_option( 'show_on_front' ) )
     {
 		/**
 		 * business_craft_homepage hook
-		 * @since business-craft 1.0.0
+		 * @since business-craft 0.0.1
 		 *
 		 * @hooked business_craft_homepage -  10
 		 * @sub_hooked business_craft_homepage -  30

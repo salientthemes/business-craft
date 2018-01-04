@@ -3,7 +3,7 @@ if (!function_exists('business_craft_before_footer') ) :
 	/**
      * Footer content
      *
-     * @since business_craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return false | void
@@ -24,7 +24,7 @@ if ( !function_exists( 'business_craft_widget_before_footer' ) ) :
 	 /**
      * Footer content
      *
-     * @since business_craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return false | void
@@ -111,7 +111,7 @@ if ( !function_exists( 'business_craft_footer_theme_text' ) ) :
     /**
      * Footer content
      *
-     * @since business_craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return null
@@ -134,7 +134,7 @@ if ( !function_exists( 'business_craft_footer_theme_text' ) ) :
                          if( 1 == $business_craft_customizer_all_values['business-craft-enable-theme-option']){
                             ?>
                         <span class="sep"> | </span>
-                        <?php printf( esc_html__( 'Theme: %1$s by %2$s', 'business_craft' ), 'business_craft', '<a href="http://salientthemes.com/" target = "_blank" rel="designer">salientthemes </a>' ); ?>
+                        <?php printf( esc_html__( 'Theme: %1$s by %2$s', 'business-craft' ), 'business-craft', '<a href="http://salientthemes.com/" target = "_blank" rel="designer">salientthemes </a>' ); ?>
                         <?php
                         }
                         ?>
@@ -152,7 +152,7 @@ if ( ! function_exists('business_craft_back_to_top')  ) :
     /**
      * Footer content
      *
-     * @since business_craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return null

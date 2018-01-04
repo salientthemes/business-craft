@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
     /**
      * Blog Section
      *
-     * @since business-craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return null

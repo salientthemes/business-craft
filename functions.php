@@ -83,10 +83,7 @@ if ( ! function_exists( 'business_craft_setup' ) ) :
 			'flex-height' => true,
 		) );
 
-		if( is_admin() )
-		{
-			require( get_template_directory() . '/updater/theme-updater.php' );
-		}
+		
 	}
 endif;
 add_action( 'after_setup_theme', 'business_craft_setup' );

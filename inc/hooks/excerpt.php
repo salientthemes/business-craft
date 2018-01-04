@@ -3,7 +3,7 @@ if ( !function_exists('business_craft_excerpt_length') ) :
 	 /**
      * Excerpt length
      *
-     * @since  business_Craft 1.0.0
+     * @since  business_Craft 0.0.1
      *
      * @param null
      * @return int

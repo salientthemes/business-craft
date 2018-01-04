@@ -5,7 +5,7 @@ if ( ! function_exists('business_craft_single_post_image_align') ):
 	/**
      * Before wp head codes
      *
-     * @since business_craft 1.0.0
+     * @since business_craft 0.0.1
      *
      * @param null
      * @return null

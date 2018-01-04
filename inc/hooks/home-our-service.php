@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
     /**
      * Featured Slider array creation
      *
-     * @since business-craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return array
@@ -14,8 +14,8 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
         $business_craft_home_Service_word_count = $business_craft_customizer_all_values['business-craft-number-of-word'];
         $business_craft_home_service_contents_array = array();
 
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-title'] = __('our-service-title', '$business-craft');
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-content'] = __("our-service-content", '$business-craft');
+        $business_craft_home_service_contents_array[0]['business-craft-our-service-title'] = __('our-service-title', 'business-craft');
+        $business_craft_home_service_contents_array[0]['business-craft-our-service-content'] = __("our-service-content", 'business-craft');
         $business_craft_home_service_contents_array[0]['business-craft-our-service-link'] = '#';
         $business_craft_home_service_contents_array[0]['business-craft-our-service-icon'] = 'fa-desktop';
         $business_craft_home_service_contents_array[0]['business-craft-our-service-image'] = get_template_directory().'/assets/images/bg1.jpg';
@@ -96,7 +96,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
     /**
      * Featured Slider
      *
-     * @since business-craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return null

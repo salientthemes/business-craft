@@ -5,12 +5,12 @@ defined( 'ABSPATH' ) or die( "No script kiddies please!" );
 
 /**
  * Constant to hold this framework version
- * @since 1.0.0
+ * @since 0.0.1
  */
 
 /*Define Version*/
 if ( !defined( 'SALIENT_CUSTOMIZER_VERSION' ) ) {
-    define( 'SALIENT_CUSTOMIZER_VERSION', '1.0.0' );
+    define( 'SALIENT_CUSTOMIZER_VERSION', '0.0.1' );
 }
 
 /*Define Url for including css and js*/
@@ -33,7 +33,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
      * Class for almost all types of customizer fields.
      *
      * @package Salient Customizer
-     * @since 1.0.0
+     * @since 0.0.1
      */
     class Salient_Customizer{
         /*Basic variables for class*/
@@ -44,7 +44,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * @see instance()
          * @var object
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected static $instance = NULL;
@@ -54,7 +54,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $basic_control_types =
@@ -80,7 +80,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $panels_sections_settings = array();
@@ -90,7 +90,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $panels = array();
@@ -100,7 +100,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $sections = array();
@@ -110,7 +110,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         public  $repeated_settings_controls = array();
@@ -120,7 +120,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $settings_controls = array();
@@ -130,7 +130,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $remove_panels = array();
@@ -140,7 +140,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $remove_sections = array();
@@ -150,7 +150,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          *
          * @var array
          * @access protected
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         protected $remove_settings_controls = array();
@@ -159,7 +159,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Access this plugin’s working instance
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          * @return object of this class
          */
         public static function instance() {
@@ -171,7 +171,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Used for regular plugin work.
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @return void
          *
@@ -265,7 +265,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Constructor. Intentionally left empty and public.
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          */
         public function __construct( $init = array()){
@@ -278,7 +278,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Function to Set default values for panels
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @param string $panel_id Id of panel
          * @param array $panel Single panel
@@ -307,7 +307,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Function to Set default values for sections
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @param string $section_id Id of section
          * @param array $section Single section
@@ -336,7 +336,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Function to Set default values for repeated setting controls
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @param string $settings_control_id Id of repeated setting controls
          * @param array $setting_control Single settings control
@@ -382,7 +382,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Function to Set default values for setting controls
          * Based on https://github.com/WPTRT/code-examples/blob/master/customizer/sanitization-callbacks.php
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @param string $settings_control_id Id of settings control
          * @param array $setting_control Single settings control
@@ -523,7 +523,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Enqueue style and scripts at Theme Customizer
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @return void
          *
@@ -539,7 +539,7 @@ if ( ! class_exists( 'Salient_Customizer' ) ){
          * Function to register customizer
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @param object $salient_customizer_wp_customize
          * @return void

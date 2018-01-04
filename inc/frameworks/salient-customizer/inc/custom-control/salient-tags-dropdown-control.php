@@ -3,7 +3,7 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
 
     /**
      * Custom Control for tags dropdown
-     * @since 1.0.0
+     * @since 0.0.1
      *
      */
     class Salient_Customizer_Tags_Dropdown_Control extends WP_Customize_Control {
@@ -20,7 +20,7 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
          * Function to  render the content on the theme customizer page
          *
          * @access public
-         * @since 1.0.0
+         * @since 0.0.1
          *
          * @param null
          * @return void

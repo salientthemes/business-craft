@@ -4,7 +4,7 @@
  *
  * @package salient themes
  * @subpackage business-craft
- * @since business-craft 1.0.0
+ * @since business-craft 0.0.1
  */
 
 require get_template_directory() . '/inc/function/header-logo.php';

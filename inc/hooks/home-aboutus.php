@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_about_us_array' ) ) :
     /**
     * About us array creation
     *
-    * @since Busniess_Craft 1.0.0
+    * @since Busniess_Craft 0.0.1
     *
     * @param null
     * @return null
@@ -75,7 +75,7 @@ if ( ! function_exists( 'business_craft_aboutus_section' ) ) :
     /**
     * Featured Slider
     *
-    * @since business-craft 1.0.0
+    * @since business-craft 0.0.1
     *
     * @param null
     * @return null

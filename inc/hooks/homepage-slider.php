@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
     /**
      * Featured Slider array creation
      *
-     * @since business-craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param string $from_slider
      * @return array
@@ -77,7 +77,7 @@ if ( ! function_exists( 'business_craft_featured_home_slider' ) ) :
     /**
      * Featured Slider
      *
-     * @since business-craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return null

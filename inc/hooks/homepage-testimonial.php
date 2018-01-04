@@ -3,7 +3,7 @@ if (!function_exists('business_craft_home_testimonial_array')) :
     /**
      * Testimonial array creation
      *
-     * @since business-craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param string $from_testimonial
      * @return array
@@ -87,7 +87,7 @@ if ( ! function_exists( 'business_craft_home_testimonial' ) ) :
     /**
      * About Section
      *
-     * @since business-craft 1.0.0
+     * @since business-craft 0.0.1
      *
      * @param null
      * @return null

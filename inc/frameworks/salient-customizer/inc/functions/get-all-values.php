@@ -4,7 +4,7 @@ if ( ! function_exists( 'salient_customizer_get_all_values' ) ) :
      * Function to get all value
      *
      * @access public
-     * @since 1.0.0
+     * @since 0.0.1
      *
      * @param string $salient_customizer_name
      * @return array || other values

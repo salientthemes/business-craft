@@ -2,7 +2,7 @@
 /**
 * Returns word count of the sentences.
 *
-* @since @since business_craft 1.0.0
+* @since business_craft 0.0.1
 */
 if ( ! function_exists( 'business_craft_words_count' ) ) :
 

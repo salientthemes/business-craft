@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_set_global' ) ) :
 /**
  * Setting global values for all saved customizer values
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -20,7 +20,7 @@ if ( ! function_exists( 'business_craft_doctype' ) ) :
 /**
  * Doctype Declaration
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -39,7 +39,7 @@ if ( ! function_exists( 'business_craft_before_wp_head' ) ) :
 /**
  * Before wp head codes
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -60,7 +60,7 @@ if( ! function_exists( 'business_craft_default_layout' ) ) :
     /**
      * Business-craft default layout function
      *
-     * @since  Business-craft 1.0.0
+     * @since  Business-craft 0.0.1
      *
      * @param int
      * @return string
@@ -88,7 +88,7 @@ if ( ! function_exists( 'business_craft_body_class' ) ) :
 /**
  * add body class
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -128,7 +128,7 @@ if ( ! function_exists( 'business_craft_before_page_start' ) ) :
 /**
  * intro loader
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -145,7 +145,7 @@ if ( ! function_exists( 'business_craft_page_start' ) ) :
 /**
  * page start
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -163,7 +163,7 @@ if ( ! function_exists( 'business_craft_skip_to_content' ) ) :
 /**
  * Skip to content
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -181,7 +181,7 @@ if ( ! function_exists( 'business_craft_header' ) ) :
 /**
  * Main header
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
@@ -246,7 +246,7 @@ if( ! function_exists( 'business_craft_add_breadcrumb' ) ) :
 /**
  * Breadcrumb
  *
- * @since Business-craft 1.0.0
+ * @since Business-craft 0.0.1
  *
  * @param null
  * @return null
