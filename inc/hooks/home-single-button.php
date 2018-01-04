@@ -4,7 +4,7 @@ if (! function_exists('business_craft_single_button') ) :
   /**
     * About us array creation
     *
-    * @since Busniess_Craft 0.0.1
+    * @since business-craft 0.0.1
     *
     * @param null
     * @return null

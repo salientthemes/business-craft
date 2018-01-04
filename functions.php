@@ -152,6 +152,9 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer/customizer.php';
 
+/*update to pro link*/
+require_once( trailingslashit( get_template_directory() ) . 'trt-customize-pro/business-craft/class-customize.php' );
+
 /**
  * Load Jetpack compatibility file.
  */
