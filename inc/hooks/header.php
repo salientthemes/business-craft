@@ -141,23 +141,6 @@ function business_craft_before_page_start() {
 endif;
 add_action( 'business_craft_action_before', 'business_craft_before_page_start', 10 );
 
-if ( ! function_exists( 'business_craft_page_start' ) ) :
-/**
- * page start
- *
- * @since business-craft 0.0.1
- *
- * @param null
- * @return null
- *
- */
-function business_craft_page_start() {
-?>
-    <div id="page" class="site">
-<?php
-}
-endif;
-add_action( 'business_craft_action_before', 'business_craft_page_start', 15 );
 
 if ( ! function_exists( 'business_craft_skip_to_content' ) ) :
 /**
@@ -171,7 +154,10 @@ if ( ! function_exists( 'business_craft_skip_to_content' ) ) :
  */
 function business_craft_skip_to_content() {
     ?>
+    <body <?php body_class(); ?>>
+    <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'business-craft' ); ?></a>
+    
 <?php
 }
 endif;
@@ -187,58 +173,82 @@ if ( ! function_exists( 'business_craft_header' ) ) :
  * @return null
  *
  */
-function business_craft_header() {
+function business_craft_header()
+{
     global $business_craft_customizer_all_values;
     global $wp_version;
     global $post;
     ?>
-        <header id="masthead" class="wrapper site-header" role="banner">
+        <header id="masthead" class="wrapper site-header">
             <?php if (  is_front_page() && !is_home() ) { do_action('business_craft_header_section'); } ?>  
-            <div id="main-menu" class="business-craft-main-menu-wrapper>          
-                <div class="container main-menu">
-                    <div class="row">
-                        <!-- site branding -->
-                        <div class="col-xs-9 col-sm-12 col-md-4">
-                            <div class="site-branding">
-                                        <?php business_craft_the_custom_logo(); ?>
-                                        <?php if ( is_front_page() && is_home() ) : ?>
-                                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                                        <?php else : ?>
-                                            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                                        <?php endif;
+                <div class="container">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="site-branding">
+                            <?php business_craft_the_custom_logo(); ?>
+                                <?php if ( is_front_page() && is_home() ) : ?>
+                                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                                <?php else : ?>
+                                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                                <?php endif;
 
-                                        $description = get_bloginfo( 'description', 'display' );
-                                        if ( $description || is_customize_preview() ) : ?>
-                                            <h2 class="site-description"><?php echo esc_html($description); ?></h2>
-                                        <?php endif;
+                                $description = get_bloginfo( 'description', 'display' );
+                                if ( $description || is_customize_preview() ) : ?>
+                                <h2 class="site-description"><?php echo esc_html($description); ?></h2>
+                            <?php endif;
                                 ?>
-                            </div><!-- .site-branding -->
-                        </div><!-- .col-md-3 -->
+                        </div><!-- .site-branding -->
+                    </div><!-- col -->
 
-                        <div class="col-xs-12 col-sm-12 col-md-8 cleaxfix">                            
-                            <nav class="nav main-navigation">
-                                <div class="nav-mobile">
-                                  <i class="fa fa-bars"></i>
-                                </div>
-                              <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-                            </nav>                 
-                        </div><!-- .col-md-9 -->
-                    </div>
+                    <div class="nav-wrapper clearfix">
+                        <div class="col-md-9 col-sm-9 col-xs-12">
+                            <nav id="site-navigation" class="col-md-11 col-xs-12 main-navigation clearfix">
+                                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <?php
+                                    wp_nav_menu( array(
+                                    'theme_location' => 'menu-1',
+                                    'menu_id'        => 'primary-menu',
+                                ) );
+                                ?>                      
+                            </nav><!-- #site-navigation -->
+                            <div class="top-header-search-share">
+                                <i class="fa fa-share-alt share" id="header-share"></i>
+                                <i class="fa fa-search" id="header-search"></i>
+                            </div>
+                            <div class="search-form-nav" id="top-search">
+                                <?php get_search_form();?>
+                            </div><!-- top-search -->
+                            <div id="social-header" class="social-widget salient-social-section social-icon-only top-tooltip">
+                                <?php
+                                    wp_nav_menu( array(
+                                    'theme_location' => 'menu-2',
+                                    'menu_id'        => 'social-menu',
+                                ) );
+                                ?>      
+                            </div>
+                        </div><!-- col -->
+                    </div><!-- wrapper-->
                 </div>
-           </div> 
+                <!-- </div> -->
         </header>
-    <?php if (  !is_front_page() && is_home() ) { ?>
-    <div id="content" class="site-content">
-        <div id="primary" class="content-area">
-            <main id="main" class="site-main" role="main">
 
-    <?php } else if (!is_front_page()) {
-        do_action('business-craft-page-inner-title');
-    }?>
+    <?php if (  !is_front_page() && is_home() )
+        {?>
+        <div id="content" class="site-content">
+            <div id="primary" class="content-area">
+                <main id="main" class="site-main" role="main">
+                    <?php } else if (!is_front_page())
+                    {
+                        do_action('business-craft-page-inner-title');
+                    }?>
 
-<?php 
-}
-endif;
+                    <?php 
+}?>
+                </main>
+            </div>
+        </div>
+<?php endif;
 add_action( 'business_craft_action_header', 'business_craft_header', 10 );
 
 if( ! function_exists( 'business_craft_add_breadcrumb' ) ) :
