@@ -179,7 +179,7 @@ function business_craft_header()
     global $wp_version;
     global $post;
     ?>
-        <header id="masthead" class="site-header">
+        <header id="masthead" class="wrapper site-header">
             <?php if (  is_front_page() && !is_home() ) { do_action('business_craft_header_section'); } ?>  
                 <div class="container">
                     <div class="col-md-3 col-sm-3 col-xs-12">
