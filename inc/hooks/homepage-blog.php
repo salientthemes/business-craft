@@ -57,7 +57,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                                             </div>  
                                             <div class="col-md-6 col-sm-12 col-xs-12">
                                                 <div class="blog-content">
-                                                    <p class="blog-category"><?php echo wp_kses_post(get_the_category_list( ",", "", get_the_id())); ?></p>
+                                                   <!--  <p class="blog-category"><?php echo wp_kses_post(get_the_category_list( ",", "", get_the_id())); ?></p> -->
                                                         <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                                         <p>
                                                             <?php
