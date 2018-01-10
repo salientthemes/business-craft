@@ -36,9 +36,7 @@ do_action( 'business_craft_action_before_head' );?>
 	 */
 	do_action( 'business_craft_action_after_wp_head' );
 	?>
-
 </head>
-
 <body <?php body_class(); ?>>
 
 
