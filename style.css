@@ -52,14 +52,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 html {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
 
 body {
 	margin: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 article,
@@ -296,9 +296,9 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	clear: both;
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Poppins', sans-serif !important;
 }
 
 h1 a:hover,
@@ -321,7 +321,7 @@ h6 a:hover,
 p {
 	margin-bottom: 1.5em;
 	font-size: 14px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 dfn,
@@ -1613,6 +1613,10 @@ div#social-header {
 
 /* banner section */
 
+.banner-wrapper {
+    height: calc(100vh - 200px);
+}
+
 section#banner-section {
 	position: relative;
 	overflow: hidden;
@@ -1640,20 +1644,21 @@ section#banner-section {
 }
 
 .overlay {
-	background: #00000070;
+	background: rgba(0, 0, 0, 0.43);
 	height: 100%;
-	padding: 15% 0;
+	padding: 10% 0;
 }
 
 a.border-btn {
-	color: #fff;
 	font-size: 18px;
-	border: 2px solid #fff;
-	padding: 12px 55px;
-	border-radius: 4px;
-	-moz-transition: all .5s;
-	-webkit-transition: all .5s;
-	transition: all .5s;
+    border: 2px solid #2a80b9;
+    padding: 12px 55px;
+    border-radius: 4px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background: #2a80b9;
+    color: #fff;
 }
 
 a.border-btn:hover,
@@ -1719,7 +1724,7 @@ a.border-btn:active {
 
 .sec-title h2 {
 	font-size: 32px;
-	font-weight: 600;
+	font-weight: bold;
 	text-transform: uppercase;
 	padding-bottom: 10px;
 	color: #000000;
@@ -1775,7 +1780,7 @@ a.border-btn:active {
 
 .feature-items i {
 	font-size: 45px;
-	border: 1px solid;
+	border: 1px solid #fff;
 	border-radius: 50%;
 	height: 86px;
 	width: 86px;
@@ -1786,6 +1791,7 @@ a.border-btn:active {
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
+	background: #fff;
 }
 
 .texts {
@@ -1799,14 +1805,15 @@ a.border-btn:active {
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
-	padding-left: 10px;
-	padding-bottom: 20px;
+	background: #f6f6f6;
+    padding: 16px;
 }
 
 .wrapper-feature-content.col-md-12 .feature-items {
     border: 1px solid #f6f6f6;
     margin-bottom: 40px;
     padding: 20px 10px;
+    background: #f6f6f6;
 }
 
 .icon-section.clearfix {
@@ -1923,25 +1930,26 @@ section#call-to-action {
 }
 
 a.call-to-action-btn {
-	color: #000;
-	font-size: 16px;
-	font-weight: 600;
-	border: 2px solid #c9c9c9;
-	padding: 12px 46px;
-	background: #fff;
-	-webkit-transition: all 1s;
-	transition: all 1s;
-	position: relative;
-	box-shadow: 0 0 2px #797979;
-	text-transform: uppercase;
+	color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #c9c9c9;
+    padding: 12px 46px;
+    background: #fff;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    position: relative;
+    box-shadow: 0 0 2px #797979;
+    text-transform: uppercase;
+    background: #2a80b9;
 }
 
 a.call-to-action-btn:hover,
 a.call-to-action-btn:focus,
 a.call-to-action-btn:active {
 	text-decoration: none;
-	color: #fff;
-	background: #2a80b9;
+	color: #000;
+	background: #fff;
 	border-color: #fff;
 	box-shadow: 0 0 1px #000;
 }
@@ -1973,7 +1981,7 @@ a.call-to-action-btn:before {
 }
 
 section#call-to-action .image-overlay {
-	background: #3d3d3df0;
+	background: #f6f6f6;
 	padding: 68px;
 }
 
@@ -2013,10 +2021,13 @@ section#testimonials-section {
 	background-attachment: fixed;
 	overflow: hidden;
 	position: relative;
+	max-height: 350px;
 }
-section#testimonials-section .slick-slide{
-	height: auto;
+
+.banner-wrapper.testimonial-wrapper {
+    height: 175px;
 }
+
 .testi-overlay {
 	background: #000000b8;
 	color: #fff;
@@ -2162,6 +2173,7 @@ span.comments:before {
 	width: calc(100% - 60px);
 	float: right;
 	padding: 10px 10px;
+	background: #f6f6f6;
 }
 
 .right-wrap p {
@@ -2172,8 +2184,9 @@ span.comments:before {
 
 section#blog-section .meet-us-content.clearfix {
 	padding: 0;
-	border: 1px solid #ececec;
+	border: 1px solid #f6f6f6;
 	margin-bottom: 40px;
+	background: #f6f6f6;
 }
 
 .meet-us-content.clearfix:hover,
@@ -2223,8 +2236,7 @@ a.read-more-text:after {
 a.read-more-text:hover,
 a.read-more-text:focus,
 a.read-more-text:active {
-	color: #fff;
-	background: #2a80b9;
+	color: #000;
 	text-decoration: none;
 	padding: 0 10px;
 }
@@ -2233,10 +2245,10 @@ a.read-more-text:active {
 	overflow: hidden;
 }
 
-a.border-btn.view-more {
+/*a.border-btn.view-more {
 	color: #000;
 	border-color: #2a80c6;
-}
+}*/
 
 .btn-more {
 	text-align: center;
@@ -2365,13 +2377,13 @@ div#content #primary h2.entry-title a {
 
 /* left , right ,no sidebar */
 
-body.salient-right-sidebar #primary {
+body.salient-left-sidebar #primary {
 	float: right;
 	padding-right: 0;
 	padding-left: 5%;
 }
 
-body.salient-left-sidebar #primary {
+body.salient-right-sidebar #primary {
 	width: 70%;
 	padding-right: 5%;
 	float: left;
@@ -2401,6 +2413,7 @@ h2.widget-title,
 h1.entry-title {
 	border-bottom: 3px solid #c9c9c9;
 	position: relative;
+	padding: 10px 0;
 }
 
 h1.entry-title {
@@ -2510,6 +2523,8 @@ span.comments-link:before {
 
 
 /* widgets sidebar */
+
+
 
 h2.widget-title:before,
 h1.entry-title:before {
@@ -2649,9 +2664,9 @@ div#gotop i {
 	animation: border-pulsate 3s infinite;
 }
 
-section#about-section i {
+/*section#about-section i {
 	animation: bounce 10s infinite;
-}
+}*/
 
 @keyframes border-pulsate {
 	0% {
