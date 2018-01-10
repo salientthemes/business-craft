@@ -1100,6 +1100,11 @@ p.site-title a:focus,
 	color: #949494;
 }
 
+.site-description {
+    font-size: 14px;
+    margin: 0;
+}
+
 .nav-wrapper.clearfix {
 	text-align: right;
 }
@@ -1663,7 +1668,7 @@ a.border-btn:active {
 	box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
 }
 
-.ocean {
+/*.ocean {
 	height: 5%;
 	width: 100%;
 	position: absolute;
@@ -1707,7 +1712,7 @@ a.border-btn:active {
 	50% {
 		transform: translate3d(0, 5px, 0);
 	}
-}
+}*/
 
 
 /* home page sections */
@@ -2009,7 +2014,9 @@ section#testimonials-section {
 	overflow: hidden;
 	position: relative;
 }
-
+section#testimonials-section .slick-slide{
+	height: auto;
+}
 .testi-overlay {
 	background: #000000b8;
 	color: #fff;
