@@ -6,6 +6,7 @@ if (!function_exists('business_craft_single_page_title')) :
     		$business_craft_inner_baner_image = esc_url($business_craft_customizer_all_values['business-craft-default-banner-image'] );
     	    ?>
 			<div class="wrapper page-inner-title" style="background-image:url(<?php echo esc_url($business_craft_inner_baner_image); ?>);">
+			</div>	
 			<div class="overlay-for-img">
             	<div class = "thumb-overlay">
 					<div class="container">
