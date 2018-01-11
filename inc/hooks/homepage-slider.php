@@ -115,13 +115,15 @@ if ( ! function_exists( 'business_craft_featured_home_slider' ) ) :
                 ?>
                     <div class="banner-slider" style="background-image: url('<?php echo esc_url( $business_craft_feature_slider_image )?>');" >
                         <div class="overlay">
-                            <h1 class="sec-title"><?php echo esc_html( $business_craft_slider_array['business-craft-feature-slider-title'] );?></h1>
-                            <?php if ( 1 == $business_craft_feature_enable_button){ ?>
-                                <a href="<?php echo esc_url( $business_craft_slider_array['business-craft-feature-slider-link'] );?>" class="border-btn">
-                                    <?php echo esc_html( $business_craft_customizer_all_values['business-craft-fs-button-text'] );?>
-                                </a>
-                            <?php } ?>
-                        </div><!-- overlay -->
+                            <div class="banner-content-wrapper">
+                                <h1 class="sec-title"><?php echo esc_html( $business_craft_slider_array['business-craft-feature-slider-title'] );?></h1>
+                                <?php if ( 1 == $business_craft_feature_enable_button){ ?>
+                                    <a href="<?php echo esc_url( $business_craft_slider_array['business-craft-feature-slider-link'] );?>" class="border-btn">
+                                        <?php echo esc_html( $business_craft_customizer_all_values['business-craft-fs-button-text'] );?>
+                                    </a>
+                                <?php } ?>
+                            </div><!-- overlay -->
+                        </div>
                     </div><!-- slider content -->  
                     <?php
                 $i++;

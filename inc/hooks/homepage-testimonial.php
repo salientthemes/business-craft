@@ -111,7 +111,10 @@ if ( ! function_exists( 'business_craft_home_testimonial' ) ) :
                         <div class="container">
                             <div class="row">
                                 <div class="testimonials-wrapper">
-                                    <h3><?php echo esc_html(  $business_craft_home_testimonial_title); ?></h3>
+                                    <div class="sec-title centre">
+                                        <h2><?php echo esc_html(  $business_craft_home_testimonial_title); ?>                             
+                                        </h2>
+                                    </div>
                                     <div class="banner-wrapper testimonial-wrapper">
                                         <?php
                                         $i = 1;
@@ -135,9 +138,7 @@ if ( ! function_exists( 'business_craft_home_testimonial' ) ) :
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="mooving"></div>
-                    <div class="mooving mooving-2"></div>
+                    </div>                    
                 </section><!-- testimonials section -->
             <?php
             }
