@@ -88,6 +88,35 @@ if ( ! function_exists( 'business_craft_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'business_craft_setup' );
 
+/*breadcrum function*/
+
+if ( ! function_exists( 'business_craft_simple_breadcrumb' ) ) :
+
+	/**
+	 * Simple breadcrumb.
+	 *
+	 * @since 1.0.0
+	 */
+	function business_craft_simple_breadcrumb() {
+
+		if ( ! function_exists( 'breadcrumb_trail' ) ) {
+			require_once get_template_directory() . '/assets/breadcrumbs/breadcrumbs.php';
+		}
+
+		$breadcrumb_args = array(
+			'container'   => 'div',
+			'show_browse' => false,
+		);
+		breadcrumb_trail( $breadcrumb_args );
+
+	}
+
+endif;
+
+
+
+add_action( 'tgmpa_register', 'business_craft_recommended_plugins' );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *

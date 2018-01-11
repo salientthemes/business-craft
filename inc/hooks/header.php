@@ -124,22 +124,23 @@ function business_craft_body_class( $business_craft_body_classes ) {
 endif;
 add_action( 'body_class', 'business_craft_body_class', 10, 1);
 
-if ( ! function_exists( 'business_craft_before_page_start' ) ) :
+if ( ! function_exists( 'business_craft_page_start' ) ) :
 /**
- * intro loader
+ * page start
  *
- * @since business-craft 0.0.1
+ * @since Flare 1.0.0
  *
  * @param null
  * @return null
  *
  */
-function business_craft_before_page_start() {
-    global $business_craft_customizer_all_values;
-    /*intro loader*/
+function business_craft_page_start() {
+?>
+    <div id="page" class="site">
+<?php
 }
 endif;
-add_action( 'business_craft_action_before', 'business_craft_before_page_start', 10 );
+add_action( 'business_craft_action_before', 'business_craft_page_start', 15 );
 
 
 if ( ! function_exists( 'business_craft_skip_to_content' ) ) :
@@ -179,75 +180,97 @@ function business_craft_header()
     global $wp_version;
     global $post;
     ?>
-        <header id="masthead" class="wrapper site-header">
-            <?php if (  is_front_page() && !is_home() ) { do_action('business_craft_header_section'); } ?>  
-                <div class="container">
-                    <div class="col-md-3 col-sm-3 col-xs-12">
-                        <div class="site-branding">
-                            <?php business_craft_the_custom_logo(); ?>
-                                <?php if ( is_front_page() && is_home() ) : ?>
-                                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                                <?php else : ?>
-                                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                                <?php endif;
-
-                                $description = get_bloginfo( 'description', 'display' );
-                                if ( $description || is_customize_preview() ) : ?>
-                                <h2 class="site-description"><?php echo esc_html($description); ?></h2>
-                            <?php endif;
-                                ?>
-                        </div><!-- .site-branding -->
-                    </div><!-- col -->
-
-                    <div class="nav-wrapper clearfix">
-                        <div class="col-md-9 col-sm-9 col-xs-12">
-                            <nav id="site-navigation" class="col-md-11 col-xs-12 main-navigation clearfix">
-                                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                                    <i class="fa fa-bars"></i>
-                                </button>
-                                <?php
-                                    wp_nav_menu( array(
-                                    'theme_location' => 'menu-1',
-                                    'menu_id'        => 'primary-menu',
-                                ) );
-                                ?>                      
-                            </nav><!-- #site-navigation -->
-                            <div class="top-header-search-share">
-                                <i class="fa fa-share-alt share" id="header-share"></i>
-                                <i class="fa fa-search" id="header-search"></i>
-                            </div>
-                            <div class="search-form-nav" id="top-search">
-                                <?php get_search_form();?>
-                            </div><!-- top-search -->
-                            <div id="social-header" class="social-widget salient-social-section social-icon-only top-tooltip">
-                                <?php
-                                    wp_nav_menu( array(
-                                    'theme_location' => 'menu-2',
-                                    'menu_id'        => 'social-menu',
-                                ) );
-                                ?>      
-                            </div>
-                        </div><!-- col -->
-                    </div><!-- wrapper-->
+    <header id="masthead" class="wrapper site-header">
+        <div class="container">
+            <div class="col-md-3 col-sm-3 col-xs-12">
+                <div class="site-branding">
+                    <?php if (version_compare($wp_version, '4.5', '<'))
+                    {
+                        if ( isset($business_craft_customizer_all_values['business-craft-logo']) && !empty($business_craft_customizer_all_values['business-craft-logo'])) :
+                            echo '<div class="site-title">';?>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                <img class="header-logo" src="<?php echo esc_url($business_craft_customizer_all_values['business-craft-logo']); ?>" alt="<?php bloginfo( 'name' );?>">
+                            </a>
+                            <?php echo '</div>';?>
+                        <?php else :
+                            echo '<div class="site-title">';?>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                                <?php if ( 1 == $business_craft_customizer_all_values['business-craft-enable-title'] ) :
+                                    bloginfo( 'name' );
+                                endif;?>
+                            </a>
+                            <?php if ( 1 == $business_craft_customizer_all_values['business-craft-enable-tagline'] ) :
+                                echo '<p class="site-description">'. esc_html (get_bloginfo('description' )).'</p>';
+                            endif; ?>
+                            <?php echo '</div>';
+                        endif;
+                    } 
+                    else
+                    {
+                        business_craft_the_custom_logo();
+                        if ( is_front_page() && is_home() ) : ?>
+                            <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                        <?php else : ?>
+                            <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                        <?php endif;
+                        $description = get_bloginfo( 'description', 'display' );
+                        if ( $description || is_customize_preview() ) : ?>
+                            <h2 class="site-description"><?php echo esc_html($description ); ?></h2>
+                        <?php endif;
+                    }?>
                 </div>
-                <!-- </div> -->
-        </header>
+            </div><!-- col -->
 
-    <?php if (  !is_front_page() && is_home() )
+            <div class="nav-wrapper clearfix">
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <nav id="site-navigation" class="col-md-11 col-xs-12 main-navigation clearfix">
+                        <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <?php
+                            wp_nav_menu( array(
+                            'theme_location' => 'menu-1',
+                            'menu_id'        => 'primary-menu',
+                        ) );
+                        ?>                      
+                    </nav><!-- #site-navigation -->
+                    <div class="top-header-search-share">
+                        <i class="fa fa-share-alt share" id="header-share"></i>
+                        <i class="fa fa-search" id="header-search"></i>
+                    </div>
+                    <div class="search-form-nav" id="top-search">
+                        <?php get_search_form();?>
+                    </div><!-- top-search -->
+                    <div id="social-header" class="social-widget salient-social-section social-icon-only top-tooltip">
+                        <?php
+                            wp_nav_menu( array(
+                            'theme_location' => 'menu-2',
+                            'menu_id'        => 'social-menu',
+                        ) );
+                        ?>      
+                    </div>
+                </div><!-- col -->
+            </div><!-- wrapper-->
+        </div>
+            <!-- </div> -->
+    </header>
+
+    <?php if (  is_front_page() && !is_home() )
         {?>
-        <div id="content" class="site-content">
+        <!-- <div id="content" class="site-content">
             <div id="primary" class="content-area">
-                <main id="main" class="site-main" role="main">
-                    <?php } else if (!is_front_page())
+                <main id="main" class="site-main" role="main"> -->
+                    <?php } 
+                    else
                     {
                         do_action('business-craft-page-inner-title');
                     }?>
 
                     <?php 
 }?>
-                </main>
+              <!--   </main>
             </div>
-        </div>
+        </div> -->
 <?php endif;
 add_action( 'business_craft_action_header', 'business_craft_header', 10 );
 

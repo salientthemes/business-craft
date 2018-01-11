@@ -69,15 +69,15 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                                                             } ?>
                                                         </p>
                                                     <div class="blog-meta">
-                                                    <span>
-                                                        <?php
-                                                        $archive_year  = get_the_time('Y'); 
-                                                        $archive_month = get_the_time('m'); 
-                                                        $archive_day   = get_the_time('d'); 
-                                                        ?>
-                                                        <a href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo get_the_date('M - j , Y');?></a>
-                                                    </span>
-                                                        <a href="<?php the_permalink(); ?>" class="read-more-text"><?php echo esc_html__('Read More','business-craft'); ?></a>
+                                                        <span>
+                                                            <?php
+                                                            $archive_year  = get_the_time('Y'); 
+                                                            $archive_month = get_the_time('m'); 
+                                                            $archive_day   = get_the_time('d'); 
+                                                            ?>
+                                                            <a href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo get_the_date('M - j , Y');?></a>
+                                                        </span>
+                                                            <a href="<?php the_permalink(); ?>" class="read-more-text"><?php echo esc_html__('Read More','business-craft'); ?></a>
                                                     </div>
                                                 </div><!-- text content -->    
                                             </div>                          

@@ -11,6 +11,8 @@ require get_template_directory() . '/inc/function/header-logo.php';
 
 require get_template_directory() . '/inc/function/single-image-align.php';
 
+require get_template_directory() . '/inc/function/inner-head.php';
+
 require get_template_directory().'/inc/function/words-count.php';
 
 require get_template_directory().'/inc/hooks/excerpt.php';
@@ -33,7 +35,7 @@ require get_template_directory().'/inc/hooks/home-our-service.php';
 
 require get_template_directory().'/inc/hooks/footer.php';
 
-// require get_template_directory().'/inc/hooks/header.php';
+require get_template_directory().'/inc/hooks/header.php';
 
  require get_template_directory() . '/inc/post-meta/layout-meta.php';
 

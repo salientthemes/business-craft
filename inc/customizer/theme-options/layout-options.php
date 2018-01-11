@@ -6,6 +6,7 @@ global $business_craft_customizer_defaults;
 
 /*defaults values*/
 $business_craft_customizer_defaults['business-craft-enable-static-page'] = 1;
+$business_craft_customizer_defaults['business-craft-default-banner-image'] = '';
 
 $business_craft_customizer_defaults['business-craft-default-layout'] = 'right-sidebar';
 $business_craft_customizer_defaults['business-craft-number-of-words'] = 30;

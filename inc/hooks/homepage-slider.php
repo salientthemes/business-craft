@@ -8,7 +8,8 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
      * @param string $from_slider
      * @return array
      */
-    function business_craft_featured_slider_array( $from_slider ){
+    function business_craft_featured_slider_array( $from_slider )
+    {
         global $business_craft_customizer_all_values;
         $business_craft_feature_slider_number = absint( $business_craft_customizer_all_values['business-craft-featured-slider-number'] );
         $business_craft_feature_slider_single_words = absint( $business_craft_customizer_all_values['business-craft-fs-single-words'] );
@@ -18,9 +19,11 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
         $repeated_page = array('business-craft-fs-pages-ids');
         $business_craft_feature_slider_args = array();
 
-        if ( 'from-category' ==  $from_slider ){
+        if ( 'from-category' ==  $from_slider )
+        {
             $business_craft_feature_slider_category = $business_craft_customizer_all_values['business-craft-featured-slider-category'];
-            if( 0 != $business_craft_feature_slider_category ){
+            if( 0 != $business_craft_feature_slider_category )
+            {
                 $business_craft_feature_slider_args =    array(
                     'post_type' => 'post',
                     'cat' => absint($business_craft_feature_slider_category),
@@ -31,14 +34,18 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
         else{
             $business_craft_feature_slider_posts = salient_customizer_get_repeated_all_value(3 , $repeated_page);
             $business_craft_feature_slider_posts_ids = array();
-            if( null != $business_craft_feature_slider_posts ) {
-                foreach( $business_craft_feature_slider_posts as $business_craft_feature_slider_post ) {
-                    if( 0 != $business_craft_feature_slider_post['business-craft-fs-pages-ids'] ){
+            if( null != $business_craft_feature_slider_posts )
+            {
+                foreach( $business_craft_feature_slider_posts as $business_craft_feature_slider_post )
+                {
+                    if( 0 != $business_craft_feature_slider_post['business-craft-fs-pages-ids'] )
+                    {
                         $business_craft_feature_section_posts_ids[] = $business_craft_feature_slider_post['business-craft-fs-pages-ids'];
                     }
                 }
 
-                if( !empty( $business_craft_feature_section_posts_ids )){
+                if( !empty( $business_craft_feature_section_posts_ids ))
+                {
                     $business_craft_feature_slider_args =    array(
                         'post_type' => 'page',
                         'post__in' => array_map( 'absint', $business_craft_feature_section_posts_ids ),
@@ -102,14 +109,18 @@ if ( ! function_exists( 'business_craft_featured_home_slider' ) ) :
         <div class="banner-wrapper">
             <?php
             $i = 1;
-            foreach( $business_craft_slider_arrays as $business_craft_slider_array ){
-                if( $business_craft_feature_slider_number < $i){
+            foreach( $business_craft_slider_arrays as $business_craft_slider_array )
+            {
+                if( $business_craft_feature_slider_number < $i)
+                {
                     break;
                 }
-                if(empty($business_craft_slider_array['business-craft-feature-slider-image'])){
+                if(empty($business_craft_slider_array['business-craft-feature-slider-image']))
+                {
                     $business_craft_feature_slider_image = get_template_directory_uri().'/assets/images/bg1.jpg';
                 }
-                else{
+                else
+                {
                     $business_craft_feature_slider_image =$business_craft_slider_array['business-craft-feature-slider-image'];
                 }
                 ?>
@@ -139,4 +150,4 @@ if ( ! function_exists( 'business_craft_featured_home_slider' ) ) :
         }
     }
 endif;
-add_action( 'business_craft_homepage_slider', 'business_craft_featured_home_slider', 10 );
+add_action( 'business_craft_homepage', 'business_craft_featured_home_slider', 10 );
