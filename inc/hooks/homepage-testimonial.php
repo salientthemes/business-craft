@@ -112,7 +112,7 @@ if ( ! function_exists( 'business_craft_home_testimonial' ) ) :
                             <div class="row">
                                 <div class="testimonials-wrapper">
                                     <h3><?php echo esc_html(  $business_craft_home_testimonial_title); ?></h3>
-                                    <div class="banner-wrapper">
+                                    <div class="banner-wrapper testimonial-wrapper">
                                         <?php
                                         $i = 1;
                                         foreach( $business_craft_testimonial_arrays as $business_craft_testimonial_array ){

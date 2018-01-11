@@ -136,7 +136,7 @@ add_action( 'after_setup_theme', 'business_craft_content_width', 0 );
  */
 function business_craft_scripts() {
 	wp_enqueue_style( 'business-craft-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'business-craft-google-fonts', '//fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,700i,900,900i');
+	wp_enqueue_style( 'business-craft-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900');
 	//css
 	wp_enqueue_script( 'jquery-modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array('jquery'), '2.8.3', true );
 

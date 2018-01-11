@@ -122,7 +122,7 @@ if ( ! function_exists( 'business_craft_aboutus_section' ) ) :
                                     ?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="meet-us-content clearfix">  
-                                            <div class="col-md-6 col-sm-6 col-xs-12 overflow-hidden">
+                                            <div class="col-md-6 col-sm-6 col-xs-12 overflow-hidden image">
                                                 <div class="background-image-div" style = "background : url('<?php echo $business_craft_about_us_image ;?>')">
                                                     <div class="image-overlay" ></div>
                                                 </div>  <!-- background image -->

@@ -52,14 +52,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 html {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
 
 body {
 	margin: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 article,
@@ -296,9 +296,9 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6 {
+.h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 	clear: both;
-	font-family: 'Lato', sans-serif !important;
+	font-family: 'Poppins', sans-serif !important;
 }
 
 h1 a:hover,
@@ -321,7 +321,7 @@ h6 a:hover,
 p {
 	margin-bottom: 1.5em;
 	font-size: 14px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 dfn,
@@ -1100,6 +1100,11 @@ p.site-title a:focus,
 	color: #949494;
 }
 
+.site-description {
+    font-size: 14px;
+    margin: 0;
+}
+
 .nav-wrapper.clearfix {
 	text-align: right;
 }
@@ -1608,9 +1613,11 @@ div#social-header {
 
 /* banner section */
 
+
 section#banner-section {
 	position: relative;
 	overflow: hidden;
+	height: calc(100vh - 200px);
 }
 
 .banner-slider {
@@ -1635,20 +1642,21 @@ section#banner-section {
 }
 
 .overlay {
-	background: #00000070;
+	background: rgba(0, 0, 0, 0.43);
 	height: 100%;
-	padding: 15% 0;
+	padding: 10% 0;
 }
 
 a.border-btn {
-	color: #fff;
 	font-size: 18px;
-	border: 2px solid #fff;
-	padding: 12px 55px;
-	border-radius: 4px;
-	-moz-transition: all .5s;
-	-webkit-transition: all .5s;
-	transition: all .5s;
+    border: 2px solid #2a80b9;
+    padding: 12px 55px;
+    border-radius: 4px;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background: #2a80b9;
+    color: #fff;
 }
 
 a.border-btn:hover,
@@ -1663,7 +1671,7 @@ a.border-btn:active {
 	box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
 }
 
-.ocean {
+/*.ocean {
 	height: 5%;
 	width: 100%;
 	position: absolute;
@@ -1707,14 +1715,14 @@ a.border-btn:active {
 	50% {
 		transform: translate3d(0, 5px, 0);
 	}
-}
+}*/
 
 
 /* home page sections */
 
 .sec-title h2 {
 	font-size: 32px;
-	font-weight: 600;
+	font-weight: bold;
 	text-transform: uppercase;
 	padding-bottom: 10px;
 	color: #000000;
@@ -1746,7 +1754,7 @@ a.border-btn:active {
 }
 
 .wrapper {
-	padding: 35px 0;
+	padding: 15px 0;
 }
 
 .wrapper h4 {
@@ -1770,7 +1778,7 @@ a.border-btn:active {
 
 .feature-items i {
 	font-size: 45px;
-	border: 1px solid;
+	border: 1px solid #fff;
 	border-radius: 50%;
 	height: 86px;
 	width: 86px;
@@ -1781,6 +1789,7 @@ a.border-btn:active {
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
+	background: #fff;
 }
 
 .texts {
@@ -1794,14 +1803,15 @@ a.border-btn:active {
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
-	padding-left: 10px;
-	padding-bottom: 20px;
+	background: #f6f6f6;
+    padding: 16px;
 }
 
 .wrapper-feature-content.col-md-12 .feature-items {
     border: 1px solid #f6f6f6;
     margin-bottom: 40px;
     padding: 20px 10px;
+    background: #f6f6f6;
 }
 
 .icon-section.clearfix {
@@ -1841,7 +1851,7 @@ a.border-btn:active {
 /* meet ussection */
 
 section#meet-us {
-	background: #f8f8f8;
+	background: #fff;
 }
 
 .background-image-div {
@@ -1861,7 +1871,7 @@ section#meet-us {
 
 .image-overlay {
 	background: #0000006e;
-	padding: 100px;
+	padding: 109px;
 }
 
 section#meet-us .image-overlay{
@@ -1874,10 +1884,16 @@ section#meet-us .image-overlay{
 }
 
 .meet-us-text.texts{
-	background: #fff;
+	background: #f6f6f6;
 	box-shadow: 0 0 2px #c7c3c3;
 	padding: 10px;
 	position: relative;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.meet-us-text.texts:hover{
+	background: #fff;
 }
 
 @media screen and (max-width: 767px) {
@@ -1888,6 +1904,8 @@ section#meet-us .image-overlay{
 @media screen and (min-width: 767px) {
 	.meet-us-content.clearfix {
 		display: flex;
+	    justify-content: space-between;
+	    flex-wrap: nowrap;
 	}
 	.text-centre {
 	    position: absolute;
@@ -1898,13 +1916,15 @@ section#meet-us .image-overlay{
 	}
 }
 
+.col-md-12.col-sm-12.col-xs-12:nth-child(odd) .image {
+    order: 2;
+}
 
 /* call to action button */
 
 section#call-to-action {
 	background: #dcdcdc;
 	text-align: center;
-	background: url('./assets/images/bg1.jpg');
 	background-size: 100%, 100%;
 	background-repeat: no-repeat;
 	background-position: center, center;
@@ -1919,16 +1939,16 @@ section#call-to-action {
 
 a.call-to-action-btn {
 	color: #000;
-	font-size: 16px;
-	font-weight: 600;
-	border: 2px solid #c9c9c9;
-	padding: 12px 46px;
-	background: #fff;
-	-webkit-transition: all 1s;
-	transition: all 1s;
-	position: relative;
-	box-shadow: 0 0 2px #797979;
-	text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #c9c9c9;
+    padding: 12px 46px;
+    background: #fff;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    position: relative;
+    box-shadow: 0 0 2px #797979;
+    text-transform: uppercase;
 }
 
 a.call-to-action-btn:hover,
@@ -1936,7 +1956,7 @@ a.call-to-action-btn:focus,
 a.call-to-action-btn:active {
 	text-decoration: none;
 	color: #fff;
-	background: #2a80b9;
+	background: #2a80c6;
 	border-color: #fff;
 	box-shadow: 0 0 1px #000;
 }
@@ -1968,8 +1988,9 @@ a.call-to-action-btn:before {
 }
 
 section#call-to-action .image-overlay {
-	background: #3d3d3df0;
+	background: #f6f6f6;
 	padding: 68px;
+	margin: 15px 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -2008,6 +2029,12 @@ section#testimonials-section {
 	background-attachment: fixed;
 	overflow: hidden;
 	position: relative;
+	max-height: 350px;
+	margin: 15px 0;
+}
+
+.banner-wrapper.testimonial-wrapper {
+    height: 175px;
 }
 
 .testi-overlay {
@@ -2100,9 +2127,12 @@ p.name:after {
 	display: list-item;
 	list-style: none;
 	display: flex;
-	margin-bottom: 10px;
+	flex-wrap: nowrap;
+	margin-bottom: 20px;
 }
-
+.col-md-12.col-sm-12.col-xs-12:nth-child(odd) .blog-meta {
+    order: 2;
+}
 .right-sect h4 {
 	font-size: 18px;
 }
@@ -2155,6 +2185,7 @@ span.comments:before {
 	width: calc(100% - 60px);
 	float: right;
 	padding: 10px 10px;
+	background: #f6f6f6;
 }
 
 .right-wrap p {
@@ -2164,14 +2195,20 @@ span.comments:before {
 }
 
 section#blog-section .meet-us-content.clearfix {
-	padding: 0;
-	border: 1px solid #ececec;
+	padding: 14px;
+	border: 1px solid #f6f6f6;
 	margin-bottom: 40px;
+	background: #f6f6f6;
+	max-height: 218px;
+	overflow: hidden;
+	height: 100%;
+	transition: all .3s;
 }
 
-.meet-us-content.clearfix:hover,
-.right-sect .blog-content:hover {
+section#blog-section .meet-us-content.clearfix:hover,
+section#blog-section .right-sect .blog-content:hover {
 	box-shadow: 0 1px 5px #d6d4d4cc;
+	background: #fff;
 }
 
 section#meet-us .meet-us-content.clearfix:hover {
@@ -2216,8 +2253,7 @@ a.read-more-text:after {
 a.read-more-text:hover,
 a.read-more-text:focus,
 a.read-more-text:active {
-	color: #fff;
-	background: #2a80b9;
+	color: #000;
 	text-decoration: none;
 	padding: 0 10px;
 }
@@ -2226,10 +2262,10 @@ a.read-more-text:active {
 	overflow: hidden;
 }
 
-a.border-btn.view-more {
+/*a.border-btn.view-more {
 	color: #000;
 	border-color: #2a80c6;
-}
+}*/
 
 .btn-more {
 	text-align: center;
@@ -2358,13 +2394,13 @@ div#content #primary h2.entry-title a {
 
 /* left , right ,no sidebar */
 
-body.salient-right-sidebar #primary {
+body.salient-left-sidebar #primary {
 	float: right;
 	padding-right: 0;
 	padding-left: 5%;
 }
 
-body.salient-left-sidebar #primary {
+body.salient-right-sidebar #primary {
 	width: 70%;
 	padding-right: 5%;
 	float: left;
@@ -2394,6 +2430,7 @@ h2.widget-title,
 h1.entry-title {
 	border-bottom: 3px solid #c9c9c9;
 	position: relative;
+	padding: 10px 0;
 }
 
 h1.entry-title {
@@ -2503,6 +2540,8 @@ span.comments-link:before {
 
 
 /* widgets sidebar */
+
+
 
 h2.widget-title:before,
 h1.entry-title:before {
@@ -2642,9 +2681,9 @@ div#gotop i {
 	animation: border-pulsate 3s infinite;
 }
 
-section#about-section i {
+/*section#about-section i {
 	animation: bounce 10s infinite;
-}
+}*/
 
 @keyframes border-pulsate {
 	0% {
@@ -2689,29 +2728,19 @@ section#about-section i {
 
 /* about us section */
 
-#tab-1 {
+#tab-1,
+#tab-2,
+#tab-3,
+.background-image-div {
 	text-align: center;
-	background: url('./assets/images/bg2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
 }
 
-#tab-2 {
-	text-align: center;
-	background: url('./assets/images/bg2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-#tab-3 {
-	text-align: center;
-	background: url('./assets/images/bg2.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 .imgchangeabale-div-wrap {
 	display: flex;
+	flex-wrap: nowrap;
 }
 
 .tab-content,
