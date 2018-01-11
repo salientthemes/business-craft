@@ -257,21 +257,17 @@ function business_craft_header()
 
     <?php if (  is_front_page() && !is_home() )
         {?>
-        <!-- <div id="content" class="site-content">
+       <!--  <div id="content" class="site-content">
             <div id="primary" class="content-area">
                 <main id="main" class="site-main" role="main"> -->
-                    <?php } 
-                    else
-                    {
-                        do_action('business-craft-page-inner-title');
-                    }?>
+            <?php } 
+            else
+            {
+                do_action('business-craft-page-inner-title');
+            }?>
 
-                    <?php 
-}?>
-              <!--   </main>
-            </div>
-        </div> -->
-<?php endif;
+            <?php 
+}  endif; 
 add_action( 'business_craft_action_header', 'business_craft_header', 10 );
 
 if( ! function_exists( 'business_craft_add_breadcrumb' ) ) :
