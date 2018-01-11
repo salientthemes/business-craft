@@ -2371,10 +2371,12 @@ body.home div#content {
 /* default */
 
 #breadcrumb {
-  background-color: #009292;
+  background-color: #2a80b9;
   color: #565656;
   font-size: 13px;
   color: #ffffff;
+  margin: 15px 0;
+  text-align: center;
 }
 #breadcrumb a{
   color: #e1e1e1 !important;
@@ -2402,6 +2404,15 @@ body.home div#content {
   margin-left: 0;
 }
 
+ul.trail-items li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+ul.trail-items{
+	margin: 0;
+	padding: 0;
+}
 /* ==================================*/
 .wrap-breadcrumb {
   padding-left: 15px;
@@ -2465,7 +2476,46 @@ body.home div#content {
 .wrap-breadcrumb a:hover, .wrap-breadcrumb a:focus, .wrap-breadcrumb a:active {
   color: #882720;
 }
+/* inner page banner image */
 
+.wrapper.page-inner-title {
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 0;
+    margin-bottom: 30px;
+}
+.wrapper.page-inner-title a{
+	color: #fff;
+	padding-bottom: 0 10px;
+}
+.thumb-overlay {
+    padding: 60px 0;
+}
+.wrapper.page-inner-title:after {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.82);
+    width: 100%;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+}
+.overlay-for-img {
+    position: relative;
+    z-index: 9999;
+    color: #fff;
+}
+.overlay-for-img h1.entry-title {
+    border: 0;
+    font-size: 40px;
+}
+.overlay-for-img h1.entry-title:before{
+	width: 0;
+}
 #primary {
 	width: 70%;
 	padding-right: 5%;
@@ -2717,7 +2767,7 @@ h2.widget-title {
 
 /* footer */
 
-footer#colophon {
+.footer-wrapper{
 	padding-top: 40px;
 	color: #bfbfbf;
 	background-size: 100%, 100%;
@@ -2730,7 +2780,7 @@ footer#colophon {
 .site-info {
 	padding: 10px 0;
 	color: #a09d9d;
-	background: #68686880;
+	background: #000;
 	text-align: center;
 }
 
