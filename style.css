@@ -2370,6 +2370,102 @@ body.home div#content {
 
 /* default */
 
+#breadcrumb {
+  background-color: #009292;
+  color: #565656;
+  font-size: 13px;
+  color: #ffffff;
+}
+#breadcrumb a{
+  color: #e1e1e1 !important;
+}
+
+#breadcrumb a:hover,
+#breadcrumb a:focus,
+#breadcrumb a:active{
+ color: #ffffff !important;
+}
+#breadcrumb span{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#breadcrumb span:first-child{
+  margin-left: 0;
+}
+
+#breadcrumb span, #breadcrumb .page-links a, .page-links #breadcrumb a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#breadcrumb span:first-child, #breadcrumb .page-links a:first-child, .page-links #breadcrumb a:first-child {
+  margin-left: 0;
+}
+
+/* ==================================*/
+.wrap-breadcrumb {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-size: 13.008px;
+  font-size: 0.813rem;
+}
+
+@media screen and (max-width: 767px) {
+  .wrap-breadcrumb {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .wrap-breadcrumb .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wrap-breadcrumb ul {
+  list-style: none;
+  padding-left: 5px;
+  margin-bottom: 0;
+  line-height: 3;
+}
+
+.wrap-breadcrumb li {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: capitalize;
+  max-width: 100%;
+}
+
+.wrap-breadcrumb li span, .wrap-breadcrumb li .page-links a, .page-links .wrap-breadcrumb li a {
+  margin-left: 5px;
+  margin-right: 5px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.wrap-breadcrumb li span:before, .wrap-breadcrumb li .page-links a:before, .page-links .wrap-breadcrumb li a:before {
+  content: "/";
+  margin-right: 10px;
+}
+
+.wrap-breadcrumb li.trail-begin span:before, .wrap-breadcrumb li.trail-begin .page-links a:before, .page-links .wrap-breadcrumb li.trail-begin a:before {
+  content: "";
+  margin-right: 0;
+}
+
+.wrap-breadcrumb a {
+  color: #626262;
+}
+
+.wrap-breadcrumb a:hover, .wrap-breadcrumb a:focus, .wrap-breadcrumb a:active {
+  color: #882720;
+}
+
 #primary {
 	width: 70%;
 	padding-right: 5%;
