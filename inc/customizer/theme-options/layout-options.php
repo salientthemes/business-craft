@@ -39,7 +39,23 @@ $business_craft_settings_controls['business-craft-enable-static-page'] =
             'priority'              => 10,
         )
     );
-    
+
+// banner image option
+$business_craft_settings_controls['business-craft-default-banner-image'] =
+    array(
+        'setting' =>     array(
+            'default'              => $business_craft_customizer_defaults['business-craft-default-banner-image']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Default Banner Image', 'business-craft' ),
+            'description'           =>  __( 'Please note that if you remove this image default banner image will appear', 'business-craft' ),
+            'section'               => 'business-craft-layout-options',
+            'type'                  => 'image',
+            'priority'              => 15,
+            'active_callback'       => ''
+        )
+    );
+
 /*layout-options option responsive lodader start*/
 $business_craft_settings_controls['business-craft-default-layout'] =
     array(
