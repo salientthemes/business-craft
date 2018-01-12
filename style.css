@@ -574,22 +574,22 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 
-a {
+body a {
 	color: #000;
 }
 
-a:visited {
+body a:visited {
 	color: #000;
 }
 
-a:hover,
-a:focus,
-a:active {
+body a:hover,
+body a:focus,
+body a:active {
 	color: #000;
 	text-decoration: none;
 }
 
-a:focus {
+body a:focus {
 	outline: none;
 }
 
@@ -1663,10 +1663,8 @@ section#banner-section {
 	font-weight: 600;
 	display: block;
 }
-.banner-content-wrapper h1 span{
-	color: #2a80b9;
-}
-a.border-btn {
+
+body a.border-btn {
 	font-size: 18px;
     border: 2px solid #2a80b9;
     padding: 12px 55px;
@@ -1808,7 +1806,6 @@ section#feature-section {
 	text-align: center;
 	float: left;
 	padding-top: 20px;
-	color: #2a80b9;
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
@@ -1843,7 +1840,6 @@ section#feature-section {
 }
 
 .feature-items.clearfix:hover i {
-	background: #2a80b9;
 	color: #fff;
 }
 
@@ -2141,8 +2137,9 @@ section#blog-section {
 	color: #000;
 }
 
-.blog-content a:hover {
-	color: #2a80c6;
+.blog-content a:hover,
+.blog-content a:active,
+.blog-content a:focus{
 	text-decoration: none;
 }
 
@@ -2162,7 +2159,7 @@ section#blog-section {
 }
 
 .right-sect .blog-meta {
-	background: #000;
+	background: rgba(0, 0, 0, 0.47);
 	width: 60px;
 	column-count: 1;
 	text-align: center;
@@ -2296,7 +2293,7 @@ a.read-more-text:active {
 }
 
 a.border-btn.view-more:hover {
-	color: #2a80c6;
+	color: #fff;
 	border-color: #777;
 	box-shadow: 0px 0px 0px 3px rgb(213, 213, 213);
 }
@@ -2372,8 +2369,6 @@ body.home div#content {
 /* default */
 
 #breadcrumb {
-  background-color: #2a80b9;
-  color: #565656;
   font-size: 13px;
   color: #ffffff;
   margin: 15px 0;
@@ -2782,6 +2777,9 @@ h2.widget-title {
 	background: #000;
 }
 
+.footer-wrapper ul li a {
+    color: #bfbfbf;
+}
 .site-info {
 	padding: 10px 0;
 	color: #a09d9d;
@@ -2847,9 +2845,8 @@ div#gotop {
 
 div#gotop i {
 	padding: 15px;
-	background: #2a80b9;
 	font-size: 15px;
-	border: 4px solid cyan;
+	border: 4px solid;
 	border-radius: 50%;
 	animation: border-pulsate 3s infinite;
 }
@@ -2860,7 +2857,7 @@ div#gotop i {
 
 @keyframes border-pulsate {
 	0% {
-		border-color: #2a80b9;
+		border-color: #000;
 	}
 	50% {
 		border-color: #f6f6f6;

@@ -225,10 +225,41 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         /*Primary*/
         if( !empty($business_craft_primary_color_option) ){
         ?>
-        a.border-btn
+        button, 
+        input[type="button"], 
+        input[type="reset"], 
+        input[type="submit"],
+        a.border-btn,
+        .feature-items.clearfix:hover i,
+        a.call-to-action-btn:hover,
+        a.call-to-action-btn:focus, 
+        a.call-to-action-btn:active,
+        h2.widget-title:before, 
+        h1.entry-title:before,
+        div#gotop i,
+        #breadcrumb
          {
         	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
         }
+
+	     .banner-content-wrapper h1 span,
+	     .feature-items i,
+	     .blog-content a:hover,
+		.blog-content a:active,
+		.blog-content a:focus
+         {
+        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>;;
+        }
+
+        header#masthead,
+        a.border-btn,
+        .sec-title h2:after,
+        .main-navigation ul ul,
+        div#gotop i
+         {
+        	border-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
+        }
+
 
         
        
