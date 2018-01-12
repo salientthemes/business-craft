@@ -239,7 +239,9 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         div#gotop i,
         #breadcrumb,
         a.call-to-action-btn,
-        .slick-prev:hover:before, .slick-next:hover:before
+        .slick-prev:hover:before, 
+        .slick-next:hover:before,
+        .slick-dots li
          {
         	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
         }
@@ -248,7 +250,13 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 	    .feature-items i,
 	    .blog-content a:hover,
 		.blog-content a:active,
-		.blog-content a:focus
+		.blog-content a:focus,
+		.feature-items.clearfix:hover h4,
+		.feature-items.clearfix:hover h4 a,
+		.meet-us-text.texts:hover h4 a,
+		.widget ul li a:hover, 
+		.widget ul li a:focus, 
+		.widget ul li a:active
          {
         	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>;;
         }
