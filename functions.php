@@ -153,7 +153,7 @@ function business_craft_scripts() {
 
 	wp_enqueue_script( 'business-craft-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	// Enqueue  inline style
+	// Enqueue  inline
 	wp_add_inline_style( 'business-craft-style', business_craft_inline_style() );
 
 	wp_enqueue_script( 'business-craft-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -164,7 +164,7 @@ function business_craft_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'business_craft_scripts' );
 
-wp_add_inline_style( 'business-craft-style', business_craft_inline_style() );
+
 
 /**
  * Implement the Custom Header feature.
@@ -196,6 +196,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
 /**
 *Inline style to use color options
 **/
@@ -204,17 +205,16 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
     /**
      * style to use color options
      *
-     * @since  flare 1.0.1
+     * @since  business-craft 1.0.1
      */
-    function business_craft_inline_style(){
+    function business_craft_inline_style()
+    {
       
         global $business_craft_customizer_all_values;
         global $business_craft_google_fonts;
         $business_craft_background_color = get_background_color();
-        $business_craft_primary_color_option = $business_craft_customizer_all_values['flare-primary-color'];
-        $business_craft_site_identity_color_option = $business_craft_customizer_all_values['flare-site-identity-color'];
-        $business_craft_site_banner_bg_color_option = $business_craft_customizer_all_values['flare-inner-banner-color'];
-        $business_craft_site_banner_title_color_option = $business_craft_customizer_all_values['flare-banner-title-color'];
+        $business_craft_primary_color_option = $business_craft_customizer_all_values['business-craft-primary-color'];
+        $business_craft_section_header_color_option = $business_craft_customizer_all_values['business-craft-section-header-color'];
         ?>
         <style type="text/css">
         /*=====COLOR OPTION=====*/
@@ -225,73 +225,23 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         /*Primary*/
         if( !empty($business_craft_primary_color_option) ){
         ?>
-
-        .button,
-        html input[type="button"],
-        input[type="button"],
-        input[type="reset"],
-        input[type="submit"],
-        .button:visited,
-        button:visited,
-        html input[type="button"]:visited,
-        input[type="button"]:visited,
-        input[type="reset"]:visited,
-        input[type="submit"]:visited,
-        .form-inner .wpcf7-submit,
-        .form-inner .wpcf7-submit:visited,
-        .slide-pager .cycle-pager-active,
-        section.wrapper-slider .slide-pager .cycle-pager-active,
-        section.wrapper-slider .slide-pager .cycle-pager-active:visited,
-        section.wrapper-slider .slide-pager .cycle-pager-active:hover,
-        section.wrapper-slider .slide-pager .cycle-pager-active:focus,
-        section.wrapper-slider .slide-pager .cycle-pager-active:active,
-        .title-divider,
-        .title-divider:visited,
-        .block-overlay-hover,
-        .block-overlay-hover:visited,
-        .btn-blue,
-        .button, button, 
-        html input[type="button"], 
-        input[type="button"], 
-        input[type="reset"], 
-        input[type="submit"], 
-        .button:visited, 
-        button:visited,
-        html input[type="button"]:visited,
-        input[type="button"]:visited, 
-        input[type="reset"]:visited, 
-        input[type="submit"]:visited, 
-        .form-inner .wpcf7-submit, 
-        .form-inner .wpcf7-submit:visited, 
-        .slide-pager .cycle-pager-active, 
-        section.wrapper-slider .slide-pager .cycle-pager-active, 
-        section.wrapper-slider .slide-pager .cycle-pager-active:visited, 
-        section.wrapper-slider .slide-pager .cycle-pager-active:hover, 
-        section.wrapper-slider .slide-pager .cycle-pager-active:focus, 
-        section.wrapper-slider .slide-pager .cycle-pager-active:active, 
-        .title-divider, 
-        .title-divider:visited, 
-        .block-overlay-hover, 
-        .block-overlay-hover:visited, 
-        .search-form .search-submit,
-        .back-tonav, 
-        .back-tonav:visited,
-        .search-form .search-submit,
-        .db-testimonials,
-        .nicescroll-cursors,
-        .db-meet-our-team .team-members section .img-wrapper:before,
-        .sidenav .closebtn,
-        #masthead .navigation .main-navigation ul#primary-menu > li a:hover,
-         .divider-v1,
-         .divider-v1:before,
-         .divider-v1:after,
-         .carousel-indicators .active,
-         span.onsale,
-         .flare-top-nav,
-         .img-n-des.clearfix:hover .date {
+        a.border-btn
+         {
         	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
         }
 
-       .flare-top-nav:before {
-           border-right-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
-        }
+        
+       
+       
+        if( !empty($business_craft_section_header_color_option) ){
+        ?>
+            h1.entry-title{
+                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>;
+            }
+        <?php
+        } 
+        ?>
+        </style>
+    <?php
+    }
+endif;
