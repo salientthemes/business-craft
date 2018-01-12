@@ -1820,7 +1820,6 @@ section#feature-section {
 
 .feature-items.clearfix:hover i {
 	color: #fff;
-	transform: rotate(360deg);
 }
 
 .feature-items.clearfix:hover {
