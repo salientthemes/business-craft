@@ -128,7 +128,7 @@ if ( ! function_exists( 'business_craft_page_start' ) ) :
 /**
  * page start
  *
- * @since Flare 1.0.0
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null

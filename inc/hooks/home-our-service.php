@@ -149,7 +149,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             <div class="feature-items clearfix">
                                                  <i class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
                                                 <div class="texts">
-                                                    <a href="<?php echo esc_url($about_link_1);?>"><h4><?php echo esc_html($about_title_1); ?></h4></a>
+                                                    <h4><a href="<?php echo esc_url($about_link_1);?>"><?php echo esc_html($about_title_1); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_1); ?></p>
                                                 </div>
                                             </div>
@@ -160,7 +160,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             <div class="feature-items clearfix">
                                                 <i class="fa <?php echo esc_attr($about_icon_2); ?>"></i>
                                                 <div class="texts">
-                                                    <a href="<?php echo esc_url($about_link_2);?>"><h4><?php echo esc_html($about_title_2); ?></h4></a>
+                                                    <h4><a href="<?php echo esc_url($about_link_2);?>"><?php echo esc_html($about_title_2); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_2); ?></p>
                                                 </div>
                                             </div>
@@ -171,7 +171,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             <div class="feature-items clearfix">
                                                 <i class="fa <?php echo esc_attr($about_icon_3); ?>"></i>
                                                 <div class="texts">
-                                                    <a href="<?php echo esc_url($about_link_3);?>"><h4><?php echo esc_html($about_title_3); ?></h4></a>
+                                                    <h4><a href="<?php echo esc_url($about_link_3);?>"><?php echo esc_html($about_title_3); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_3); ?></p>
                                                 </div>
                                             </div>
