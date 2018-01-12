@@ -114,9 +114,9 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
         {
             $business_craft_service_mian_title = $business_craft_customizer_all_values['business-craft-main-title-text'];
 
-            $about_title_1 = ''; $about_content_1= ''; $about_icon_1 = ''; $about_image_1 = '';
-            $about_title_2 = ''; $about_content_2= ''; $about_icon_2 = ''; $about_image_2 = '';
-            $about_title_3 = ''; $about_content_3= ''; $about_icon_3 = ''; $about_image_3 = '';
+            $about_title_1 = ''; $about_content_1= ''; $about_icon_1 = ''; $about_image_1 = ''; $about_link_1 = '';
+            $about_title_2 = ''; $about_content_2= ''; $about_icon_2 = ''; $about_image_2 = ''; $about_link_2 = '';
+            $about_title_3 = ''; $about_content_3= ''; $about_icon_3 = ''; $about_image_3 = ''; $about_link_3 = '';
             ?>
             <section class="about-section wrapper" id="about-section">
                 <div class="container">
@@ -137,6 +137,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                             ${'about_content_'.$i} =  wp_kses_post( $business_craft_service_array['business-craft-our-service-content'] );
                             ${'about_icon_'.$i} =  esc_attr( $business_craft_service_array['business-craft-our-service-pages-icon'] );
                             ${'about_image_'.$i} =  esc_url( $business_craft_service_array['business-craft-our-service-image'] );
+                            ${'about_link_'.$i} = esc_url($business_craft_service_array['business-craft-our-service-link']);
                             $i++;
                         }
                         ?>
@@ -148,7 +149,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             <div class="feature-items clearfix">
                                                  <i class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
                                                 <div class="texts">
-                                                    <h4><?php echo esc_html($about_title_1); ?></h4>
+                                                    <a href="<?php echo esc_url($about_link_1);?>"><h4><?php echo esc_html($about_title_1); ?></h4></a>
                                                     <p><?php echo wp_kses_post($about_content_1); ?></p>
                                                 </div>
                                             </div>
@@ -159,7 +160,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             <div class="feature-items clearfix">
                                                 <i class="fa <?php echo esc_attr($about_icon_2); ?>"></i>
                                                 <div class="texts">
-                                                    <h4><?php echo esc_html($about_title_2); ?></h4>
+                                                    <a href="<?php echo esc_url($about_link_2);?>"><h4><?php echo esc_html($about_title_2); ?></h4></a>
                                                     <p><?php echo wp_kses_post($about_content_2); ?></p>
                                                 </div>
                                             </div>
@@ -170,7 +171,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             <div class="feature-items clearfix">
                                                 <i class="fa <?php echo esc_attr($about_icon_3); ?>"></i>
                                                 <div class="texts">
-                                                    <h4><?php echo esc_html($about_title_3); ?></h4>
+                                                    <a href="<?php echo esc_url($about_link_3);?>"><h4><?php echo esc_html($about_title_3); ?></h4></a>
                                                     <p><?php echo wp_kses_post($about_content_3); ?></p>
                                                 </div>
                                             </div>
