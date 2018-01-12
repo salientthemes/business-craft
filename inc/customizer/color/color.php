@@ -19,42 +19,6 @@ $business_craft_sections['business_crfat_color_section'] 	=
 	);
 
 
-/**
- * Reset color settings to default
- * @param  $input
- *
- * @since business-craft- 1.0
- */
-if ( ! function_exists( 'business_craft_color_reset' ) ) :
-    function business_craft_color_reset( ) {
-        
-            global $business_craft_customizer_saved_values;
-           $business_craft_customizer_saved_values = business_craft_get_all_options();
-        if ( $business_craft_customizer_saved_values['business-craft-color-reset'] == 1 ) {
-            global $business_craft_customizer_defaults;
-            global $business_craft_customizer_saved_values;
-
-            /*setting fields */
-            $business_craft_customizer_saved_values['business-craft-primary-color'] = $business_craft_customizer_defaults['business-craft-primary-color'];
-            $business_craft_customizer_saved_values['business-craft-section-header-color'] = $business_craft_customizer_defaults['business-craft-section-header-color'];
-            
-
-
-
-            remove_theme_mod( 'background_color' );
-            $business_craft_customizer_saved_values['business-craft-color-reset'] = '';
-            /*resetting fields*/
-            business_craft_reset_options( $business_craft_customizer_saved_values );
-
-        }
-        else 
-        {
-            return '';
-        }
-    }
-endif;
-add_action( 'customize_save_after','business_craft_color_reset' );
-
 // control section for primary color
 $business_craft_settings_controls['business-craft-primary-color']  =  
 	array(
