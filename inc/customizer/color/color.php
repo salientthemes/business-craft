@@ -7,8 +7,8 @@ global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
 
-$business_craft_customizer_defaults['business_craft_primary_Color'] = '#37ce9c';
-$business_craft_customizer_defaults['business_craft_section_header_color'] = '#000';
+$business_craft_customizer_defaults['business-craft-primary-color'] = '#37ce9c';
+$business_craft_customizer_defaults['business-craft-section-header-color'] = '#000';
 
 // create a section for color option
 $business_craft_sections['business_crfat_color_section'] 	=
@@ -18,10 +18,10 @@ $business_craft_sections['business_crfat_color_section'] 	=
 	);
 
 // control section for primary color
-$business_craft_settings_controls['business_craft_primary_Color']  =  
+$business_craft_settings_controls['business-craft-primary-color']  =  
 	array(
 		'setting'			=>array(
-			'default'		=> $business_craft_customizer_defaults['business_craft_primary_Color']
+			'default'		=> $business_craft_customizer_defaults['business-craft-primary-color']
 		),
 		'control'				=>array(
 			'label'				=>esc_html__('Primary','business-craft'),
@@ -34,10 +34,10 @@ $business_craft_settings_controls['business_craft_primary_Color']  =
 	);
 
 // control section for primary color
-$business_craft_settings_controls['business_craft_section_header_color']  =  
+$business_craft_settings_controls['business-craft-section-header-color']  =  
 	array(
 		'setting'			=>array(
-			'default'		=> $business_craft_customizer_defaults['business_craft_section_header_color']
+			'default'		=> $business_craft_customizer_defaults['business-craft-section-header-color']
 		),
 		'control'				=>array(
 			'label'				=>esc_html__('Header Section Color','business-craft'),

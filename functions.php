@@ -153,6 +153,9 @@ function business_craft_scripts() {
 
 	wp_enqueue_script( 'business-craft-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
+	// Enqueue  inline
+	wp_add_inline_style( 'business-craft-style', business_craft_inline_style() );
+
 	wp_enqueue_script( 'business-craft-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -160,6 +163,8 @@ function business_craft_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'business_craft_scripts' );
+
+
 
 /**
  * Implement the Custom Header feature.
@@ -191,3 +196,52 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+/**
+*Inline style to use color options
+**/
+if( ! function_exists( 'business_craft_inline_style' ) ) :
+
+    /**
+     * style to use color options
+     *
+     * @since  business-craft 1.0.1
+     */
+    function business_craft_inline_style()
+    {
+      
+        global $business_craft_customizer_all_values;
+        global $business_craft_google_fonts;
+        $business_craft_background_color = get_background_color();
+        $business_craft_primary_color_option = $business_craft_customizer_all_values['business-craft-primary-color'];
+        $business_craft_section_header_color_option = $business_craft_customizer_all_values['business-craft-section-header-color'];
+        ?>
+        <style type="text/css">
+        /*=====COLOR OPTION=====*/
+
+        /*Color*/
+        /*----------------------------------*/
+        <?php 
+        /*Primary*/
+        if( !empty($business_craft_primary_color_option) ){
+        ?>
+        a.border-btn
+         {
+        	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
+        }
+
+        
+       
+       
+        if( !empty($business_craft_section_header_color_option) ){
+        ?>
+            h1.entry-title{
+                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>;
+            }
+        <?php
+        } 
+        ?>
+        </style>
+    <?php
+    }
+endif;
