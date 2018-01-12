@@ -1957,13 +1957,12 @@ section#call-to-action {
 	background-attachment: fixed;
 }
 
-a.call-to-action-btn {
-	color: #000;
+body a.call-to-action-btn {
+	color: #fff;
     font-size: 16px;
     font-weight: 600;
     border: 2px solid #c9c9c9;
     padding: 12px 46px;
-    background: #fff;
     -webkit-transition: all 1s;
     transition: all 1s;
     position: relative;
@@ -1971,12 +1970,12 @@ a.call-to-action-btn {
     text-transform: uppercase;
 }
 
-a.call-to-action-btn:hover,
-a.call-to-action-btn:focus,
-a.call-to-action-btn:active {
+body a.call-to-action-btn:hover,
+body a.call-to-action-btn:focus,
+body a.call-to-action-btn:active {
 	text-decoration: none;
-	color: #fff;
-	background: #2a80c6;
+	color: #000;
+	background: #fff !important;
 	border-color: #fff;
 	box-shadow: 0 0 1px #000;
 }
