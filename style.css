@@ -1658,6 +1658,19 @@ section#banner-section {
     transform: translate(0,-50%);
     z-index: 999;
 }
+
+@media screen and (max-width: 767px) {
+	.banner-content-wrapper{
+		text-align: left;
+	    margin-left: 0;
+	    width: 100%;
+	    padding: 16px;
+	}
+	body .banner-content-wrapper h1{
+		font-size: 28px;
+    	display: inherit;
+	}
+}
 .banner-content-wrapper h1{
 	margin: 0;
 	font-weight: 600;
@@ -1687,53 +1700,6 @@ a.border-btn:active {
 	outline: none;
 	box-shadow: 0px 0px 0px 3px rgb(255, 255, 255);
 }
-
-/*.ocean {
-	height: 5%;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background: #015871;
-	opacity: 0.3;
-	z-index: 1;
-}
-
-.wave {
-	background: url('./assets/images/wave.svg') repeat-x;
-	position: absolute;
-	top: -128px;
-	width: 6400px;
-	height: 198px;
-	animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
-	transform: translate3d(0, 0, 0);
-}
-
-.wave:nth-of-type(2) {
-	top: -120px;
-	animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
-	opacity: 1;
-}
-
-@keyframes wave {
-	0% {
-		margin-left: 0;
-	}
-	100% {
-		margin-left: -1600px;
-	}
-}
-
-@keyframes swell {
-	0%,
-	100% {
-		transform: translate3d(0, -25px, 0);
-	}
-	50% {
-		transform: translate3d(0, 5px, 0);
-	}
-}*/
-
 
 /* home page sections */
 

@@ -238,7 +238,8 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         h1.entry-title:before,
         div#gotop i,
         #breadcrumb,
-        a.call-to-action-btn
+        a.call-to-action-btn,
+        .slick-prev:hover:before, .slick-next:hover:before
          {
         	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
         }
@@ -256,7 +257,8 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         a.border-btn,
         .sec-title h2:after,
         .main-navigation ul ul,
-        div#gotop i
+        div#gotop i,
+        .social-widget.salient-social-section.social-icon-only.top-tooltip
          {
         	border-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
         }
