@@ -237,16 +237,26 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         h2.widget-title:before, 
         h1.entry-title:before,
         div#gotop i,
-        #breadcrumb
+        #breadcrumb,
+        a.call-to-action-btn,
+        .slick-prev:hover:before, 
+        .slick-next:hover:before,
+        .slick-dots li
          {
         	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
         }
 
-	     .banner-content-wrapper h1 span,
-	     .feature-items i,
-	     .blog-content a:hover,
+	    .banner-content-wrapper h1 span,
+	    .feature-items i,
+	    .blog-content a:hover,
 		.blog-content a:active,
-		.blog-content a:focus
+		.blog-content a:focus,
+		.feature-items.clearfix:hover h4,
+		.feature-items.clearfix:hover h4 a,
+		.meet-us-text.texts:hover h4 a,
+		.widget ul li a:hover, 
+		.widget ul li a:focus, 
+		.widget ul li a:active
          {
         	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>;;
         }
@@ -255,7 +265,8 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         a.border-btn,
         .sec-title h2:after,
         .main-navigation ul ul,
-        div#gotop i
+        div#gotop i,
+        .social-widget.salient-social-section.social-icon-only.top-tooltip
          {
         	border-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
         }
