@@ -2219,6 +2219,10 @@ section#blog-section .overflow-hidden {
 	padding: 0;
 }
 
+section#blog-section .overflow-hidden .background-image-div{
+	padding: 100px;
+}
+
 .blog-meta {
 	column-count: 2;
 	padding: 8px 0;
