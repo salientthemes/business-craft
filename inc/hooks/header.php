@@ -180,6 +180,9 @@ function business_craft_header()
     global $wp_version;
     global $post;
     ?>
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
     <header id="masthead" class="site-header">
         <div class="container">
             <div class="col-md-3 col-sm-3 col-xs-12">

@@ -1672,6 +1672,7 @@ section#banner-section {
 	    margin-left: 0;
 	    width: 100%;
 	    padding: 16px;
+	    position: sticky;
 	}
 	body .banner-content-wrapper h1{
 		font-size: 28px;
@@ -1682,6 +1683,11 @@ section#banner-section {
 	margin: 0;
 	font-weight: 600;
 	display: block;
+	padding-bottom: 0;
+}
+
+.banner-content-wrapper p {
+    margin-bottom: 34px;
 }
 
 body a.border-btn {
@@ -1775,14 +1781,14 @@ section#feature-section {
 }
 
 .feature-items i {
-	font-size: 45px;
+	font-size: 30px;
 	border: 1px solid #fff;
 	border-radius: 50%;
 	height: 86px;
 	width: 86px;
 	text-align: center;
 	float: left;
-	padding-top: 20px;
+	padding-top: 27px;
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
@@ -1817,10 +1823,6 @@ section#feature-section {
 
 .icon-section.clearfix {
 	padding-top: 20px;
-}
-
-.feature-items.clearfix:hover i {
-	color: #fff;
 }
 
 .feature-items.clearfix:hover {
@@ -2469,6 +2471,15 @@ ul.trail-items{
 }
 /* inner page banner image */
 
+.image-right {
+    float: right;
+    padding-left: 16px;
+}
+.image-left {
+    float: left;
+    padding-right: 16px;
+}
+
 .wrapper.page-inner-title {
     text-align: center;
     position: relative;
@@ -3014,4 +3025,37 @@ section.bc-contact-section{
     padding: 131px;
 }
 
+body {
+  overflow: hidden;
+}
 
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99999;
+  /* makes sure it stays on top */
+}
+
+#status {
+    max-width: 150px;
+    max-height: 101px;
+    position: absolute;
+    height: 100%;
+    background-image: url(assets/images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-size: 250px;
+}

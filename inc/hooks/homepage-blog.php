@@ -76,8 +76,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                                                             $archive_day   = get_the_time('d'); 
                                                             ?>
                                                             <a href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo get_the_date('M - j , Y');?></a>
-                                                        </span>
-                                                            <a href="<?php the_permalink(); ?>" class="read-more-text"><?php echo esc_html__('Read More','business-craft'); ?></a>
+                                                        </span>                                                       
                                                     </div>
                                                 </div><!-- text content -->    
                                             </div>                          
@@ -125,8 +124,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                                             <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                             <p class="by-line">
                                                 <a href="<?php echo esc_url( get_author_posts_url( $author_id ) )?>" ><span><?php echo esc_html__('By: ','business-craft'); ?><?php echo esc_html( get_the_author_meta( 'display_name', $author_id )); ?></span> </a>
-                                            </p>
-                                            <a href="<?php the_permalink(); ?>" class="read-more-text"><?php echo esc_html__('Read More','business-craft'); ?></a>
+                                            </p>                                           
                                         </div>                              
                                     </div><!-- text content -->    
                                 </div>
