@@ -3040,7 +3040,7 @@ body {
   bottom: 0;
   background-color: #fff;
   /* change if the mask should have another color then white */
-  z-index: 99999;
+  z-index: 9999999;
   /* makes sure it stays on top */
 }
 
