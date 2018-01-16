@@ -20,11 +20,15 @@ if ( ! function_exists( 'business_craft_home_feature_array' ) ) :
         $business_craft_home_feature_contents_array[1]['business-craft-home-feature-link'] = '#';
         $business_craft_home_feature_contents_array[1]['business-craft-home-feature-page-icon'] = 'fa-desktop';
         $business_craft_home_feature_contents_array[1]['business-craft-home-feature-page-link-text'] = __('Know More','business-craft');
+        $business_craft_home_feature_contents_array[1]['business-craft-icon-color'] = "#401010";
 
         $business_craft_icons_array = array('business-craft-home-feature-page-icon');
+        $business_craft_icons_color_array = array('business-craft-icon-color');
         $business_craft_home_feature_page = array('business-craft-home-feature-pages-ids');
 
         $business_craft_icons_arrays = salient_customizer_get_repeated_all_value(6 , $business_craft_icons_array);
+        $business_craft_icons_color_arrays = salient_customizer_get_repeated_all_value(6 , $business_craft_icons_color_array);
+
 
         if ( 'from-category' ==  $from_feature ){
             $business_craft_home_feature_category = $business_craft_customizer_all_values['business-craft-home-feature-category'];
@@ -76,6 +80,15 @@ if ( ! function_exists( 'business_craft_home_feature_array' ) ) :
                     else{
                         $business_craft_home_feature_contents_array[$i]['business-craft-home-feature-page-icon'] = 'fa-desktop';
                     }
+                    if (isset($business_craft_icons_color_arrays)) 
+                    {
+                        $business_craft_home_feature_contents_array[$i]['business-craft-icon-color'] =$business_craft_icons_color_arrays[$i]['business-craft-icon-color'];
+                    }
+                    else
+                    {
+                        $business_craft_home_feature_contents_array[$i]['business-craft-icon-color'] = '#401010';
+                    }
+
                     $business_craft_home_feature_contents_array[$i]['business-craft-home-feature-page-link-text'] = __('Know More','business-craft');
 
                     $i++;
@@ -126,7 +139,7 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
                                     ?>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="feature-items clearfix">
-                                        <i class="fa <?php echo esc_attr( $business_craft_feature_array['business-craft-home-feature-page-icon'] ); ?>"></i>
+                                        <i style="color : <?php echo $business_craft_feature_array['business-craft-icon-color'] ;?>" class="fa <?php echo esc_attr( $business_craft_feature_array['business-craft-home-feature-page-icon'] ); ?>"></i>
                                         <div class="texts">
                                            <h4><a href="<?php echo esc_url($business_craft_feature_array['business-craft-home-feature-link']);?>"><?php echo esc_html( $business_craft_feature_array['business-craft-home-feature-title'] );?></a></h4>
                                             <p><?php echo wp_kses_post( $business_craft_feature_array['business-craft-home-feature-content'] );?></p>

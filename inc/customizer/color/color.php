@@ -51,6 +51,7 @@ $business_craft_settings_controls['business-craft-section-header-color']  =
 		)
 	);
 
+
 // control section for reset color
 $business_craft_settings_controls['business-craft-color-reset']  =  
 	array(
@@ -58,7 +59,7 @@ $business_craft_settings_controls['business-craft-color-reset']  =
 			'default'		=> $business_craft_customizer_defaults['business-craft-color-reset']
 		),
 		'control'				=>array(
-			'label'				=>esc_html__('Rest','business-craft'),
+			'label'				=>esc_html__('Reset','business-craft'),
 			'description'		=>esc_html__('Caution: Reset all above color settings to default. Refresh the page after save to view the effects.','business-craft'),
 			'section'			=>'business_crfat_color_section',
 			'type'				=>'checkbox',
