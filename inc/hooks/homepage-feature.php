@@ -80,7 +80,7 @@ if ( ! function_exists( 'business_craft_home_feature_array' ) ) :
                     else{
                         $business_craft_home_feature_contents_array[$i]['business-craft-home-feature-page-icon'] = 'fa-desktop';
                     }
-                    if (isset($business_craft_icons_color_arrays)) 
+                    if (isset($business_craft_icons_color_arrays[$i])) 
                     {
                         $business_craft_home_feature_contents_array[$i]['business-craft-icon-color'] =$business_craft_icons_color_arrays[$i]['business-craft-icon-color'];
                     }
@@ -139,7 +139,7 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
                                     ?>
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <div class="feature-items clearfix">
-                                        <i style="color : <?php echo $business_craft_feature_array['business-craft-icon-color'] ;?>" class="fa <?php echo esc_attr( $business_craft_feature_array['business-craft-home-feature-page-icon'] ); ?>"></i>
+                                        <i style="color : <?php echo $business_craft_feature_array['business-craft-icon-color'];?>" class="fa <?php echo esc_attr( $business_craft_feature_array['business-craft-home-feature-page-icon'] ); ?>"></i>
                                         <div class="texts">
                                            <h4><a href="<?php echo esc_url($business_craft_feature_array['business-craft-home-feature-link']);?>"><?php echo esc_html( $business_craft_feature_array['business-craft-home-feature-title'] );?></a></h4>
                                             <p><?php echo wp_kses_post( $business_craft_feature_array['business-craft-home-feature-content'] );?></p>

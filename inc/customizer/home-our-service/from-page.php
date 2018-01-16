@@ -12,7 +12,7 @@ $business_craft_customizer_defaults['business-craft-our-service-page'] = '';
 $business_craft_customizer_defaults['business-craft-our-service-image'] = get_template_directory().'/assets/images/bg1.jpg';
 
 $business_craft_customizer_defaults['business-craft-our-service-icon'] = __('fa fa-desktop','business-craft');
-$business_craft_customizer_defaults['business-craft-our-service-icon-color'] = '#087501';
+$business_craft_customizer_defaults['business-craft-our-service-icon-color'] = '#151915';
 
 
 // create panel for singele button
