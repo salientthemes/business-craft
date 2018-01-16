@@ -21,9 +21,10 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
         $business_craft_home_service_contents_array[0]['business-craft-our-service-image'] = get_template_directory().'/assets/images/bg1.jpg';
 
         $business_craft_icons_arrays = array();
+        $business_craft_icons_color_arrays =array();
         $business_craft_home_service_args = array();
 
-        $repeated = array('business-craft-our-service-pages-icon','business-craft-desgin-develop-pages-ids');
+        $repeated = array('business-craft-our-service-pages-icon','business-craft-desgin-develop-pages-ids','business-craft-our-service-icon-color');
 
         $business_craft_home_service_posts =salient_customizer_get_repeated_all_value(3, $repeated);
         $business_craft_home_service_posts_ids = array();
@@ -82,6 +83,14 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
                     else
                     {
                         $business_craft_home_service_contents_array[$i]['business-craft-our-service-pages-icon'] = 'fa-desktop';
+                    }
+                    if (isset( $business_craft_icons_color_arrays[$i] ))
+                    {
+                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-icon-color'] =$business_craft_icons_color_arrays[$i];
+                    }
+                    else
+                    {
+                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-icon-color'] ='#087501';
                     }
                     $i++;
                 endwhile;
@@ -147,7 +156,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-1" data-toggle="tab">
                                             <div class="feature-items clearfix">
-                                                 <i class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
+                                                 <i style="color: <?php echo $business_craft_service_array['business-craft-our-service-icon-color'];?>" class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
                                                 <div class="texts">
                                                     <h4><?php echo esc_html($about_title_1); ?></h4>
                                                     <p><?php echo wp_kses_post($about_content_1); ?></p>

@@ -13,6 +13,7 @@ $business_craft_customizer_defaults['business-craft-home-feature-selection'] = '
 $business_craft_customizer_defaults['business-craft-home-feature-number'] = 6;
 $business_craft_customizer_defaults['business-craft-home-feature-page-icon'] = 'fa-desktop';
 $business_craft_customizer_defaults['business-craft-home-feature-pages'] = 0;
+$business_craft_customizer_defaults['business-craft-icon-color'] = '#401010';
 
 
 /*creating panel for fonts-setting*/
@@ -83,6 +84,18 @@ $business_craft_repeated_settings_controls['business-craft-home-feature-font-ico
                 'description'           => sprintf( __( 'Use font awesome icon: Eg: %1$s. %2$s See more here %3$s', 'business-craft' ), 'fa-desktop','<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>' ),
             )
         ),
+         'business-craft-icon-color'  =>array(
+            'setting'   =>  array(
+                'default'       =>$business_craft_customizer_defaults['business-craft-icon-color']
+            ),
+            'control' => array(
+                'label'                 =>  __( 'Select Icon Color For Service %s', 'business-craft' ),
+                'section'               => 'business-craft-home-feature',
+                'type'                  => 'color',
+                'priority'              => 60,
+                'description'           => ''
+            )
+        ),
         'business-craft-home-feature-pages-ids' => array(
             'setting' =>     array(
                 'default'              => $business_craft_customizer_defaults['business-craft-home-feature-pages'],
@@ -95,4 +108,5 @@ $business_craft_repeated_settings_controls['business-craft-home-feature-font-ico
                 'description'           => ''
             )
         ),
+       
     );

@@ -215,6 +215,7 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         $business_craft_background_color = get_background_color();
         $business_craft_primary_color_option = $business_craft_customizer_all_values['business-craft-primary-color'];
         $business_craft_section_header_color_option = $business_craft_customizer_all_values['business-craft-section-header-color'];
+        $business_craft_icon_color = $business_craft_customizer_all_values['business-craft-icon-color'];
         ?>
         <style type="text/css">
         /*=====COLOR OPTION=====*/
@@ -223,67 +224,69 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         /*----------------------------------*/
         <?php 
         /*Primary*/
-        if( !empty($business_craft_primary_color_option) ){
-        ?>
-        button, 
-        input[type="button"], 
-        input[type="reset"], 
-        input[type="submit"],
-        a.border-btn,
-        .feature-items.clearfix:hover i,
-        a.call-to-action-btn:hover,
-        a.call-to-action-btn:focus, 
-        a.call-to-action-btn:active,
-        h2.widget-title:before, 
-        h1.entry-title:before,
-        div#gotop i,
-        #breadcrumb,
-        a.call-to-action-btn,
-        .slick-prev:hover:before, 
-        .slick-next:hover:before,
-        .slick-dots li
-         {
-        	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
-        }
+        if( !empty($business_craft_primary_color_option) )
+        { ?>
+	        button, 
+	        input[type="button"], 
+	        input[type="reset"], 
+	        input[type="submit"],
+	        a.border-btn,
+	        .feature-items.clearfix:hover i,
+	        a.call-to-action-btn:hover,
+	        a.call-to-action-btn:focus, 
+	        a.call-to-action-btn:active,
+	        h2.widget-title:before, 
+	        h1.entry-title:before,
+	        div#gotop i,
+	        #breadcrumb,
+	        a.call-to-action-btn,
+	        .slick-prev:hover:before, 
+	        .slick-next:hover:before,
+	        .slick-dots li
+	        {
+	        	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
+	        }
 
-	    .banner-content-wrapper h1 span,
-	    .feature-items i,
-	    .blog-content a:hover,
-		.blog-content a:active,
-		.blog-content a:focus,
-		.feature-items.clearfix:hover h4,
-		.feature-items.clearfix:hover h4 a,
-		.meet-us-text.texts:hover h4 a,
-		.widget ul li a:hover, 
-		.widget ul li a:focus, 
-		.widget ul li a:active
-         {
-        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>;;
-        }
+		    .banner-content-wrapper h1 span,
+		    .feature-items i,
+		    .blog-content a:hover,
+			.blog-content a:active,
+			.blog-content a:focus,
+			.feature-items.clearfix:hover h4,
+			.feature-items.clearfix:hover h4 a,
+			.meet-us-text.texts:hover h4 a,
+			.widget ul li a:hover, 
+			.widget ul li a:focus, 
+			.widget ul li a:active
+	        {
+	        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>;;
+	        }
 
-        header#masthead,
-        a.border-btn,
-        .sec-title h2:after,
-        .main-navigation ul ul,
-        div#gotop i,
-        .social-widget.salient-social-section.social-icon-only.top-tooltip
-         {
-        	border-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
-        }
+	        header#masthead,
+	        a.border-btn,
+	        .sec-title h2:after,
+	        .main-navigation ul ul,
+	        div#gotop i,
+	        .social-widget.salient-social-section.social-icon-only.top-tooltip
+	        {
+	        	border-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
+	        }
+	    <?php }
 
-
-        
        
        
-        if( !empty($business_craft_section_header_color_option) ){
-        ?>
-            h1.entry-title{
-                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>;
-            }
-        <?php
-        } 
-        ?>
-        </style>
-    <?php
-    }
-endif;
+	        if( !empty($business_craft_section_header_color_option) )
+	        {
+	        ?>
+	            h1.entry-title
+	            {
+	                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>;
+	            }
+	        <?php
+	        } ?>
+	        
+
+	       
+        </style>       
+     <?php }
+ endif;
