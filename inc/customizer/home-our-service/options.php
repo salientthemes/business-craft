@@ -6,7 +6,7 @@ global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
-$business_craft_customizer_defaults['business-craft-our-service-enable'] = 1;
+$business_craft_customizer_defaults['business-craft-our-service-enable'] = 0;
 $business_craft_customizer_defaults['business-craft-main-title-text'] = __('DESIGN. DEVELOP. DEDICATE','business-craft');
 
 // create panel for singele button

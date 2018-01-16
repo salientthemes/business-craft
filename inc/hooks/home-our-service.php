@@ -18,10 +18,11 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
         $business_craft_home_service_contents_array[0]['business-craft-our-service-content'] = __("our-service-content", 'business-craft');
         $business_craft_home_service_contents_array[0]['business-craft-our-service-link'] = '#';
         $business_craft_home_service_contents_array[0]['business-craft-our-service-icon'] = 'fa-desktop';
+        $business_craft_home_service_contents_array[0]['business-craft-our-service-icon_color'] = '#151915';
         $business_craft_home_service_contents_array[0]['business-craft-our-service-image'] = get_template_directory().'/assets/images/bg1.jpg';
 
         $business_craft_icons_arrays = array();
-        $business_craft_home_service_page_icon_color_array =array();
+        $business_craft_icon_color_arrays =array();
         $business_craft_home_service_args = array();
 
         $repeated = array('business-craft-our-service-pages-icon','business-craft-desgin-develop-pages-ids','business-craft-our-service-icon-color');
@@ -53,8 +54,8 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
                     {
                         $business_craft_home_service_page_icon_color ='#';
                     }
-                    $business_craft_home_service_page_icon_color_array[] = $business_craft_home_service_page_icon_color;
-                    $business_craft_icons_arrays[] = $business_craft_home_service_page_icon;
+                    $business_craft_icon_color_arrays[] = $business_craft_home_service_page_icon_color;
+                    
                 }
             }
             if( !empty( $business_craft_home_service_posts_ids ))
@@ -95,9 +96,9 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
                     {
                         $business_craft_home_service_contents_array[$i]['business-craft-our-service-pages-icon'] = 'fa-desktop';
                     }
-                    if (isset( $business_craft_home_service_page_icon_color_array[$i] ))
+                    if (isset( $business_craft_icon_color_arrays[$i] ))
                     {
-                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-icon-color'] =$business_craft_home_service_page_icon_color_array[$i];
+                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-icon-color'] =$business_craft_icon_color_arrays[$i];
                     }
                     else
                     {

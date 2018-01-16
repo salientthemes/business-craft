@@ -78,7 +78,7 @@ $business_craft_repeated_settings_controls['business-craft-our-service-page'] =
                 'default'              => $business_craft_customizer_defaults['business-craft-our-service-icon-color'],
             ),
             'control' => array(
-                'label'                 =>  __( 'Select Page For Our Page %s', 'business-craft' ),
+                'label'                 =>  __( 'Select Icon Color For Our Page %s', 'business-craft' ),
                 'section'               => 'business-craft-our-service-section-page',
                 'type'                  => 'color',
                 'priority'              => 30,

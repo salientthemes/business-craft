@@ -10,6 +10,18 @@ if ( 'posts' == get_option( 'show_on_front' ) )
 {
     include( get_home_template() );
 }
+if ( ( $business_craft_customizer_all_values['business-craft-feature-slider-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-home-feature-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-about-us-enable-option'] != 1 ) && ($business_craft_customizer_all_values['business-craft-our-service-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-single-button-enable'] != 1 ) && ( $business_craft_customizer_all_values['business-craft-home-testimonial-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-home-blog-enable'] != 1 )) {
+        if ( current_user_can( 'edit_theme_options' ) ) { ?>
+            <section class="wrapper display-info">
+                <div class="container">
+                <?php echo sprintf(
+                    __( 'All Section are based on page. Enable each Section from customizer for </br> slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections </br> %s', 'business-craft' ),
+                    '<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">' . __( 'click here', 'business-craft' ) . '</a>'
+                    ); ?>
+                </div>
+            </section>
+        <?php }
+    }   
     else
     {
 		/**
