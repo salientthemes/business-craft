@@ -663,7 +663,7 @@ a:active {
     padding: 34px 8px;
     -webkit-transition: width 0.5s;
     transition: width 0.5s;
-    color: #484848;
+    color: #000;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
@@ -1092,7 +1092,7 @@ p.site-title,
 	margin: 0;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 p.site-title a:hover,
@@ -1651,7 +1651,7 @@ section#banner-section {
 
 .overlay {
 	background: rgba(0, 0, 0, 0.43);
-	height: 100vh;
+	height: calc(100vh - 80px);
 	padding: 10% 0;
 }
 
@@ -1672,6 +1672,7 @@ section#banner-section {
 	    margin-left: 0;
 	    width: 100%;
 	    padding: 16px;
+	    position: sticky;
 	}
 	body .banner-content-wrapper h1{
 		font-size: 28px;
@@ -1682,6 +1683,11 @@ section#banner-section {
 	margin: 0;
 	font-weight: 600;
 	display: block;
+	padding-bottom: 0;
+}
+
+.banner-content-wrapper p {
+    margin-bottom: 34px;
 }
 
 body a.border-btn {
@@ -1775,19 +1781,20 @@ section#feature-section {
 }
 
 .feature-items i {
-	font-size: 45px;
+	font-size: 30px;
 	border: 1px solid #fff;
 	border-radius: 50%;
 	height: 86px;
 	width: 86px;
 	text-align: center;
 	float: left;
-	padding-top: 20px;
+	padding-top: 27px;
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
 	background: #f6f6f6;
 }
+
 
 .texts {
 	width: calc(100% - 86px);
@@ -1798,7 +1805,7 @@ section#feature-section {
     cursor: pointer;
 }
 .feature-items {
-	margin-bottom: 40px;
+	margin-bottom: 32px;
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
@@ -1818,10 +1825,6 @@ section#feature-section {
 	padding-top: 20px;
 }
 
-.feature-items.clearfix:hover i {
-	color: #fff;
-}
-
 .feature-items.clearfix:hover {
     box-shadow: 0 0 15px #bbbbbb;
 }
@@ -1833,6 +1836,9 @@ section#feature-section {
 }
 
 @media screen and (max-width: 767px) {
+	.feature-items{
+		text-align: center;
+	}
 	.texts {
 	    padding-right: 0;
 	    width: 100%;
@@ -1844,6 +1850,7 @@ section#feature-section {
 	}
 	.feature-items i{
 		margin-bottom: 20px;
+		float: none;
 	}
 }
 
@@ -1918,6 +1925,13 @@ section#meet-us .image-overlay {
   box-shadow: 0 0 0 7px #fff; 
   transition: box-shadow 0.3s linear;
   margin: 20px;
+}
+
+@media screen and (max-width: 767px) {
+	section#meet-us .image-overlay {
+	  box-shadow: none; 
+	  margin: 0;
+	}
 }
 
 section#meet-us .image-overlay:hover { 
@@ -1997,7 +2011,7 @@ section#call-to-action .image-overlay {
 
 @media screen and (max-width: 767px) {
 	section#call-to-action .image-overlay {
-		padding: 68px 0;
+		padding: 35px 0;
 	}
 	body a.call-to-action-btn:after,
 	body a.call-to-action-btn:before {
@@ -2038,9 +2052,12 @@ section#testimonials-section {
 }
 
 .testi-overlay {
-	background: #f6f6f6;
-	color: #000;
-	padding: 35px 50px;
+	background: rgba(0, 0, 0, 0.68);
+    color: #fff;
+    padding: 35px 50px;
+}
+.testi-overlay h2{
+	color: #fff;
 }
 
 .testimonials-wrapper h3 {
@@ -2164,14 +2181,11 @@ span.comments:before {
 
 .right-wrap p.by-line {
 	width: 100%;
-	opacity: 0.7;
 	padding-bottom: 10px;
 }
 
 .right-wrap a.read-more-text {
 	float: left;
-	font-size: 14px;
-	color: #acacac;
 }
 
 .blog-meta p a span {
@@ -2457,6 +2471,15 @@ ul.trail-items{
 }
 /* inner page banner image */
 
+.image-right {
+    float: right;
+    padding-left: 16px;
+}
+.image-left {
+    float: left;
+    padding-right: 16px;
+}
+
 .wrapper.page-inner-title {
     text-align: center;
     position: relative;
@@ -2527,6 +2550,11 @@ footer.entry-footer {
 
 .footer-wrapper aside.widget {
     padding: 0 35px;
+}
+@media screen and (max-width:767px) {
+	.footer-wrapper aside.widget {
+	    padding: 0;
+	}
 }
 
 header.page-header {
@@ -2747,7 +2775,7 @@ h2.widget-title {
 
 section.block-section.wrap-contact.footer-widget.full-width {
     background: #fafafa;
-    padding-top: 0;
+    padding: 0 16px;
     margin-top: 35px;
 }
 
@@ -2997,4 +3025,37 @@ section.bc-contact-section{
     padding: 131px;
 }
 
+body {
+  overflow: hidden;
+}
 
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99999;
+  /* makes sure it stays on top */
+}
+
+#status {
+    max-width: 150px;
+    max-height: 101px;
+    position: absolute;
+    height: 100%;
+    background-image: url(assets/images/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translate(0,-50%);
+    background-size: 250px;
+}

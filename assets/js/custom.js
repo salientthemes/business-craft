@@ -12,15 +12,17 @@
       responsive: [{
           breakpoint: 768,
           settings: {
-            arrows: false,
-            slidesToShow: 1
+            arrows: true,
+            slidesToShow: 1,
+            dots: false
           }
         },
         {
           breakpoint: 480,
           settings: {
             arrows: false,
-            slidesToShow: 1
+            slidesToShow: 1,
+            dots: false
           }
         }
       ]
@@ -115,5 +117,12 @@
       heading.html([first_part, ' <span class="last-word">', last_word, '</span>'].join(''));
     });
   });
+
+/* pre loader */
+$(window).on('load', function() { 
+  $('#status').fadeOut();  
+  $('#preloader').delay(350).fadeOut('slow'); 
+  $('body').delay(350).css({'overflow':'visible'});
+})
 
 })(jQuery);
