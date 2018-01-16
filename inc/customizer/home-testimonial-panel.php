@@ -12,6 +12,7 @@ $business_craft_customizer_defaults['business-craft-home-testimonial-number'] = 
 $business_craft_customizer_defaults['business-craft-home-testimonial-single-words'] = 30;
 $business_craft_customizer_defaults['business-craft-home-testimonial-selection'] = 'from-page';
 $business_craft_customizer_defaults['business-craft-home-testimonial-pages'] = 0;
+$business_craft_customizer_defaults['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/bg1.jpg";
 
 
 /*creating panel for fonts-setting*/
@@ -88,6 +89,22 @@ $business_craft_settings_controls['business-craft-home-testimonial-single-words'
             'type'                  => 'number',
             'input_attrs' => array( 'min' => 1, 'max' => 200),
             'priority'              => 20,
+            'active_callback'       => ''
+        )
+    );
+
+/* is the optional field for upload a image background for the business-craft-home-testimonial section*/
+$business_craft_settings_controls['business-craft-home-testimonial-image'] =
+    array(
+        'setting' =>     array(
+            'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-image']
+        ),
+        'control' => array(
+            'label'                 =>  __( 'Upload Image ', 'business-craft' ),
+            'description'           =>  __( 'It is a option for image background in testimonial section', 'business-craft' ),
+            'section'               => 'business-craft-home-testimonial',
+            'type'                  => 'image',
+            'priority'              => 25,
             'active_callback'       => ''
         )
     );
