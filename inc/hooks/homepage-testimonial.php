@@ -16,7 +16,7 @@ if (!function_exists('business_craft_home_testimonial_array')) :
         $business_craft_home_testimonial_contents_array = array();
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-title'] = __('John Doe','business-craft');
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-content'] = '';
-        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/img/no-img.png";
+        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/bg1.jpg";
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-link'] = '#';
         $business_craft_home_testimonial_contents_array[0]['business-craft-testimonial-slider-number'] = 0;
         $repeated_page = array('business-craft-home-testimonial-pages-ids');
@@ -105,8 +105,9 @@ if ( ! function_exists( 'business_craft_home_testimonial' ) ) :
                 $business_craft_home_testimonial_title = $business_craft_customizer_all_values['business-craft-home-testimonial-main-title'];
                 $business_craft_home_testimonial_number = absint( $business_craft_customizer_all_values['business-craft-home-testimonial-number'] );
                 $business_craft_home_testimonial_icon_no = ($business_craft_home_testimonial_number - 1) ;
+                $business_craft_home_testimonial_image = $business_craft_customizer_all_values['business-craft-home-testimonial-image'];
                 ?>
-                <section class="testimonials-section" id="testimonials-section"><!-- testimonials section -->
+                <section class="testimonials-section" id="testimonials-section" style="background-image: url('<?php echo esc_url( $business_craft_home_testimonial_image )?>');"><!-- testimonials section -->
                     <div class="testi-overlay">
                         <div class="container">
                             <div class="row">

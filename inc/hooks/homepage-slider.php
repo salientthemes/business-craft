@@ -14,6 +14,7 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
         $business_craft_feature_slider_number = absint( $business_craft_customizer_all_values['business-craft-featured-slider-number'] );
         $business_craft_feature_slider_single_words = absint( $business_craft_customizer_all_values['business-craft-fs-single-words'] );
         $business_craft_feature_slider_contents_array[0]['business-craft-feature-slider-title'] = __('Welcome to The Digital Media','business-craft');
+        $business_craft_feature_slider_contents_array[0]['business-craft-feature-slider-content'] = __('Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.','business-craft');
         $business_craft_feature_slider_contents_array[0]['business-craft-feature-slider-link'] = '#';
         $business_craft_feature_slider_contents_array[0]['business-craft-feature-slider-image'] = get_template_directory_uri()."/assets/images/bg1.jpg";
         $repeated_page = array('business-craft-fs-pages-ids');
@@ -69,6 +70,7 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
                         $url = $thumb['0'];
                     }
                     $business_craft_feature_slider_contents_array[$i]['business-craft-feature-slider-title'] = get_the_title();
+                    $business_craft_feature_slider_contents_array[$i]['business-craft-feature-slider-content'] = business_craft_words_count( $business_craft_feature_slider_single_words ,get_the_content());
                     $business_craft_feature_slider_contents_array[$i]['business-craft-feature-slider-link'] = get_permalink();
                     $business_craft_feature_slider_contents_array[$i]['business-craft-feature-slider-image'] = $url;
                     $i++;
@@ -128,6 +130,7 @@ if ( ! function_exists( 'business_craft_featured_home_slider' ) ) :
                         <div class="overlay">
                             <div class="banner-content-wrapper">
                                 <h1 class="sec-title"><?php echo esc_html( $business_craft_slider_array['business-craft-feature-slider-title'] );?></h1>
+                                <p><?php echo wp_kses_post($business_craft_slider_array['business-craft-feature-slider-content']);?></p>
                                 <?php if ( 1 == $business_craft_feature_enable_button){ ?>
                                     <a href="<?php echo esc_url( $business_craft_slider_array['business-craft-feature-slider-link'] );?>" class="border-btn">
                                         <?php echo esc_html( $business_craft_customizer_all_values['business-craft-fs-button-text'] );?>

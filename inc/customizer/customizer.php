@@ -83,6 +83,33 @@ require get_template_directory().'/inc/customizer/site-identity/site-identity.ph
 /* customizer site identity options */
 require get_template_directory().'/inc/customizer/color/color.php';
 
+/*Resetting all Values*/
+/**
+ * Reset color settings to default
+ * @param  $input
+ *
+ * @since chrimbo 1.0
+ */
+global $business_craft_customizer_defaults;
+$business_craft_customizer_defaults['business-craft-customizer-reset'] = '';
+if ( ! function_exists( 'business_craft_customizer_reset' ) ) :
+    function business_craft_customizer_reset( ) {
+        global $business_craft_customizer_saved_values;
+        $business_craft_customizer_saved_values = business_craft_get_all_options();
+        if ( $business_craft_customizer_saved_values['business-craft-customizer-reset'] == 1 ) {
+            global $business_craft_customizer_defaults;
+
+            $business_craft_customizer_defaults['business-craft-customizer-reset'] = '';
+            /*resetting fields*/
+            business_craft_reset_options( $business_craft_customizer_defaults );
+        }
+        else {
+            return '';
+        }
+    }
+endif;
+add_action( 'customize_save_after','business_craft_customizer_reset' );
+
 
 /**
  * business-craft Theme Customizer
