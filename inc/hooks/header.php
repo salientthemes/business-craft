@@ -237,10 +237,13 @@ function business_craft_header()
                         ) );
                         ?>                      
                     </nav><!-- #site-navigation -->
+                    <?php if(1 == $business_craft_customizer_all_values['business-craft-enable-top-social-meanu-icon'])
+                    {?>
                     <div class="top-header-search-share">
                         <i class="fa fa-share-alt share" id="header-share"></i>
                         <i class="fa fa-search" id="header-search"></i>
                     </div>
+                    <?php } ?>
                     <div class="search-form-nav" id="top-search">
                         <?php get_search_form();?>
                     </div><!-- top-search -->
