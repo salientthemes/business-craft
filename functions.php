@@ -256,9 +256,10 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 			.meet-us-text.texts:hover h4 a,
 			.widget ul li a:hover, 
 			.widget ul li a:focus, 
-			.widget ul li a:active
+			.widget ul li a:active,
+			.meet-us-content h4 a
 	        {
-	        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>;;
+	        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
 	        }
 
 	        header#masthead,
