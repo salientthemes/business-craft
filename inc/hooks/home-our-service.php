@@ -134,7 +134,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
         if( is_array( $business_craft_service_arrays ))
         {
             $business_craft_service_mian_title = $business_craft_customizer_all_values['business-craft-main-title-text'];
-
+            $bsuiness_craft_service_number = $business_craft_customizer_all_values['business-craft-select-number-page'];
             $about_title_1 = ''; $about_content_1= ''; $about_icon_1 = ''; $about_image_1 = ''; $about_icon_color_1 ='';
             $about_title_2 = ''; $about_content_2= ''; $about_icon_2 = ''; $about_image_2 = ''; $about_icon_color_2 ='';
             $about_title_3 = ''; $about_content_3= ''; $about_icon_3 = ''; $about_image_3 = ''; $about_icon_color_3 ='';
@@ -150,7 +150,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                         $i = 1;
                         foreach( $business_craft_service_arrays as $business_craft_service_array )
                         {
-                            if( 3 < $i)
+                            if( $bsuiness_craft_service_number < $i)
                             {
                                 break;
                             } 
@@ -205,16 +205,18 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                             </div>
                             <div class="col-md-6 col-xs-hidden col-sm-6">
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="tab-1" style = "background : url('<?php echo $about_image_1 ;?>')"></div>
-                                    <div class="tab-pane" id="tab-2" style = "background : url('<?php echo $about_image_2 ;?>')"></div>
-                                    <div class="tab-pane " id="tab-3" style = "background : url('<?php echo $about_image_3 ;?>')"></div>
+                                    <div class="tab-pane active" id="tab-1" style = "background : url('<?php echo esc_url($about_image_1);?>')"></div>
+                                    <div class="tab-pane" id="tab-2" style = "background : url('<?php echo esc_url($about_image_2 );?>')"></div>
+                                    <div class="tab-pane " id="tab-3" style = "background : url('<?php echo esc_url($about_image_3 );?>')"></div>
                                 </div><!-- tab content -->
                             </div><!-- xs-hdden -->
                         </div>
                     </div><!-- row -->
                 </div><!-- container -->
             </section> <!-- about section -->
-            <?php
+             <!-- our team section -->
+            
+        <?php
         }
     }
 endif;

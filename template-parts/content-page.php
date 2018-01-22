@@ -12,7 +12,9 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
 		<?php
+		global $business_craft_customizer_all_values;
 		$business_craft_single_post_image_align = business_craft_single_post_image_align(get_the_ID());
+		
 		if( 'no-image' != $business_craft_single_post_image_align )
 		{
 			if( 'left' == $business_craft_single_post_image_align )
@@ -34,7 +36,9 @@
 		}
 		?>
 		<?php
-			the_content();
+			 
+			// the_content();
+			the_excerpt();
 
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business-craft' ),

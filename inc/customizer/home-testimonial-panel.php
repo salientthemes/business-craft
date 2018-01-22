@@ -29,7 +29,7 @@ $business_craft_settings_controls['business-craft-home-testimonial-enable'] =
             'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-enable']
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable Testimonial', 'business-craft' ),
+            'label'                 => __( 'Enable Testimonial', 'business-craft' ),
             'description'           => __( 'Enable "Testimonial selection" on checked', 'business-craft' ),
             'section'               => 'business-craft-home-testimonial',
             'type'                  => 'checkbox',
@@ -62,7 +62,7 @@ $business_craft_settings_controls['business-craft-home-testimonial-number'] =
             'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-number']
         ),
         'control' => array(
-            'label'                 =>  __( 'Number Of Testimonial/s', 'business-craft' ),
+            'label'                 => __( 'Number Of Testimonial/s', 'business-craft' ),
             'description'           => __( 'Choose number of Testimonial to be displayed', 'business-craft' ),
             'section'               => 'business-craft-home-testimonial',
             'type'                  => 'select',

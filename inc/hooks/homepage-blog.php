@@ -134,7 +134,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                      </div>
                    </div>
                     <div class="col-md-12 clearfix col-sm-12 col-xs-12 btn-more">
-                       <a href="#" class="border-btn view-more">View More </a>
+                       <a href="<?php echo esc_url($business_craft_home_blog_button_link);?>" class="border-btn view-more"><?php echo esc_html($business_craft_home_blog_button_text);?> </a>
                    </div>
                 </div><!-- row -->
             </div><!-- container -->
