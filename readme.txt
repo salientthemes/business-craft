@@ -30,6 +30,9 @@ Business Craft is distributed under the terms of the GNU GPL
 
 1)https://www.pexels.com/photo/businesswomen-businesswoman-interview-meeting-70292/
 
+== default banner image ==
+
+1) https://pixabay.com/en/businessman-consulting-business-3087395/
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =

@@ -262,7 +262,7 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 			.widget ul li a:hover, 
 			.widget ul li a:focus, 
 			.widget ul li a:active,
-			.meet-us-content h4 a
+			section#meet-us .meet-us-content h4 a
 	        {
 	        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
 	        }
