@@ -1715,7 +1715,7 @@ section#banner-section {
 	top: 50%;
 	transform: translate(0, -50%);
 	z-index: 999;
-	padding-left: 0 35px;
+	padding: 0 100px;
 }
 
 @media screen and (max-width: 768px) {
