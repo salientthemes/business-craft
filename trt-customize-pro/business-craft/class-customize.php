@@ -74,8 +74,8 @@ final class business_craft_Customize {
 				'business-craft-update',
 				array(
         			'priority'       => 10,					
-					'pro_text' => esc_html__( 'business-craft Pro - Buy Now',  'business-craft' ),
-					'pro_url'  => 'https://evisionthemes.com/product/business-craft-premium-theme'
+					'pro_text' => esc_html__( 'Business Craft Pro  Buy Now',  'business-craft' ),
+					'pro_url'  => 'https://www.salientthemes.com/product/business-craft-pro/'
 				)
 			)
 		);
