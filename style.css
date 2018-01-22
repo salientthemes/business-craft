@@ -3036,3 +3036,26 @@ body {
 	transform: translate(0, -50%);
 	background-size: 250px;
 }
+
+/* blog listing in default home page */
+@media screen and (min-width: 768px) {
+	body.home.blog main#main {
+	    column-count: 2;
+	    column-gap: 30px;
+	}
+
+	body.home.blog article {
+	    padding: 10px;
+	    border: 1px solid #efefef;
+	    transition: all .3s;
+	    display: inline-table;
+	}
+
+	body.home.blog article:hover {
+    	box-shadow: 0 0 5px #616161;
+	}
+
+	body.home.blog article h2{
+		margin-top: 0
+	}
+}
