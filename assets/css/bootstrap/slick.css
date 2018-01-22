@@ -216,7 +216,7 @@ ul.slick-dots button {
     border-radius: 61%;
 }
 .slick-dots li.slick-active {
-border: 3px solid #000;
+border: 3px solid #fff;
 }
 .slick-dots {
     position: absolute;
