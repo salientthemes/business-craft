@@ -49,7 +49,7 @@ $business_craft_default_layout_options = array(
 $business_craft_single_post_image_align_options = array(
     'full' => array(
         'value' => 'full',
-        'label' => __( 'Full', 'business-craft' )
+        'label' => __( 'Full', 'business-craft' ),
     ),
     'right' => array(
         'value' => 'right',

@@ -129,7 +129,7 @@ if ( ! function_exists( 'business_craft_aboutus_section' ) ) :
                                             </div>  
                                             <div class="col-md-6 col-sm-6 col-xs-12 meet-us-text texts">
                                                <div class="text-centre">
-                                                     <h4><a href="#"><?php echo esc_html($business_craft_aboutus_section_array['business-craft-about-us-title']); ?></a></h4>
+                                                     <h4><a href="<?php echo esc_url($business_craft_aboutus_section_array['business-craft-about-us-link']);?>"><?php echo esc_html($business_craft_aboutus_section_array['business-craft-about-us-title']); ?></a></h4>
                                                     <p><?php echo wp_kses_post($business_craft_aboutus_section_array['business-craft-about-us-content']); ?></p>
                                                 </div><!-- text centre -->
                                             </div><!-- text content -->

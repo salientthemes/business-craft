@@ -16,7 +16,7 @@ if ( ( $business_craft_customizer_all_values['business-craft-feature-slider-enab
                 <div class="container">
                 <?php echo sprintf(
                     __( 'All Section are based on page. Enable each Section from customizer for </br> slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections </br> %s', 'business-craft' ),
-                    '<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">' . __( 'click here', 'business-craft' ) . '</a>'
+                    '<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">' .  __( 'click here', 'business-craft' ) . '</a>'
                     ); ?>
                 </div>
             </section>
@@ -36,6 +36,7 @@ if ( ( $business_craft_customizer_all_values['business-craft-feature-slider-enab
         do_action( 'business_craft_homepage' );
 
         $business_craft_static_page = absint($business_craft_customizer_all_values['business-craft-enable-static-page']);
+        
         // $business_craft_static_page = 1;
         if ($business_craft_static_page == 1) { ?>
             <div id="content" class="site-content container">
@@ -43,7 +44,7 @@ if ( ( $business_craft_customizer_all_values['business-craft-feature-slider-enab
                     <main id="main" class="site-main" role="main">
 
                         <?php
-                        while ( have_posts() ) : the_post();
+                        while ( have_posts() ) :  the_post();
 
                             get_template_part( 'template-parts/content', 'page' );
 

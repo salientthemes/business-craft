@@ -169,7 +169,12 @@ add_action( 'wp_enqueue_scripts', 'business_craft_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+// require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * Custom functions that act independently of the theme templates.
+ */
+require get_template_directory() . '/inc/extras.php';
 
 /**
  * Custom template tags for this theme.
@@ -179,7 +184,7 @@ require get_template_directory() . '/inc/template-tags.php';
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+// require get_template_directory() . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
@@ -277,7 +282,7 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 	        if( !empty($business_craft_section_header_color_option) )
 	        {
 	        ?>
-	            h1.entry-title
+	            .sec-title h2
 	            {
 	                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>;
 	            }

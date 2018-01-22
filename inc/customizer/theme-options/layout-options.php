@@ -149,3 +149,4 @@ $business_craft_settings_controls['business-craft-single-post-image-align'] =
             'description'           =>  __( 'Please note that this setting can be override from individual post/page', 'business-craft' ),
         )
     );
+

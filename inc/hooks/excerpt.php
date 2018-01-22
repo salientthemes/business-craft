@@ -10,8 +10,8 @@ if ( !function_exists('business_craft_excerpt_length') ) :
      */
 	 function business_craft_excerpt_length( $length )
 	 {
-	 	global $business_craft_coustomizer_all_values;
-	 	$excerpt_length = $business_craft_coustomizer_all_values['business-craft-number-of-words'];
+	 	global $business_craft_customizer_all_values;
+	 	$excerpt_length = $business_craft_customizer_all_values['business-craft-number-of-words'];
 	 	if ( empty($excerpt_length) )
 	 	{
 	 		$excerpt_length = $length;
