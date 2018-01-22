@@ -3,9 +3,7 @@ Theme Name: Business Craft
 Theme URI: https://www.salientthemes.com/product/business-craft/
 Author: Salient Themes
 Author URI: http://salientthemes.com
-Description: Business Craft, is a fresh, clean & feature rich WordPress theme developed specifically for all type of corporate  business, finance business and startup company, blogging, etc.
-The layout looks beautiful at any size, be it a laptop screen, iPad, iPhone, Android Mobile or tablets.
-Version: 1.0.0
+Description: Business Craft is a fresh, clean & feature rich WordPress theme developed specifically for all type of corporate business, finance business and startup company, blogging, etc.  This theme is fully responsive that is perfectly adjust on any small to large devices. No coding required to create a website. In order to build inner pages layout, it supports popular plugins like Jetpack, Elementor Page Builder and other popular ones.
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: business-craft
@@ -1214,7 +1212,7 @@ body header.site-header.fixed .main-navigation ul.sub-menu li a {
 		border-bottom: 0;
 	}
 	body header.site-header .main-navigation ul.sub-menu li a {
-	    padding: 10px 28px !important;
+		padding: 10px 28px !important;
 	}
 }
 
@@ -1744,8 +1742,8 @@ section#banner-section {
 
 .banner-content-wrapper p {
 	margin-bottom: 50px;
-    margin-top: 20px;
-    line-height: 30px;
+	margin-top: 20px;
+	line-height: 30px;
 }
 
 body a.border-btn {
@@ -1877,7 +1875,6 @@ section#feature-section {
 	border: 1px solid #e0e0e0;
 }
 
-
 .icon-section.clearfix {
 	padding-top: 20px;
 }
@@ -1910,12 +1907,18 @@ section#feature-section {
 		float: none;
 	}
 }
+
 @media screen and (min-width: 768px) {
 	.icon-section.clearfix {
 		display: flex;
+		display: -ms-flexbox;
+		display: -webkit-flexbox;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
 }
+
 
 /* meet ussection */
 
@@ -2818,7 +2821,6 @@ aside.widget ul li:before,
 }
 
 .widget ul li {
-	border-bottom: 1px solid #efefef;
 	padding: 5px 0;
 }
 
@@ -3012,6 +3014,7 @@ div#gotop i {
 
 
 /* Preloader */
+
 body {
 	overflow: hidden;
 }
@@ -3041,25 +3044,24 @@ body {
 	background-size: 250px;
 }
 
+
 /* blog listing in default home page */
+
 @media screen and (min-width: 768px) {
 	body.home.blog main#main {
-	    column-count: 2;
-	    column-gap: 30px;
+		column-count: 2;
+		column-gap: 30px;
 	}
-
 	body.home.blog article {
-	    padding: 10px;
-	    border: 1px solid #efefef;
-	    transition: all .3s;
-	    display: inline-table;
+		padding: 10px;
+		border: 1px solid #efefef;
+		transition: all .3s;
+		display: inline-table;
 	}
-
 	body.home.blog article:hover {
-    	box-shadow: 0 0 5px #616161;
+		box-shadow: 0 0 5px #616161;
 	}
-
-	body.home.blog article h2{
+	body.home.blog article h2 {
 		margin-top: 0
 	}
 }
