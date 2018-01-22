@@ -1213,6 +1213,9 @@ body header.site-header.fixed .main-navigation ul.sub-menu li a {
 	.main-navigation ul ul li {
 		border-bottom: 0;
 	}
+	body header.site-header .main-navigation ul.sub-menu li a {
+	    padding: 10px 28px !important;
+	}
 }
 
 
@@ -1723,7 +1726,7 @@ section#banner-section {
 		text-align: left;
 		margin-left: 0;
 		width: 100%;
-		padding: 16px;
+		padding: 16px 30px;
 		position: relative;
 	}
 	body .banner-content-wrapper h1 {

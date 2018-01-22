@@ -137,7 +137,7 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
                                         break;
                                     }
                                     ?>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="feature-items clearfix">
                                         <i style="color : <?php echo $business_craft_feature_array['business-craft-icon-color'];?>" class="fa <?php echo esc_attr( $business_craft_feature_array['business-craft-home-feature-page-icon'] ); ?>"></i>
                                         <div class="texts">
