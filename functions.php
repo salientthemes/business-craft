@@ -242,7 +242,7 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 	        .slick-prev:hover:before, 
 	        .slick-next:hover:before,
 	        .slick-dots li,
-	        #preloader
+	        body .team-section a
 	        {
 	        	background-color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
 	        }
