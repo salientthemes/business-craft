@@ -711,6 +711,7 @@ a:active {
 
 .site-branding {
 	margin-bottom: 15px;
+	padding: 7px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1709,12 +1710,12 @@ section#banner-section {
 .banner-content-wrapper {
 	position: absolute;
 	text-align: left;
-	margin-left: 125px;
 	max-width: 1000px;
 	width: 100%;
 	top: 50%;
 	transform: translate(0, -50%);
 	z-index: 999;
+	padding-left: 0 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -2680,7 +2681,7 @@ h1.entry-title {
 	body div#primary,
 	body aside#secondary,
 	body.salient-left-sidebar #primary {
-		width: 100%;
+		width: 100% !important;
 		padding: 0 !important;
 	}
 	body div#primary {

@@ -166,7 +166,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                         }
                         ?>
                         <div class="col-md-12 imgchangeabale-div-wrap">
-                            <div class="col-md-6 col-xs-12 col-sm-6">
+                            <div class="col-md-6 col-xs-12 col-sm-12">
                                 <div class="icon-left">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-1" data-toggle="tab">
@@ -203,7 +203,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                     </div><!-- col-md-4 -->                             
                                 </div>
                             </div>
-                            <div class="col-md-6 col-xs-hidden col-sm-6">
+                            <div class="col-md-6 col-sm-hidden">
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="tab-1" style = "background : url('<?php echo esc_url($about_image_1);?>')"></div>
                                     <div class="tab-pane" id="tab-2" style = "background : url('<?php echo esc_url($about_image_2 );?>')"></div>
