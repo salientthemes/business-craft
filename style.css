@@ -2369,6 +2369,10 @@ a.border-btn.view-more:hover {
 	.right-sect .blog-content {
 		margin-bottom: 20px;
 	}
+	section#blog-section .meet-us-content.clearfix{
+		max-height: none;
+	}
+
 }
 
 
