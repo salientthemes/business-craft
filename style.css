@@ -728,6 +728,9 @@ a:active {
 	li.menu-item-has-children:hover:after {
 		content: "\f106";
 	}
+	ul ul li.menu-item-has-children:after {
+		content: "";
+	}
 }
 
 
@@ -805,13 +808,7 @@ button.menu-toggle {
 		margin: 3px;
 	}
 	body .top-header-search-share {
-		text-align: center;
-		display: flex;
-		left: 0;
-		right: 0;
-		margin: auto;
-		width: 64px;
-		position: relative;
+		display: none;
 	}
 	body div#top-search,
 	div#social-header {
@@ -823,6 +820,9 @@ button.menu-toggle {
 	i#header-share {
 		cursor: pointer;
 		padding: 16px 10px;
+	}
+	nav#site-navigation {
+		margin-bottom: 20px;
 	}
 }
 
@@ -1213,6 +1213,17 @@ body header.site-header.fixed .main-navigation ul.sub-menu li a {
 	}
 	body header.site-header .main-navigation ul.sub-menu li a {
 		padding: 10px 28px !important;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 500px) {
+	nav#site-navigation {
+		width: calc(100% - 48px);
+	}
+	.top-header-search-share {
+		width: 48px;
+		display: flex;
+		right: 14px;
 	}
 }
 
@@ -2544,7 +2555,6 @@ ul.trail-items {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-	padding: 40px 0 0;
 	margin-bottom: 30px;
 }
 
@@ -3007,12 +3017,44 @@ div#gotop i {
 }
 
 @media screen and (max-width: 767px) {
-	.col-xs-hidden.col-sm-6 {
+	.col-sm-hidden {
 		display: none;
 	}
 }
+/* blog listing in default home page */
 
+@media screen and (min-width: 768px) {
+	body.home.blog main#main {
+		column-count: 2;
+		column-gap: 30px;
+	}
+	body.home.blog article {
+		padding: 10px;
+		border: 1px solid #efefef;
+		transition: all .3s;
+		display: inline-table;
+	}
+	body.home.blog article:hover {
+		box-shadow: 0 0px 3px #dcdcdc;
+	}
+	body.home.blog article h2 {
+		margin-top: 0
+	}
+	body.home.blog.salient-right-sidebar #primary{
+		padding-right: 2%;
+	}
+	body.home.blog.salient-left-sidebar #primary{
+		padding-left: 2%;
+	}
+}
 
+article p{
+	margin-top: 15px;
+}
+body.home.blog main#main {
+    border: 0;
+    padding-top: 0;
+}
 /* Preloader */
 
 body {
@@ -3042,26 +3084,4 @@ body {
 	top: 50%;
 	transform: translate(0, -50%);
 	background-size: 250px;
-}
-
-
-/* blog listing in default home page */
-
-@media screen and (min-width: 768px) {
-	body.home.blog main#main {
-		column-count: 2;
-		column-gap: 30px;
-	}
-	body.home.blog article {
-		padding: 10px;
-		border: 1px solid #efefef;
-		transition: all .3s;
-		display: inline-table;
-	}
-	body.home.blog article:hover {
-		box-shadow: 0 0 5px #616161;
-	}
-	body.home.blog article h2 {
-		margin-top: 0
-	}
 }

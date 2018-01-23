@@ -73,7 +73,6 @@
     $("i#header-share").click(function () {
       $('div#top-search').delay(350).fadeOut('fast'); 
       $("div#social-header").toggle("1000", function () {
-        // Animation complete.
       });
     });
     // back to top animation
