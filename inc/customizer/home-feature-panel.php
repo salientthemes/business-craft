@@ -71,7 +71,7 @@ $business_craft_settings_controls['business-craft-home-page-feature-single-words
 
 $business_craft_repeated_settings_controls['business-craft-home-feature-font-icon'] =
     array(
-        'repeated' => 6,
+        'repeated' => 4,
         'business-craft-home-feature-page-icon' => array(
             'setting' =>     array(
                 'default'              => $business_craft_customizer_defaults['business-craft-home-feature-page-icon'],

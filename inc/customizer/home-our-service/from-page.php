@@ -61,7 +61,7 @@ $business_craft_settings_controls['business-craft-select-number-page'] =
 $business_craft_repeated_settings_controls['business-craft-our-service-page'] =
     array(
         'repeated' => 3,
-        'business-craft-our-service-pages-icon' => array(
+        'business-craft-our-service-icon' => array(
             'setting' =>     array(
                 'default'              => $business_craft_customizer_defaults['business-craft-our-service-icon'],
             ),
