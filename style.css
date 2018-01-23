@@ -2980,7 +2980,7 @@ div#gotop {
 div#gotop i {
 	padding: 8px;
 	font-size: 15px;
-	border: 4px solid;
+	border: 2px solid;
 	border-radius: 50%;
 	animation: border-pulsate 3s infinite;
 	height: 40px;
