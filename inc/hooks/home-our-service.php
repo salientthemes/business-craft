@@ -14,18 +14,18 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
         $business_craft_home_Service_word_count = $business_craft_customizer_all_values['business-craft-number-of-word'];
         $business_craft_home_service_contents_array = array();
 
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-title'] = __('our-service-title', 'business-craft');
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-content'] = __("our-service-content", 'business-craft');
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-link'] = '#';
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-icon'] = 'fa-desktop';
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-icon_color'] = '#151915';
-        $business_craft_home_service_contents_array[0]['business-craft-our-service-image'] = get_template_directory().'/assets/images/bg1.jpg';
+        $business_craft_home_service_contents_array[1]['business-craft-our-service-title'] = __('our-service-title', 'business-craft');
+        $business_craft_home_service_contents_array[1]['business-craft-our-service-content'] = __("our-service-content", 'business-craft');
+        $business_craft_home_service_contents_array[1]['business-craft-our-service-link'] = '#';
+        $business_craft_home_service_contents_array[1]['business-craft-our-service-icon'] = 'fa-desktop';
+        $business_craft_home_service_contents_array[1]['business-craft-our-service-icon-color'] = '#151915';
+        $business_craft_home_service_contents_array[1]['business-craft-our-service-image'] = get_template_directory().'/assets/images/bg1.jpg';
 
         $business_craft_icons_arrays = array();
         $business_craft_icon_color_arrays =array();
         $business_craft_home_service_args = array();
 
-        $repeated = array('business-craft-our-service-pages-icon','business-craft-desgin-develop-pages-ids','business-craft-our-service-icon-color');
+        $repeated = array('business-craft-our-service-icon','business-craft-desgin-develop-pages-ids','business-craft-our-service-icon-color');
 
         $business_craft_home_service_posts =salient_customizer_get_repeated_all_value(3, $repeated);
         $business_craft_home_service_posts_ids = array();
@@ -36,9 +36,9 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
                 if( isset($business_craft_home_service_post['business-craft-desgin-develop-pages-ids']) && 0 != $business_craft_home_service_post['business-craft-desgin-develop-pages-ids'] )
                 {
                     $business_craft_home_service_posts_ids[] = $business_craft_home_service_post['business-craft-desgin-develop-pages-ids'];
-                    if( isset( $business_craft_home_service_post['business-craft-our-service-pages-icon'] ))
+                    if( isset( $business_craft_home_service_post['business-craft-our-service-icon'] ))
                     {
-                        $business_craft_home_service_page_icon = $business_craft_home_service_post['business-craft-our-service-pages-icon'];
+                        $business_craft_home_service_page_icon = $business_craft_home_service_post['business-craft-our-service-icon'];
                     }
                     else
                     {
@@ -90,11 +90,11 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
 
                     if(isset( $business_craft_icons_arrays[$i] ))
                     {
-                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-pages-icon'] = $business_craft_icons_arrays[$i];
+                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-icon'] = $business_craft_icons_arrays[$i];
                     }
                     else
                     {
-                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-pages-icon'] = 'fa-desktop';
+                        $business_craft_home_service_contents_array[$i]['business-craft-our-service-icon'] = 'fa-desktop';
                     }
                     if (isset( $business_craft_icon_color_arrays[$i] ))
                     {
@@ -156,7 +156,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                             } 
                             ${'about_title_'.$i} = esc_html( $business_craft_service_array['business-craft-our-service-title'] );
                             ${'about_content_'.$i} =  wp_kses_post( $business_craft_service_array['business-craft-our-service-content'] );
-                            ${'about_icon_'.$i} =  esc_attr( $business_craft_service_array['business-craft-our-service-pages-icon'] );
+                            ${'about_icon_'.$i} =  esc_attr( $business_craft_service_array['business-craft-our-service-icon'] );
                             ${'about_image_'.$i} =  esc_url( $business_craft_service_array['business-craft-our-service-image'] );
                             ${'about_icon_color_'.$i} =  esc_url( $business_craft_service_array['business-craft-our-service-icon-color'] );
 
@@ -168,10 +168,11 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                         <div class="col-md-12 imgchangeabale-div-wrap">
                             <div class="col-md-6 col-xs-12 col-sm-12">
                                 <div class="icon-left">
+                                    <?php if (!empty($about_icon_1)){?> 
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-1" data-toggle="tab">
                                             <div class="feature-items clearfix">
-                                                 <i style="color: <?php echo $about_icon_color_1;?> " class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
+                                                <i style="color: <?php echo $about_icon_color_1;?> " class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
                                                 <div class="texts">
                                                     <h4><?php echo esc_html($about_title_1); ?></h4>
                                                     <p><?php echo wp_kses_post($about_content_1); ?></p>
@@ -179,6 +180,9 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             </div>
                                         </a>
                                     </div><!-- col-md-4 -->
+                                    <?php } ?>
+                                    
+                                    <?php if (!empty($about_icon_2)){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-2" data-toggle="tab">
                                             <div class="feature-items clearfix">
@@ -190,6 +194,9 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                             </div>
                                         </a>
                                     </div><!-- col-md-4 -->
+                                    <?php } ?>
+
+                                    <?php if (!empty($about_icon_3)){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-3" data-toggle="tab">
                                             <div class="feature-items clearfix">
@@ -200,7 +207,8 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                                 </div>
                                             </div>
                                         </a>
-                                    </div><!-- col-md-4 -->                             
+                                    </div><!-- col-md-4 --> 
+                                    <?php } ?>                            
                                 </div>
                             </div>
                             <div class="col-md-6 col-sm-hidden">

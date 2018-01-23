@@ -14,7 +14,5 @@ $business_craft_panels['business-craft-our-service-panel'] =
 // require single button options
 require get_template_directory(). '/inc/customizer/home-our-service/options.php';
 
-require get_template_directory(). '/inc/customizer/home-our-service/setting.php';
-
 require get_template_directory(). '/inc/customizer/home-our-service/from-page.php';
 
