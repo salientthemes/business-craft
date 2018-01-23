@@ -2560,7 +2560,15 @@ ul.trail-items {
 	color: #882720;
 }
 
+ul.trail-items li:after {
+    content: "/";
+    padding-left: 10px;
+    color: #e6e6e6;
+}
 
+ul.trail-items li:last-child:after{
+	content: "";
+}
 /* inner page banner image */
 
 .image-right {
