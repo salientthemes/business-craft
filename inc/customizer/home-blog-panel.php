@@ -11,7 +11,7 @@ $business_craft_customizer_defaults['business-craft-home-blog-title'] = __('FROM
 $business_craft_customizer_defaults['business-craft-home-blog-single-words'] = 30;
 $business_craft_customizer_defaults['business-craft-home-blog-category'] = 0;
 $business_craft_customizer_defaults['business-craft-home-blog-button-text'] = __('Browse more','business-craft');
-$business_craft_customizer_defaults['business-craft-home-blog-button-link'] = home_url( '/blog' );
+$business_craft_customizer_defaults['business-craft-home-blog-button-link'] = '#';
 
 $business_craft_sections['business-craft-home-blog-panel'] =
     array(
