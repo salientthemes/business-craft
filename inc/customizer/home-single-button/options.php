@@ -14,7 +14,7 @@ $business_craft_customizer_defaults['business-craft-single-button-link'] = "#";
 // create panel for singele button
 $business_craft_sections['business-craft-single-button-section'] = 
 	array(
-		'title'   	=>__('Single Butoon Option','business-craft'),
+		'title'   	=>__('Single Button Option','business-craft'),
 		'panel'		=>'business-craft-single-button-panel',
 		'priorty'	=>10
 	);
