@@ -10,7 +10,6 @@ $business_craft_customizer_defaults['business-craft-select-number-footer'] = 3;
 $business_craft_customizer_defaults['business-craft-copy-right-text'] = __('Copyright © All right reserved','business-craft');
 
 
-
 // created theme layout footer section
 $business_craft_sections['business-craft-footer-section'] = 
 	array(
