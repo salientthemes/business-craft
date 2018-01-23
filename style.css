@@ -2189,7 +2189,11 @@ p.name:after {
 	display: none !important;
 }
 
-
+@media (max-width: 768px) {
+	.testi-overlay{
+		padding: 35px 16px;
+	}
+}
 /* from our blog */
 
 section#blog-section {
