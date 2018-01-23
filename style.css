@@ -2417,6 +2417,8 @@ body.home div#content {
 	color: #ffffff;
 	margin: 15px 0;
 	text-align: center;
+	position: absolute;
+	width: 100%;
 }
 
 #breadcrumb a {
@@ -2555,7 +2557,7 @@ ul.trail-items {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
-	margin-bottom: 30px;
+	margin-bottom: 45px;
 }
 
 .wrapper.page-inner-title a {
@@ -2694,7 +2696,9 @@ h1.entry-title {
 }
 
 @media screen and (max-width:767px) {
-	body div#primary,
+	body #primary,
+	#primary,
+	aside#secondary,
 	body aside#secondary,
 	body.salient-left-sidebar #primary {
 		width: 100% !important;
@@ -2705,6 +2709,9 @@ h1.entry-title {
 	}
 	div#content {
 		padding-bottom: 0;
+	}
+	body aside#secondary{
+		margin-top: 20px;
 	}
 }
 
