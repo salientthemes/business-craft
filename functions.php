@@ -88,6 +88,8 @@ if ( ! function_exists( 'business_craft_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'business_craft_setup' );
 
+add_image_size( 'business-craft-main-banner', 1370, 650, true );
+
 /*breadcrum function*/
 
 if ( ! function_exists( 'business_craft_simple_breadcrumb' ) ) :
