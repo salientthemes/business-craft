@@ -97,7 +97,7 @@
       var scrollTopPosition = $('html, body').scrollTop();
       if (scrollTopPosition > 240) {
         $('#gotop').css({
-          'bottom': 25
+          'bottom': 80
         });
       } else {
         $('#gotop').css({

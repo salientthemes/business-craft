@@ -5,6 +5,7 @@ Author: Salient Themes
 Author URI: http://salientthemes.com
 Description: Business Craft is a fresh, clean & feature rich WordPress theme developed specifically for all type of corporate business, finance business and startup company, blogging, etc.  This theme is fully responsive that is perfectly adjust on any small to large devices. No coding required to create a website. In order to build inner pages layout, it supports popular plugins like Jetpack, Elementor Page Builder and other popular ones.
 License: GNU General Public License v3 or later
+version: 1.0.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: business-craft
 Tags: full-width-template, portfolio, left-sidebar, one-column, custom-header, right-sidebar, theme-options, threaded-comments, translation-ready, two-columns, custom-background, custom-menu, flexible-header, editor-style, footer-widgets, custom-logo
@@ -2188,7 +2189,11 @@ p.name:after {
 	display: none !important;
 }
 
-
+@media (max-width: 768px) {
+	.testi-overlay{
+		padding: 35px 16px;
+	}
+}
 /* from our blog */
 
 section#blog-section {
@@ -2368,6 +2373,10 @@ a.border-btn.view-more:hover {
 	.right-sect .blog-content {
 		margin-bottom: 20px;
 	}
+	section#blog-section .meet-us-content.clearfix{
+		max-height: none;
+	}
+
 }
 
 
@@ -2559,7 +2568,15 @@ ul.trail-items {
 	color: #882720;
 }
 
+ul.trail-items li:after {
+    content: "/";
+    padding-left: 10px;
+    color: #e6e6e6;
+}
 
+ul.trail-items li:last-child:after{
+	content: "";
+}
 /* inner page banner image */
 
 .image-right {
@@ -2963,7 +2980,7 @@ div#gotop {
 div#gotop i {
 	padding: 8px;
 	font-size: 15px;
-	border: 4px solid;
+	border: 2px solid;
 	border-radius: 50%;
 	animation: border-pulsate 3s infinite;
 	height: 40px;

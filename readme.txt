@@ -17,7 +17,7 @@ Description
 
 == Copyright ==
 
-Business Craft WordPress Theme, Copyright 2014-2015 salientthemes
+Business Craft WordPress Theme, Copyright 2014-2018 salientthemes
 Business Craft is distributed under the terms of the GNU GPL
 
 == Installation ==
@@ -33,8 +33,8 @@ Business Craft is distributed under the terms of the GNU GPL
 == default banner image ==
 
 1) https://pixabay.com/en/businessman-consulting-business-3087395/
-== Frequently Asked Questions ==
 
+== Frequently Asked Questions ==
 = Does this theme support any plugins? =
 
 Business Craft includes support for Infinite Scroll in Jetpack.
