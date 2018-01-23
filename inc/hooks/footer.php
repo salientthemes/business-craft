@@ -39,7 +39,7 @@ if ( !function_exists( 'business_craft_widget_before_footer' ) ) :
     	{
     		return false;
     	}
-    	if (!is_active_sidebar('full-width-footer') && !is_active_sidebar('footer-sidebar-1')  && !is_active_sidebar('footer-sidebar-2')  && !is_active_sidebar('footer-sidebar-3') )
+    	if ( !is_active_sidebar('footer-sidebar-1')  && !is_active_sidebar('footer-sidebar-2')  && !is_active_sidebar('footer-sidebar-3') )
     	{
     		return false;
     	}
@@ -63,19 +63,6 @@ if ( !function_exists( 'business_craft_widget_before_footer' ) ) :
         <!-- *****************************************
              Footer before section
         ****************************************** -->
-        <!-- full width footer -->
-        <section class="wrapper block-section wrap-contact footer-widget full-width">
-            <div class="container full-width-footer">
-                <div class="row">
-                    <div id="full-width-footer">
-                    <?php
-                    if(is_active_sidebar('full-width-footer')){
-                    dynamic_sidebar('full-width-footer');
-                    }
-                    ?>
-                </div>
-            </div>
-        </section><!-- full width widget ended -->
 
         <div class="footer-wrapper">
         <div class="container">
