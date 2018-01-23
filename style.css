@@ -3075,6 +3075,10 @@ div#gotop i {
 		column-count: 2;
 		column-gap: 30px;
 	}
+	body.home.blog #primary,
+	body.home.blog #secondary {
+	    margin-top: 44px;
+	}
 	body.home.blog article {
 		padding: 10px;
 		border: 1px solid #efefef;
@@ -3094,13 +3098,19 @@ div#gotop i {
 		padding-left: 2%;
 	}
 }
-
+body.home.blog .wrapper.page-inner-title{
+	display: none;
+}
 article p{
 	margin-top: 15px;
 }
 body.home.blog main#main {
     border: 0;
     padding-top: 0;
+}
+
+body.home.blog header#masthead {
+    background: #f3f3f3;
 }
 /* Preloader */
 
