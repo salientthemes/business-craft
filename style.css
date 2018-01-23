@@ -256,9 +256,10 @@ table {
 	border-spacing: 0;
 }
 
-td,
-th {
-	padding: 0;
+table td, 
+table th {
+    padding: 5px;
+    border: 1px solid #ececec;
 }
 
 div {
@@ -1653,7 +1654,28 @@ footer#colophon .menu-socialnav-container ul li {
 	padding-bottom: 0;
 }
 
+/* comment section */
+article.comment-body {
+    border: 1px solid #f5f5f5;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+ol.comment-list {
+    padding: 0;
+    list-style: none;
+}
 
+ol.children {
+    list-style: none;
+}
+ol.comment-list a,
+ol.comment-list i {
+    color: #737373;
+    transition: all .3s;
+}
+ol.comment-list a:hover{
+	color: #000
+}
 /*top search */
 
 div#top-search {
@@ -2597,7 +2619,7 @@ ul.trail-items {
 
 #primary {
 	width: 70%;
-	padding-right: 5%;
+	padding-right: 3%;
 	float: left;
 }
 
@@ -2654,12 +2676,12 @@ div#content #primary h2.entry-title a {
 body.salient-left-sidebar #primary {
 	float: right;
 	padding-right: 0;
-	padding-left: 5%;
+	padding-left: 3%;
 }
 
 body.salient-right-sidebar #primary {
 	width: 70%;
-	padding-right: 5%;
+	padding-right: 3%;
 	float: left;
 }
 
@@ -2868,6 +2890,7 @@ section.block-section.wrap-contact.footer-widget.full-width {
 	background-position: center, center;
 	background-attachment: fixed;
 	background: #000;
+	margin-top: 15px;
 }
 
 .footer-wrapper ul li a {
