@@ -257,10 +257,10 @@ table {
 	border-spacing: 0;
 }
 
-table td, 
+table td,
 table th {
-    padding: 5px;
-    border: 1px solid #ececec;
+	padding: 5px;
+	border: 1px solid #ececec;
 }
 
 div {
@@ -1209,6 +1209,7 @@ body header.site-header.fixed .main-navigation ul.sub-menu li a {
 		box-shadow: none;
 		border: none;
 		border-top: 0;
+		width: 100%;
 		background: #000;
 	}
 	.main-navigation ul ul li {
@@ -1217,12 +1218,15 @@ body header.site-header.fixed .main-navigation ul.sub-menu li a {
 	body header.site-header .main-navigation ul.sub-menu li a {
 		padding: 10px 28px !important;
 	}
+	body header.site-header .main-navigation ul.sub-menu ul li a {
+		padding: 10px 45px !important;
+	}
+	body header.site-header .main-navigation ul.sub-menu ul ul li a {
+		padding: 10px 55px !important;
+	}
 }
 
 @media screen and (max-width: 1024px) and (min-width: 500px) {
-	nav#site-navigation {
-		width: calc(100% - 48px);
-	}
 	.top-header-search-share {
 		width: 48px;
 		display: flex;
@@ -1656,28 +1660,35 @@ footer#colophon .menu-socialnav-container ul li {
 	padding-bottom: 0;
 }
 
+
 /* comment section */
+
 article.comment-body {
-    border: 1px solid #f5f5f5;
-    padding: 16px;
-    margin-bottom: 8px;
+	border: 1px solid #f5f5f5;
+	padding: 16px;
+	margin-bottom: 8px;
 }
+
 ol.comment-list {
-    padding: 0;
-    list-style: none;
+	padding: 0;
+	list-style: none;
 }
 
 ol.children {
-    list-style: none;
+	list-style: none;
 }
+
 ol.comment-list a,
 ol.comment-list i {
-    color: #737373;
-    transition: all .3s;
+	color: #737373;
+	transition: all .3s;
 }
-ol.comment-list a:hover{
+
+ol.comment-list a:hover {
 	color: #000
 }
+
+
 /*top search */
 
 div#top-search {
@@ -1765,6 +1776,11 @@ section#banner-section {
 	body .banner-content-wrapper h1 {
 		font-size: 28px;
 		display: inherit;
+	}
+	.banner-content-wrapper p {
+		margin-bottom: 23px;
+		margin-top: 0;
+		line-height: 22px;
 	}
 }
 
@@ -1943,13 +1959,13 @@ section#feature-section {
 	}
 }
 
-@media screen and (min-width: 768px) {	
+@media screen and (min-width: 768px) {
 	.icon-section.clearfix {
-	    display: -webkit-box;
-	    display: -ms-flexbox;
-	    display: -webkit-flex;
-	    display: flex;
-	    flex-wrap: wrap;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
@@ -2190,10 +2206,12 @@ p.name:after {
 }
 
 @media (max-width: 768px) {
-	.testi-overlay{
+	.testi-overlay {
 		padding: 35px 16px;
 	}
 }
+
+
 /* from our blog */
 
 section#blog-section {
@@ -2373,10 +2391,9 @@ a.border-btn.view-more:hover {
 	.right-sect .blog-content {
 		margin-bottom: 20px;
 	}
-	section#blog-section .meet-us-content.clearfix{
+	section#blog-section .meet-us-content.clearfix {
 		max-height: none;
 	}
-
 }
 
 
@@ -2569,14 +2586,16 @@ ul.trail-items {
 }
 
 ul.trail-items li:after {
-    content: "/";
-    padding-left: 10px;
-    color: #e6e6e6;
+	content: "/";
+	padding-left: 10px;
+	color: #e6e6e6;
 }
 
-ul.trail-items li:last-child:after{
+ul.trail-items li:last-child:after {
 	content: "";
 }
+
+
 /* inner page banner image */
 
 .image-right {
@@ -2749,7 +2768,7 @@ h1.entry-title {
 	div#content {
 		padding-bottom: 0;
 	}
-	body aside#secondary{
+	body aside#secondary {
 		margin-top: 20px;
 	}
 }
@@ -3068,6 +3087,8 @@ div#gotop i {
 		display: none;
 	}
 }
+
+
 /* blog listing in default home page */
 
 @media screen and (min-width: 768px) {
@@ -3077,7 +3098,7 @@ div#gotop i {
 	}
 	body.home.blog #primary,
 	body.home.blog #secondary {
-	    margin-top: 44px;
+		margin-top: 44px;
 	}
 	body.home.blog article {
 		padding: 10px;
@@ -3091,27 +3112,32 @@ div#gotop i {
 	body.home.blog article h2 {
 		margin-top: 0
 	}
-	body.home.blog.salient-right-sidebar #primary{
+	body.home.blog.salient-right-sidebar #primary {
 		padding-right: 2%;
 	}
-	body.home.blog.salient-left-sidebar #primary{
+	body.home.blog.salient-left-sidebar #primary {
 		padding-left: 2%;
 	}
 }
-body.home.blog .wrapper.page-inner-title{
+
+body.home.blog .wrapper.page-inner-title {
 	display: none;
 }
-article p{
+
+article p {
 	margin-top: 15px;
 }
+
 body.home.blog main#main {
-    border: 0;
-    padding-top: 0;
+	border: 0;
+	padding-top: 0;
 }
 
 body.home.blog header#masthead {
-    background: #f3f3f3;
+	background: #f3f3f3;
 }
+
+
 /* Preloader */
 
 body {
