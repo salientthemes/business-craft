@@ -94,20 +94,20 @@ $business_craft_settings_controls['business-craft-home-testimonial-single-words'
     );
 
 /* is the optional field for upload a image background for the business-craft-home-testimonial section*/
-$business_craft_settings_controls['business-craft-home-testimonial-image'] =
-    array(
-        'setting' =>     array(
-            'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-image']
-        ),
-        'control' => array(
-            'label'                 =>  __( 'Upload Image ', 'business-craft' ),
-            'description'           =>  esc_html__( 'It is a option for image background in testimonial section', 'business-craft' ),
-            'section'               => 'business-craft-home-testimonial',
-            'type'                  => 'image',
-            'priority'              => 25,
-            'active_callback'       => ''
-        )
-    );
+// $business_craft_settings_controls['business-craft-home-testimonial-image'] =
+//     array(
+//         'setting' =>     array(
+//             'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-image']
+//         ),
+//         'control' => array(
+//             'label'                 =>  __( 'Upload Image ', 'business-craft' ),
+//             'description'           =>  esc_html__( 'It is a option for image background in testimonial section', 'business-craft' ),
+//             'section'               => 'business-craft-home-testimonial',
+//             'type'                  => 'image',
+//             'priority'              => 25,
+//             'active_callback'       => ''
+//         )
+//     );
 
 /*creating setting control for business-craft-home-testimonial-page start*/
 $business_craft_repeated_settings_controls['business-craft-home-testimonial-pages'] =
