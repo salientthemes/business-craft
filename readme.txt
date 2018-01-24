@@ -12,8 +12,8 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 A starter theme called business-craft.
 
 == Description ==
+Business Craft is a fresh, clean & feature rich WordPress theme developed specifically for all type of corporate business, finance business and startup company, blogging, etc.  This theme is fully responsive that is perfectly adjust on any small to large devices. No coding required to create a website. In order to build inner pages layout, it supports popular plugins like Jetpack, Elementor Page Builder and other popular ones.
 
-Description
 
 == Copyright ==
 
