@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
     /**
      * Featured Slider array creation
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return array
@@ -15,7 +15,7 @@ if ( ! function_exists( 'business_craft_our_service_array' ) ) :
         $business_craft_home_service_contents_array = array();
 
         $business_craft_home_service_contents_array[1]['business-craft-our-service-title'] = __('our-service-title', 'business-craft');
-        $business_craft_home_service_contents_array[1]['business-craft-our-service-content'] = __("our-service-content", 'business-craft');
+        $business_craft_home_service_contents_array[1]['business-craft-our-service-content'] = __('Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'business-craft');
         $business_craft_home_service_contents_array[1]['business-craft-our-service-link'] = '#';
         $business_craft_home_service_contents_array[1]['business-craft-our-service-icon'] = 'fa-desktop';
         $business_craft_home_service_contents_array[1]['business-craft-our-service-icon-color'] = '#151915';
@@ -117,7 +117,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
     /**
      * Featured Slider
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return null
@@ -135,9 +135,9 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
         {
             $business_craft_service_mian_title = $business_craft_customizer_all_values['business-craft-main-title-text'];
             $bsuiness_craft_service_number = $business_craft_customizer_all_values['business-craft-select-number-page'];
-            $about_title_1 = ''; $about_content_1= ''; $about_icon_1 = ''; $about_image_1 = ''; $about_icon_color_1 ='';
-            $about_title_2 = ''; $about_content_2= ''; $about_icon_2 = ''; $about_image_2 = ''; $about_icon_color_2 ='';
-            $about_title_3 = ''; $about_content_3= ''; $about_icon_3 = ''; $about_image_3 = ''; $about_icon_color_3 ='';
+            // $about_title_1 = ''; $about_content_1= ''; $about_icon_1 = ''; $about_image_1 = ''; $about_icon_color_1 ='';
+            // $about_title_2 = ''; $about_content_2= ''; $about_icon_2 = ''; $about_image_2 = ''; $about_icon_color_2 ='';
+            // $about_title_3 = ''; $about_content_3= ''; $about_icon_3 = ''; $about_image_3 = ''; $about_icon_color_3 ='';
             ?>
             <section class="about-section wrapper" id="about-section">
                 <div class="container">
@@ -168,7 +168,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                         <div class="col-md-12 imgchangeabale-div-wrap">
                             <div class="col-md-6 col-xs-12 col-sm-12">
                                 <div class="icon-left">
-                                    <?php if (!empty($about_icon_1)){?> 
+                                    <?php if ( isset($about_icon_1) && !empty($about_icon_1) ){?> 
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-1" data-toggle="tab">
                                             <div class="feature-items clearfix">
@@ -182,7 +182,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                     </div><!-- col-md-4 -->
                                     <?php } ?>
                                     
-                                    <?php if (!empty($about_icon_2)){?>
+                                    <?php if ( isset($about_icon_2 ) && !empty($about_icon_2 ) ){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-2" data-toggle="tab">
                                             <div class="feature-items clearfix">
@@ -196,7 +196,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                     </div><!-- col-md-4 -->
                                     <?php } ?>
 
-                                    <?php if (!empty($about_icon_3)){?>
+                                    <?php if ( isset($about_icon_3) && !empty($about_icon_3) ){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <a href="#tab-3" data-toggle="tab">
                                             <div class="feature-items clearfix">

@@ -19,7 +19,7 @@ $business_craft_customizer_defaults['business-craft-home-testimonial-image'] = g
 
 $business_craft_sections['business-craft-home-testimonial'] =
     array(
-        'title'          => __( 'Home Page Testimonial Section', 'business-craft' ),
+        'title'          => esc_html__( 'Home Page Testimonial Section', 'business-craft' ),
         'priority'       => 300
    	);
 
@@ -29,8 +29,8 @@ $business_craft_settings_controls['business-craft-home-testimonial-enable'] =
             'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-enable']
         ),
         'control' => array(
-            'label'                 => __( 'Enable Testimonial', 'business-craft' ),
-            'description'           => __( 'Enable "Testimonial selection" on checked', 'business-craft' ),
+            'label'                 => esc_html__( 'Enable Testimonial', 'business-craft' ),
+            'description'           => esc_html__( 'Enable "Testimonial selection" on checked', 'business-craft' ),
             'section'               => 'business-craft-home-testimonial',
             'type'                  => 'checkbox',
             'priority'              => 2,
@@ -47,7 +47,7 @@ array(
         'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-main-title']
     ),
     'control' => array(
-        'label'                 =>  __( 'Testimonial Section Title', 'business-craft' ),
+        'label'                 =>  esc_html__( 'Testimonial Section Title', 'business-craft' ),
         'section'               => 'business-craft-home-testimonial',
         'type'                  => 'text',
         'priority'              => 5,
@@ -62,8 +62,8 @@ $business_craft_settings_controls['business-craft-home-testimonial-number'] =
             'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-number']
         ),
         'control' => array(
-            'label'                 => __( 'Number Of Testimonial/s', 'business-craft' ),
-            'description'           => __( 'Choose number of Testimonial to be displayed', 'business-craft' ),
+            'label'                 => esc_html__( 'Number Of Testimonial/s', 'business-craft' ),
+            'description'           => esc_html__( 'Choose number of Testimonial to be displayed', 'business-craft' ),
             'section'               => 'business-craft-home-testimonial',
             'type'                  => 'select',
             'choices'               => array(
@@ -101,7 +101,7 @@ $business_craft_settings_controls['business-craft-home-testimonial-image'] =
         ),
         'control' => array(
             'label'                 =>  __( 'Upload Image ', 'business-craft' ),
-            'description'           =>  __( 'It is a option for image background in testimonial section', 'business-craft' ),
+            'description'           =>  esc_html__( 'It is a option for image background in testimonial section', 'business-craft' ),
             'section'               => 'business-craft-home-testimonial',
             'type'                  => 'image',
             'priority'              => 25,
@@ -118,7 +118,7 @@ $business_craft_repeated_settings_controls['business-craft-home-testimonial-page
                 'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-pages'],
             ),
             'control' => array(
-                'label'                 =>  __( 'Select Page For Testimonial %s', 'business-craft' ),
+                'label'                 =>  esc_html__( 'Select Page For Testimonial %s', 'business-craft' ),
                 'section'               => 'business-craft-home-testimonial',
                 'type'                  => 'dropdown-pages',
                 'priority'              => 90,

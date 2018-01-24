@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_set_global' ) ) :
 /**
  * Setting global values for all saved customizer values
  *
- * @since business-craft 0.0.1
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null
@@ -20,7 +20,7 @@ if ( ! function_exists( 'business_craft_doctype' ) ) :
 /**
  * Doctype Declaration
  *
- * @since business-craft 0.0.1
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null
@@ -39,7 +39,7 @@ if ( ! function_exists( 'business_craft_before_wp_head' ) ) :
 /**
  * Before wp head codes
  *
- * @since business-craft 0.0.1
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null
@@ -60,7 +60,7 @@ if( ! function_exists( 'business_craft_default_layout' ) ) :
     /**
      * Business-craft default layout function
      *
-     * @since  Business-craft 0.0.1
+     * @since  business-craft 1.0.0
      *
      * @param int
      * @return string
@@ -88,7 +88,7 @@ if ( ! function_exists( 'business_craft_body_class' ) ) :
 /**
  * add body class
  *
- * @since business-craft 0.0.1
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null
@@ -147,7 +147,7 @@ if ( ! function_exists( 'business_craft_skip_to_content' ) ) :
 /**
  * Skip to content
  *
- * @since business-craft 0.0.1
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null
@@ -168,7 +168,7 @@ if ( ! function_exists( 'business_craft_header' ) ) :
 /**
  * Main header
  *
- * @since business-craft 0.0.1
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null
@@ -237,7 +237,7 @@ function business_craft_header()
                         ) );
                         ?>                      
                     </nav><!-- #site-navigation -->
-                    <?php if(1 == $business_craft_customizer_all_values['business-craft-enable-top-social-meanu-icon'])
+                    <?php if(0 != $business_craft_customizer_all_values['business-craft-enable-top-social-meanu-icon'])
                     {?>
                     <div class="top-header-search-share">
                         <i class="fa fa-share-alt share" id="header-share"></i>
@@ -281,7 +281,7 @@ if( ! function_exists( 'business_craft_add_breadcrumb' ) ) :
 /**
  * Breadcrumb
  *
- * @since business-craft 0.0.1
+ * @since business-craft 1.0.0
  *
  * @param null
  * @return null

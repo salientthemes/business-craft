@@ -45,7 +45,7 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
                         }
                         printf('<option value="-1" %s>%s</option>',selected( $default_selected, 1, false ),esc_html__( 'Select','business-craft' ) );
                         foreach ( $tags as $tag ) {
-                            printf('<option value="%s" %s>%s</option>', $tags->term_id, selected( $this->value(), $tag->ID, false ), $tags->name );
+                            esc_html__(printf('<option value="%s" %s>%s</option>', $tags->term_id, selected( $this->value(), $tag->ID, false ), $tags->name ) );
                         }
                         ?>
                     </select>

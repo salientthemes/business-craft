@@ -3,7 +3,7 @@ if (!function_exists('business_craft_before_footer') ) :
 	/**
      * Footer content
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return false | void
@@ -24,7 +24,7 @@ if ( !function_exists( 'business_craft_widget_before_footer' ) ) :
 	 /**
      * Footer content
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return false | void
@@ -98,7 +98,7 @@ if ( !function_exists( 'business_craft_footer_theme_text' ) ) :
     /**
      * Footer content
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return null
@@ -134,7 +134,7 @@ if ( ! function_exists('business_craft_back_to_top')  ) :
     /**
      * Footer content
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return null

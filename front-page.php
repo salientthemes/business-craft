@@ -1,47 +1,40 @@
 <?php
 /**
- * Template Name: Front page
  * The template for displaying home page.
- * @package Flare Pro
+ * @package business-craft
  */
 global $business_craft_customizer_all_values;
+
 get_header();
 if ( 'posts' == get_option( 'show_on_front' ) ) {
-    include( get_home_template() );
-    }
-else{   
-    /**
-     * flare_homepage hook
-     * @since Charitize 1.0.0
-     *
-     * @hooked flare_homepage -  10
-     * @sub_hooked flare_homepage -  30
-     */
-    do_action( 'business_craft_homepage' );
+    include( get_home_template() );    
+} else {
+    /*echo "<pre>";
+     print_r( $business_craft_customizer_all_values) ;
+     echo "</pre>";
+    die();*/
+    if ( 1 == $business_craft_customizer_all_values['business-craft-feature-slider-enable'] && 1 == $business_craft_customizer_all_values['business-craft-home-feature-enable'] && 1 == $business_craft_customizer_all_values['business-craft-about-us-enable-option'] && 1 == $business_craft_customizer_all_values['business-craft-our-service-enable'] && 1 == $business_craft_customizer_all_values['business-craft-single-button-enable'] && 1 == $business_craft_customizer_all_values['business-craft-home-testimonial-enable'] && 1 == $business_craft_customizer_all_values['business-craft-home-blog-enable'] ) {
+           
+        
+        /**
+         * business_craft_homepage hook
+         * @since business-craft 1.0.0
+         *
+         * @hooked business_craft_homepage -  10
+         * @sub_hooked business_craft_homepage -  30
+         * @hooked busine_Craft_aboutus _page -16
+         * @hooked business_craft_our_service -21
+         */
+        do_action( 'business_craft_homepage' );
 
-    $business_craft_static_page = absint($business_craft_customizer_all_values['business-craft-enable-static-page']);
-    
-    if ( ( $business_craft_customizer_all_values['business-craft-feature-slider-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-home-feature-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-about-us-enable-option'] != 1 ) && ($business_craft_customizer_all_values['business-craft-our-service-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-single-button-enable'] != 1 ) && ( $business_craft_customizer_all_values['business-craft-home-testimonial-enable'] != 1 ) && ($business_craft_customizer_all_values['business-craft-home-blog-enable'] != 1 )) {
-        if ( current_user_can( 'edit_theme_options' ) ) { ?>
-            <section class="wrapper display-info">
-                <div class="container">
-                <?php echo sprintf(
-                    __( 'All Section are based on page. Enable each Section from customizer for </br> slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections </br> %s', 'business-craft' ),
-                    '<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">' .  __( 'click here', 'business-craft' ) . '</a>'
-                    ); ?>
-                </div>
-            </section>
-        <?php }
-        else
-        {
-            // $business_craft_static_page = 1;
+        $business_craft_static_page = absint($business_craft_customizer_all_values['business-craft-enable-static-page']);
+        // $business_craft_static_page = 1;
         if ($business_craft_static_page == 1) { ?>
             <div id="content" class="site-content container">
                 <div id="primary" class="content-area col-sm-8">
                     <main id="main" class="site-main" role="main">
-
                         <?php
-                        while ( have_posts() ) :  the_post();
+                        while ( have_posts() ) : the_post();
 
                             get_template_part( 'template-parts/content', 'page' );
 
@@ -55,15 +48,20 @@ else{
 
                     </main><!-- #main -->
                 </div><!-- #primary -->
-                <?php
-                    get_sidebar();
-                ?>
-                
+                <?php get_sidebar(); ?>                
             </div>
         <?php }
-        }
-    }   
-   
-        
+    } else {
+        if ( current_user_can( 'edit_theme_options' ) ) { ?>
+            <section class="wrapper display-info">
+                <div class="container">
+                   <?php
+                   
+                    printf(__('All Section are based on page. Enable each Section from customizer for %s slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections %s %sclick here%s ','business-craft'), '<br />','<br />','<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>');
+                    ?>
+                </div>
+            </section>
+        <?php }        
     }
+}
 get_footer();

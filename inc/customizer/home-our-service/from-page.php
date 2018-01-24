@@ -5,7 +5,7 @@ global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
-$business_craft_customizer_defaults['business-craft-number-of-word'] = 30;
+$business_craft_customizer_defaults['business-craft-number-of-word'] = 16;
 $business_craft_customizer_defaults['business-craft-select-number-page'] = 3;
 $business_craft_customizer_defaults['business-craft-our-service-page-title'] = '';
 $business_craft_customizer_defaults['business-craft-our-service-page'] = '';

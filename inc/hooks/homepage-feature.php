@@ -3,7 +3,7 @@ if ( ! function_exists( 'business_craft_home_feature_array' ) ) :
     /**
      * Service Section array creation
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param string $from_feature
      * @return array
@@ -104,7 +104,7 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
     /**
      * Service Section
      *
-     * @since business-craft 0.0.1
+     * @since business-craft 1.0.0
      *
      * @param null
      * @return null

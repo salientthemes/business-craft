@@ -1,6 +1,15 @@
 <?php 
 global $post;
 if (!function_exists('business_craft_single_page_title')) :
+
+	/**
+	* business_craft_inner_head_section
+	
+	* @since business-craft 1.0.0
+	*
+	* @hooked null
+	*/
+
     function business_craft_single_page_title() {
     		global $business_craft_customizer_all_values;
     		$business_craft_inner_baner_image = esc_url($business_craft_customizer_all_values['business-craft-default-banner-image'] );
