@@ -8,7 +8,6 @@ global $business_craft_customizer_defaults;
 $business_craft_customizer_defaults['business-craft-enable-breadcrumb'] = 1;
 $business_craft_customizer_defaults['business-craft-select-number-footer'] = 3;
 $business_craft_customizer_defaults['business-craft-copy-right-text'] = __('Copyright © All right reserved','business-craft');
-$business_craft_customizer_defaults['business-craft-enable-theme-option'] = 1;
 
 
 // created theme layout footer section
@@ -30,27 +29,13 @@ $business_craft_settings_controls['business-craft-select-number-footer'] =
 			'section'					=>'business-craft-footer-section',
 			'type'						=>'select',
 			'choices'					=>array(
-				0						=>__('Desabal sidebar footer area','business-craft'),
+				0						=>__('Disable sidebar footer area','business-craft'),
 				1						=>__('1','business-craft'),
 				2 						=>__('2','business-craft'),
 				3						=>__('3','business-craft')
 
 			),
 			'priority'					=>10,
-			'active_callback'			=>''
-		)
-	);
-// enable theme name 
-$business_craft_settings_controls['business-craft-enable-theme-option']  = 
-	array(
-		'setting'						=>array(
-			'default' 					=>$business_craft_customizer_defaults['business-craft-enable-theme-option']
-		),
-		'control'						=>array(
-			'label'						=>__('Enable Theme Name','business-craft'),
-			'section'					=>'business-craft-footer-section',
-			'type'						=>'checkbox',
-			'priority'					=>20,
 			'active_callback'			=>''
 		)
 	);

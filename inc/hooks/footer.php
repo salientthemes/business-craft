@@ -117,14 +117,9 @@ if ( !function_exists( 'business_craft_footer_theme_text' ) ) :
                             echo wp_kses_post( $business_craft_customizer_all_values['business-craft-copy-right-text'] );
                         }
                         ?>
-                        <?php
-                         if( 1 == $business_craft_customizer_all_values['business-craft-enable-theme-option']){
-                            ?>
                         <span class="sep"> | </span>
                         <?php printf( esc_html__( 'Theme: %1$s by %2$s', 'business-craft' ), 'Business Craft', '<a href="http://salientthemes.com/" target = "_blank" rel="designer">salientthemes </a>' ); ?>
-                        <?php
-                        }
-                        ?>
+
                     <!-- </div> -->
                 </div><!-- .social-links-n-copy-right -->
             </div><!-- .col-md-12 -->
