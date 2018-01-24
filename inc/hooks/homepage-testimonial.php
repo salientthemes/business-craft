@@ -16,7 +16,7 @@ if (!function_exists('business_craft_home_testimonial_array')) :
         $business_craft_home_testimonial_contents_array = array();
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-title'] = __('John Doe','business-craft');
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-content'] = '';
-        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/bg1.jpg";
+        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/tt1.jpg";
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-link'] = '#';
         $business_craft_home_testimonial_contents_array[0]['business-craft-testimonial-slider-number'] = 0;
         $repeated_page = array('business-craft-home-testimonial-pages-ids');
