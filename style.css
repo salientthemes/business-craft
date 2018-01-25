@@ -1967,11 +1967,7 @@ section#feature-section {
 
 @media screen and (min-width: 768px) {
 	.icon-section.clearfix {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		flex-wrap: wrap;
+		display: block;
 	}
 }
 
@@ -3086,7 +3082,6 @@ div#gotop i {
 
 .icon-left a {
 	color: #000;
-	cursor: default;
 }
 
 .icon-left i {
