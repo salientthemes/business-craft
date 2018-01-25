@@ -168,13 +168,15 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                 <div class="icon-left">
                                     <?php if ( isset($about_icon_1) && !empty($about_icon_1) ){?> 
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <a href="#tab-1" data-toggle="tab">
+                                        <a href="" data-toggle="tab">
                                             <div class="feature-items clearfix">
+                                                <a href="<?php echo esc_url($about_link_1); ?> ">
                                                 <i test style="color: <?php echo $about_icon_color_1;?> " class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
                                                 <div class="texts">
                                                     <h4><?php echo esc_html($about_title_1); ?></h4>
                                                     <p><?php echo wp_kses_post($about_content_1); ?></p>
                                                 </div>
+                                                </a>
                                             </div>
                                         </a>
                                     </div><!-- col-md-4 -->
