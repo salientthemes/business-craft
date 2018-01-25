@@ -135,6 +135,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
         {
             $business_craft_service_mian_title = $business_craft_customizer_all_values['business-craft-main-title-text'];
             $bsuiness_craft_service_number = $business_craft_customizer_all_values['business-craft-select-number-page'];
+            
             ?>
             <section class="about-section wrapper" id="about-section">
                 <div class="container">
