@@ -13,7 +13,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
      print_r( $business_craft_customizer_all_values) ;
      echo "</pre>";
     die();*/
-    if ( 1 == $business_craft_customizer_all_values['business-craft-feature-slider-enable'] && 1 == $business_craft_customizer_all_values['business-craft-home-feature-enable'] && 1 == $business_craft_customizer_all_values['business-craft-about-us-enable-option'] && 1 == $business_craft_customizer_all_values['business-craft-our-service-enable'] && 1 == $business_craft_customizer_all_values['business-craft-single-button-enable'] && 1 == $business_craft_customizer_all_values['business-craft-home-testimonial-enable'] && 1 == $business_craft_customizer_all_values['business-craft-home-blog-enable'] ) {
+    if ( 1 == $business_craft_customizer_all_values['business-craft-feature-slider-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-feature-enable'] || 1 == $business_craft_customizer_all_values['business-craft-about-us-enable-option'] || 1 == $business_craft_customizer_all_values['business-craft-our-service-enable'] || 1 == $business_craft_customizer_all_values['business-craft-single-button-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-testimonial-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-blog-enable'] ) {
            
         
         /**
@@ -57,8 +57,10 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
                 <div class="container">
                    <?php
                    
-                    printf(__('All Section are based on page. Enable each Section from customizer for %s slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections %s %sclick here%s ','business-craft'), '<br />','<br />','<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>');
+                    printf(__('All Section are based on page. Enable each Section from customizer for %1$s slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections %2$s %3$s click here %4$s ','business-craft'), '<br />','<br />','<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>');
                     ?>
+
+                   
                 </div>
             </section>
         <?php }        

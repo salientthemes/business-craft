@@ -49,7 +49,7 @@ $business_craft_default_layout_options = array(
 $business_craft_single_post_image_align_options = array(
     'full' => array(
         'value' => 'full',
-        'label' => esc_html__( 'Full', 'business-craft' ),
+        'label' => esc_html__( 'Full', 'business-craft' )
     ),
     'right' => array(
         'value' => 'right',
@@ -81,7 +81,7 @@ function business_craft_layout_options_callback() {
     <table class="form-table page-meta-box">
         <!--Image alignment-->
         <tr>
-            <td colspan="4"><em class="f13"><?php esc_html__( 'Choose Sidebar Template', 'business-craft' ); ?></em></td>
+            <td colspan="4"><em class="f13"><?php _e( 'Choose Sidebar Template', 'business-craft' ); ?></em></td>
         </tr>
         <tr>
             <td>
@@ -106,7 +106,7 @@ function business_craft_layout_options_callback() {
             </td>
         </tr>
         <tr>
-            <td><em class="f13"><?php esc_html__( 'You can set up the sidebar content', 'business-craft' ); ?> <a href="<?php echo esc_url( admin_url('/widgets.php') ); ?>"><?php _e( 'here', 'business-craft' ); ?></a></em></td>
+            <td><em class="f13"><?php _e( 'You can set up the sidebar content', 'business-craft' ); ?> <a href="<?php echo esc_url( admin_url('/widgets.php') ); ?>"><?php _e( 'here', 'business-craft' ); ?></a></em></td>
         </tr>
         <!--Image alignment-->
         <tr>
@@ -141,7 +141,7 @@ function business_craft_layout_options_callback() {
 function business_craft_save_sidebar_layout( $post_id ) {
     global $post;
     // Verify the nonce before proceeding.
-    if ( !isset( $_POST[ 'business_craft_layout_options_nonce' ] ) || !wp_verify_nonce( wp_unslash( $_POST[ 'business_craft_layout_options_nonce' ], basename( __FILE__ ) ) ) ) {
+    if ( !isset( $_POST[ 'business_craft_layout_options_nonce' ] ) || !wp_verify_nonce( $_POST[ 'business_craft_layout_options_nonce' ], basename( __FILE__ ) ) ) {
         return;
     }
 
@@ -156,7 +156,7 @@ function business_craft_save_sidebar_layout( $post_id ) {
     
     if(isset($_POST['business-craft-default-layout'])){
         $old = get_post_meta( $post_id, 'business-craft-default-layout', true);
-        $new = sanitize_text_field(wp_unslash( $_POST['business-craft-default-layout']) );
+        $new = sanitize_text_field($_POST['business-craft-default-layout']);
         if ($new && $new != $old) {
             update_post_meta($post_id, 'business-craft-default-layout', $new);
         } elseif ('' == $new && $old) {
@@ -167,7 +167,7 @@ function business_craft_save_sidebar_layout( $post_id ) {
     /*image align*/
     if(isset($_POST['business-craft-single-post-image-align'])){
         $old = get_post_meta( $post_id, 'business-craft-single-post-image-align', true);
-        $new = sanitize_text_field(wp_unslash( $_POST['business-craft-single-post-image-align']) );
+        $new = sanitize_text_field($_POST['business-craft-single-post-image-align']);
         if ($new && $new != $old) {
             update_post_meta($post_id, 'business-craft-single-post-image-align', $new);
         } elseif ('' == $new && $old) {

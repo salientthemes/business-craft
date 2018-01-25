@@ -16,55 +16,55 @@ if (version_compare($wp_version, '4.5', '<')) {
     /*creating setting control*/
     $business_craft_settings_controls['business-craft-logo'] =
         array(
-            'setting' =>     array(
-                'default'              => $business_craft_customizer_defaults['business-craft-logo'],
+            'setting' =>       array(
+                'default'              =>   $business_craft_customizer_defaults['business-craft-logo'],
             ),
-            'control' => array(
-                'label'                 =>  __( 'Logo', 'business-craft' ),
-                'section'               => 'title_tagline',
-                'type'                  => 'image',
-                'priority'              => 70,
-                'description'           =>  __( 'Recommended logo size 165*50', 'business-craft' ),
-                'active_callback'       => ''
+            'control' =>   array(
+                'label'                 =>    __( 'Logo', 'business-craft' ),
+                'section'               =>   'title_tagline',
+                'type'                  =>   'image',
+                'priority'              =>   70,
+                'description'           =>    __( 'Recommended logo size 165*50', 'business-craft' ),
+                'active_callback'       =>   ''
             )
         );
 
     /*enable option for enable tagline in header*/
     $business_craft_settings_controls['business-craft-title-tagline-message'] =
         array(
-            'control' => array(
-                'description'           =>  $business_craft_customizer_defaults['business-craft-title-tagline-message'],
-                'section'               => 'title_tagline',
-                'type'                  => 'message',
-                'priority'              => 75,
-                'active_callback'       => ''
+            'control' =>   array(
+                'description'           =>    $business_craft_customizer_defaults['business-craft-title-tagline-message'],
+                'section'               =>   'title_tagline',
+                'type'                  =>   'message',
+                'priority'              =>   75,
+                'active_callback'       =>   ''
             )
         );
     /*enable option for enable tagline in header*/
     $business_craft_settings_controls['business-craft-enable-title'] =
         array(
-            'setting' =>     array(
-                'default'              => $business_craft_customizer_defaults['business-craft-enable-title'],
+            'setting' =>       array(
+                'default'              =>   $business_craft_customizer_defaults['business-craft-enable-title'],
             ),
-            'control' => array(
-                'label'                 =>  __( 'Enable Title', 'business-craft' ),
-                'section'               => 'title_tagline',
-                'type'                  => 'checkbox',
-                'priority'              => 80,
-                'active_callback'       => ''
+            'control' =>   array(
+                'label'                 =>    esc_html__( 'Enable Title', 'business-craft' ),
+                'section'               =>   'title_tagline',
+                'type'                  =>   'checkbox',
+                'priority'              =>   80,
+                'active_callback'       =>   ''
             )
         );
     $business_craft_settings_controls['business-craft-enable-tagline'] =
         array(
-            'setting' =>     array(
-                'default'              => $business_craft_customizer_defaults['business-craft-enable-tagline'],
+            'setting' =>       array(
+                'default'              =>   $business_craft_customizer_defaults['business-craft-enable-tagline'],
             ),
-            'control' => array(
-                'label'                 =>  __( 'Enable Tagline', 'business-craft' ),
-                'section'               => 'title_tagline',
-                'type'                  => 'checkbox',
-                'priority'              => 90,
-                'active_callback'       => ''
+            'control' =>   array(
+                'label'                 =>    esc_html__( 'Enable Tagline', 'business-craft' ),
+                'section'               =>   'title_tagline',
+                'type'                  =>   'checkbox',
+                'priority'              =>   90,
+                'active_callback'       =>   ''
             )
         );
 }

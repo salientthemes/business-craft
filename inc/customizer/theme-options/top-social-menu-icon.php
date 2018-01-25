@@ -10,7 +10,7 @@ $business_craft_customizer_defaults['business-craft-enable-top-social-meanu-icon
 $business_craft_sections['business-craft-layout-options'] =
     array(
         'priority'       => 20,
-        'title'          => __( 'Layout Options', 'business-craft' ),
+        'title'          => esc_html__( 'Layout Options', 'business-craft' ),
         'panel'          => 'business-craft-theme-panel',
     );
 

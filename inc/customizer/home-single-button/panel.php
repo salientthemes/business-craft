@@ -7,8 +7,8 @@ global $business_craft_repeated_settings_controls;
 // create panel for singele button
 $business_craft_panels['business-craft-single-button-panel'] = 
 	array(
-		'title'   	=>__('Home Single Button Section','business-craft'),
-		'priority'	=>280
+		'title'   	=>  esc_html__('Home Single Button Section','business-craft'),
+		'priority'	=>  280
 	);
 
 // require single button options

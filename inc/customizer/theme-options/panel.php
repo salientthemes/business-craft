@@ -8,8 +8,8 @@ global $business_craft_repeated_settings_controls;
 // created a panel for theme option's
 $business_craft_panels['business-craft-theme-panel'] = 
 	array(
-		'title' 			=> __('Theme Option','business-craft'),
-		'priority'			=> 320
+		'title' 			=>  esc_html__('Theme Option','business-craft'),
+		'priority'			=>  320
 
 	);
 

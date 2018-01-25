@@ -31,17 +31,15 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
                 array(
                     'name'              => $name,
                     'echo'              => 0,
-                    'show_option_none'  =>esc_html__('Select','business-craft'),
+                    'show_option_none'  => esc_html__('Select','business-craft'),
                     'option_none_value' => '0',
                     'selected'          => $this->value(),
                 )
             );
+            
             $dropdown_final = str_replace( '<select', '<select ' . $this->get_link(), $dropdown_categories );
-            esc_html__(printf(
-                '<label><span class="customize-control-title">%s</span> %s</label>',
-                $this->label,
-                $dropdown_final
-            ) );
+            
+            printf('<label><span class="customize-control-title">%s</span> %s</label>',$this->label, esc_html($dropdown_final,'business-craft') );
         }
     }
 }

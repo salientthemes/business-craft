@@ -40,9 +40,6 @@ if (!function_exists('business_craft_single_page_title')) :
 										elseif (is_search()) { ?>
 											<h1 class="entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'business-craft' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 										<?php }
-										else{ ?>
-												<h2 class="entry-title"><?php echo (esc_html__( '', 'business-craft' )); ?></h2>
-										<?php }
 										?>
 									</header><!-- .entry-header -->
 						        </div>

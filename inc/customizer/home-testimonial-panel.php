@@ -7,7 +7,7 @@ global $business_craft_customizer_defaults;
 
 /*defaults values feature portfolio options*/
 $business_craft_customizer_defaults['business-craft-home-testimonial-enable'] = 0;
-$business_craft_customizer_defaults['business-craft-home-testimonial-main-title'] =  __('Client Testimonials','business-craft');
+$business_craft_customizer_defaults['business-craft-home-testimonial-main-title'] =  esc_html__('Client Testimonials','business-craft');
 $business_craft_customizer_defaults['business-craft-home-testimonial-number'] = 3;
 $business_craft_customizer_defaults['business-craft-home-testimonial-single-words'] = 30;
 $business_craft_customizer_defaults['business-craft-home-testimonial-selection'] = 'from-page';
@@ -67,9 +67,9 @@ $business_craft_settings_controls['business-craft-home-testimonial-number'] =
             'section'               => 'business-craft-home-testimonial',
             'type'                  => 'select',
             'choices'               => array(
-                1 => __( '1', 'business-craft' ),
-                2 => __( '2', 'business-craft' ),
-                3 => __( '3', 'business-craft' ),
+                1 => esc_html__( '1', 'business-craft' ),
+                2 => esc_html__( '2', 'business-craft' ),
+                3 => esc_html__( '3', 'business-craft' ),
             ),
             'priority'              => 10,
             'active_callback'       => ''
@@ -83,8 +83,8 @@ $business_craft_settings_controls['business-craft-home-testimonial-single-words'
             'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-single-words']
         ),
         'control' => array(
-            'label'                 =>  __( 'Single Testimonial- Number Of Words', 'business-craft' ),
-            'description'           =>  __( 'If you do not have selected from - Custom', 'business-craft' ),
+            'label'                 =>  esc_html__( 'Single Testimonial- Number Of Words', 'business-craft' ),
+            'description'           =>  esc_html__( 'If you do not have selected from - Custom', 'business-craft' ),
             'section'               => 'business-craft-home-testimonial',
             'type'                  => 'number',
             'input_attrs' => array( 'min' => 1, 'max' => 200),
@@ -92,22 +92,6 @@ $business_craft_settings_controls['business-craft-home-testimonial-single-words'
             'active_callback'       => ''
         )
     );
-
-/* is the optional field for upload a image background for the business-craft-home-testimonial section*/
-// $business_craft_settings_controls['business-craft-home-testimonial-image'] =
-//     array(
-//         'setting' =>     array(
-//             'default'              => $business_craft_customizer_defaults['business-craft-home-testimonial-image']
-//         ),
-//         'control' => array(
-//             'label'                 =>  __( 'Upload Image ', 'business-craft' ),
-//             'description'           =>  esc_html__( 'It is a option for image background in testimonial section', 'business-craft' ),
-//             'section'               => 'business-craft-home-testimonial',
-//             'type'                  => 'image',
-//             'priority'              => 25,
-//             'active_callback'       => ''
-//         )
-//     );
 
 /*creating setting control for business-craft-home-testimonial-page start*/
 $business_craft_repeated_settings_controls['business-craft-home-testimonial-pages'] =

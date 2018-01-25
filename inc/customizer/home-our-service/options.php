@@ -7,43 +7,43 @@ global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
 $business_craft_customizer_defaults['business-craft-our-service-enable'] = 0;
-$business_craft_customizer_defaults['business-craft-main-title-text'] = __('DESIGN. DEVELOP. DEDICATE','business-craft');
+$business_craft_customizer_defaults['business-craft-main-title-text'] = esc_html__('DESIGN. DEVELOP. DEDICATE','business-craft');
 
 // create panel for singele button
 $business_craft_sections['business-craft-our-service-section'] = 
 	array(
-		'title'   	=>__('Our Service','business-craft'),
-		'panel'		=>'business-craft-our-service-panel',
-		'priorty'	=>10
+		'title'   	=>  esc_html__('Our Service','business-craft'),
+		'panel'		=>  'business-craft-our-service-panel',
+		'priorty'	=>  10
 	);
 
 // option's cntrol section
 $business_craft_settings_controls['business-craft-our-service-enable'] = 
 	array(
-		'setting' 				=> array(
-			'default'			=>$business_craft_customizer_defaults['business-craft-our-service-enable']
+		'setting' 				=>   array(
+			'default'			=>  $business_craft_customizer_defaults['business-craft-our-service-enable']
 		),
-		'control'				=>array(
-			'label' 			=>__('Enable Our Service ','business-craft'),
-			'section'			=>'business-craft-our-service-section',
-			'type'				=>'checkbox',
-			'priority'			=>10,
-			'active_callback'	=>''	
+		'control'				=>  array(
+			'label' 			=>  esc_html__('Enable Our Service ','business-craft'),
+			'section'			=>  'business-craft-our-service-section',
+			'type'				=>  'checkbox',
+			'priority'			=>  10,
+			'active_callback'	=>  ''	
 		)
 	);
 
 
 $business_craft_settings_controls['business-craft-main-title-text'] = 
 	array(
-		'setting' 				=> array(
-			'default'			=>$business_craft_customizer_defaults['business-craft-main-title-text']
+		'setting' 				=>   array(
+			'default'			=>  $business_craft_customizer_defaults['business-craft-main-title-text']
 		),
-		'control'				=>array(
-			'label' 			=>__('Main Title Text Here','business-craft'),
-			'section'			=>'business-craft-our-service-section',
-			'type'				=>'text',
-			'priority'			=>20,
-			'active_callback'	=>''	
+		'control'				=>  array(
+			'label' 			=>  esc_html__('Main Title Text Here','business-craft'),
+			'section'			=>  'business-craft-our-service-section',
+			'type'				=>  'text',
+			'priority'			=>  20,
+			'active_callback'	=>  ''	
 		)
 	);
 
