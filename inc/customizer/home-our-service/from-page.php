@@ -11,7 +11,7 @@ $business_craft_customizer_defaults['business-craft-our-service-page-title'] = '
 $business_craft_customizer_defaults['business-craft-our-service-page'] = '';
 $business_craft_customizer_defaults['business-craft-our-service-image'] = get_template_directory().'/assets/images/bg1.jpg';
 
-$business_craft_customizer_defaults['business-craft-our-service-icon'] = __('fa fa-desktop','business-craft');
+$business_craft_customizer_defaults['business-craft-our-service-icon'] = esc_html__('fa fa-desktop','business-craft');
 $business_craft_customizer_defaults['business-craft-our-service-icon-color'] = '#151915';
 
 
@@ -67,7 +67,7 @@ $business_craft_repeated_settings_controls['business-craft-our-service-page'] =
             ),
             'control' =>   array(
                 'label'                 =>    esc_html__( 'Select Page For Our Page Icon %s', 'business-craft' ),
-                'description'           =>   sprintf( __( 'Use font awesome icon: Eg: %1$s . %2$s See more here %3$s', 'business-craft' ), 'fa-desktop','<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>' ),
+                'description'           =>   sprintf( esc_html__( 'Use font awesome icon: Eg: %1$s . %2$s See more here %3$s', 'business-craft' ), 'fa-desktop','<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>' ),
                 'section'               =>   'business-craft-our-service-section-page',
                 'type'                  =>   'text',
                 'priority'              =>   30,

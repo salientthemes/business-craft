@@ -20,11 +20,11 @@ if (version_compare($wp_version, '4.5', '<')) {
                 'default'              =>   $business_craft_customizer_defaults['business-craft-logo'],
             ),
             'control' =>   array(
-                'label'                 =>    __( 'Logo', 'business-craft' ),
+                'label'                 =>    esc_html__( 'Logo', 'business-craft' ),
                 'section'               =>   'title_tagline',
                 'type'                  =>   'image',
                 'priority'              =>   70,
-                'description'           =>    __( 'Recommended logo size 165*50', 'business-craft' ),
+                'description'           =>    esc_html__( 'Recommended logo size 165*50', 'business-craft' ),
                 'active_callback'       =>   ''
             )
         );

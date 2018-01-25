@@ -26,10 +26,10 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
          *
          */
         public function render_content() {
-            $name = 'salient_customizer_dropdown_categories_' . $this->id;;
+            $name = 'salient_customizer_dropdown_categories_' . $this->id;
             $dropdown_categories = wp_dropdown_categories(
                 array(
-                    'name'              => $name,
+                    'name'              =>  $name ,
                     'echo'              => 0,
                     'show_option_none'  => esc_html__('Select','business-craft'),
                     'option_none_value' => '0',
@@ -39,7 +39,7 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
             
             $dropdown_final = str_replace( '<select', '<select ' . $this->get_link(), $dropdown_categories );
             
-            printf('<label><span class="customize-control-title">%s</span> %s</label>',$this->label, esc_html($dropdown_final,'business-craft') );
+            printf('<label><span class="customize-control-title">%s</span> %s</label>',$this->label, $dropdown_final );
         }
     }
 }

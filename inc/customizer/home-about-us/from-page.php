@@ -12,7 +12,7 @@ $business_craft_customizer_defaults['business-craft-about-us-single-word'] = 30;
 // section about us from page
 $business_craft_sections['business-craft-about-us-setting'] = 
 	array(
-		'title'			=>__('From Page','business-craft'),
+		'title'			=>esc_html__('From Page','business-craft'),
 		'panel'			=>'business_craft_about_panel',
 		'priority'		=>10
 	);

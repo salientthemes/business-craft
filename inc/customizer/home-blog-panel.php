@@ -67,6 +67,7 @@ $business_craft_settings_controls['business-craft-home-blog-title'] =
             )
         );
 
+
 /*creating setting control for business-craft-fs-Category start*/
 $business_craft_settings_controls['business-craft-home-blog-category'] =
     array(

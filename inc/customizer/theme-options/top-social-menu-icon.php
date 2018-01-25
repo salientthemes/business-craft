@@ -22,8 +22,8 @@ $business_craft_settings_controls['business-craft-enable-top-social-meanu-icon']
             'default'              => $business_craft_customizer_defaults['business-craft-enable-top-social-meanu-icon'],
         ),
         'control' => array(
-            'label'                 =>  __( 'Enable top menu social icon', 'business-craft' ),
-            'description'           =>  __( 'If you disable a menu top social icon it will not appear in the top meanu bar', 'business-craft' ),
+            'label'                 =>  esc_html__( 'Enable top menu social icon', 'business-craft' ),
+            'description'           =>  esc_html__( 'If you disable a menu top social icon it will not appear in the top meanu bar', 'business-craft' ),
             'section'               => 'business-craft-layout-options',
             'type'                  => 'checkbox',
             'priority'              => 10,

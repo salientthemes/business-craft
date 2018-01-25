@@ -46,8 +46,8 @@ $business_craft_settings_controls['business-craft-default-banner-image'] =
             'default'              =>   $business_craft_customizer_defaults['business-craft-default-banner-image']
         ),
         'control' =>   array(
-            'label'                 =>    __( 'Default Banner Image', 'business-craft' ),
-            'description'           =>    __( 'Please note that if you remove this image default banner image will appear', 'business-craft' ),
+            'label'                 =>    esc_html__( 'Default Banner Image', 'business-craft' ),
+            'description'           =>    esc_html__( 'Please note that if you remove this image default banner image will appear', 'business-craft' ),
             'section'               =>   'business-craft-layout-options',
             'type'                  =>   'image',
             'priority'              =>   15,
@@ -118,8 +118,8 @@ $business_craft_settings_controls['business-craft-number-of-words'] =
             'default'              =>   $business_craft_customizer_defaults['business-craft-number-of-words']
         ),
         'control' =>   array(
-            'label'                 =>    __( 'Number Of Words For Excerpt', 'business-craft' ),
-            'description'           =>    __( 'This will controll the excerpt length on listing page', 'business-craft' ),
+            'label'                 =>    esc_html__( 'Number Of Words For Excerpt', 'business-craft' ),
+            'description'           =>    esc_html__( 'This will controll the excerpt length on listing page', 'business-craft' ),
             'section'               =>   'business-craft-layout-options',
             'type'                  =>   'number',
             'input_attrs' =>   array( 'min' =>   1, 'max' =>   200),
@@ -135,17 +135,17 @@ $business_craft_settings_controls['business-craft-single-post-image-align'] =
             'default'              =>   $business_craft_customizer_defaults['business-craft-single-post-image-align'],
         ),
         'control' =>   array(
-            'label'                 =>    __( 'Alignment Of Image In Single Post/Page', 'business-craft' ),
+            'label'                 =>    esc_html__( 'Alignment Of Image In Single Post/Page', 'business-craft' ),
             'section'               =>   'business-craft-layout-options',
             'type'                  =>   'select',
             'choices'               =>   array(
-                'full' =>   __( 'Full', 'business-craft' ),
-                'right' =>   __( 'Right', 'business-craft' ),
-                'left' =>   __( 'Left', 'business-craft' ),
-                'no-image' =>   __( 'No image', 'business-craft' )
+                'full' =>   esc_html__( 'Full', 'business-craft' ),
+                'right' =>   esc_html__( 'Right', 'business-craft' ),
+                'left' =>   esc_html__( 'Left', 'business-craft' ),
+                'no-image' =>   esc_html__( 'No image', 'business-craft' )
             ),
             'priority'              =>   50,
-            'description'           =>    __( 'Please note that this setting can be override from individual post/page', 'business-craft' ),
+            'description'           =>    esc_html__( 'Please note that this setting can be override from individual post/page', 'business-craft' ),
         )
     );
 
