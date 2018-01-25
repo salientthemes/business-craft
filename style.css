@@ -614,8 +614,9 @@ body a:visited {
 body a:hover,
 body a:focus,
 body a:active {
-	color: #000;
+	color: #6f6f6f;
 	text-decoration: none;
+	transition: all .3s;
 }
 
 body a:focus {
@@ -976,7 +977,12 @@ button.menu-toggle {
 .entry-summary {
 	margin: 1.5em 0 0;
 }
-
+body.page .entry-content {
+	margin: 0;
+}
+.entry-content p {
+    padding-top: 10px;
+}
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -2695,6 +2701,11 @@ footer.entry-footer {
 
 header.page-header {
 	margin: 0;
+	border-bottom: 0px;
+}
+
+h2.entry-title {
+    margin: 0;
 }
 
 h1.page-title {
@@ -3167,4 +3178,29 @@ body {
 	top: 50%;
 	transform: translate(0, -50%);
 	background-size: 250px;
+}
+
+/* if all sections are disabled */
+
+section.display-info {
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    background: #efefef;
+    padding: 100px 10px;
+}
+section.display-info a.button {
+    background: #37ce9c;
+    color: #fff;
+    padding: 10px 30px;
+    display: block;
+    width: 130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 20px;
+}
+
+section.display-info a.button:hover{
+	color: #fff;
 }
