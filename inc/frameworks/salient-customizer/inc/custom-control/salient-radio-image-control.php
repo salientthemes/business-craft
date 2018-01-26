@@ -43,8 +43,8 @@ if ( class_exists( 'WP_Customize_Control' ) && !class_exists( 'Salient_Customize
                 <?php endif; ?>
                 <?php
                 foreach ( $this->choices as $value => $label ) :
-                    printf('<label><input class="radio-image" type="radio"  name="%s" value="%s" %s %s>', esc_attr( $name ), esc_attr( $value ), $this->get_link(), checked( $this->value(), $value, 0 ));
-                     printf('<span><img src="%s" alt="%s" /></span></label>', esc_url($label), esc_attr( $value )) ;
+                    printf('<label><input class="radio-image" type="radio"  name="%s" value="%s" %s %s>', esc_attr( $name ), esc_attr( $value ), $this->get_link(), checked( $this->value(), $value, 0 ) );
+                     printf( '<span><img src="%s" alt="%s" /></span></label>', esc_url( $label ), esc_attr( $value ) );
                     ?>
                     <?php
                 endforeach;

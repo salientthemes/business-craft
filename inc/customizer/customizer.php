@@ -54,25 +54,25 @@ global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
 /*customizer homepage slider option*/
-require get_template_directory().'/inc/customizer/home-slider-panel.php';
+require get_template_directory().'/inc/customizer/homepage-panel.php';
 
 /*customizer homepage featured section*/
-require get_template_directory().'/inc/customizer/home-feature-panel.php';
+// require get_template_directory().'/inc/customizer/home-feature-panel.php';
 
 /*customizer homepage testimonial section*/
-require get_template_directory().'/inc/customizer/home-testimonial-panel.php';
+// require get_template_directory().'/inc/customizer/home-testimonial-panel.php';
 
 /*customizer homepage blog section*/
-require get_template_directory().'/inc/customizer/home-blog-panel.php';
+// require get_template_directory().'/inc/customizer/home-blog-panel.php';
 
 /*customizer about us section*/
-require get_template_directory().'/inc/customizer/home-about-us/panel.php';
+// require get_template_directory().'/inc/customizer/home-about-us/panel.php';
 
 /*customizer single button section*/
-require get_template_directory().'/inc/customizer/home-single-button/panel.php';
+// require get_template_directory().'/inc/customizer/home-single-button/panel.php';
 
 /*customizer design develop section*/
-require get_template_directory().'/inc/customizer/home-our-service/panel.php';
+// require get_template_directory().'/inc/customizer/home-our-service/panel.php';
 
 /*customizer theme option's section*/
 require get_template_directory().'/inc/customizer/theme-options/panel.php';

@@ -14,14 +14,47 @@ $business_craft_customizer_defaults['business-craft-our-service-image'] = get_te
 $business_craft_customizer_defaults['business-craft-our-service-icon'] = esc_html__('fa fa-desktop','business-craft');
 $business_craft_customizer_defaults['business-craft-our-service-icon-color'] = '#151915';
 
+$business_craft_customizer_defaults['business-craft-our-service-enable'] = 0;
+$business_craft_customizer_defaults['business-craft-main-title-text'] = esc_html__('DESIGN. DEVELOP. DEDICATE','business-craft');
+
 
 // create panel for singele button
 $business_craft_sections['business-craft-our-service-section-page'] = 
 	array(
-		'title'   	=>  esc_html__('Our Service Select Page','business-craft'),
-		'panel'		=>  'business-craft-our-service-panel',
-		'priorty'	=>  10
+		'title'   	=>  esc_html__('Our Service','business-craft'),
+		'panel'		=>  'business_craft_home_panel',
+		'priority'	=>  30
 	);
+
+    // option's cntrol section
+    $business_craft_settings_controls['business-craft-our-service-enable'] = 
+        array(
+            'setting'               =>   array(
+                'default'           =>  $business_craft_customizer_defaults['business-craft-our-service-enable']
+            ),
+            'control'               =>  array(
+                'label'             =>  esc_html__('Enable Our Service ','business-craft'),
+                'section'           =>  'business-craft-our-service-section-page',
+                'type'              =>  'checkbox',
+                'priority'          =>  10,
+                'active_callback'   =>  ''  
+            )
+        );
+
+
+    $business_craft_settings_controls['business-craft-main-title-text'] = 
+        array(
+            'setting'               =>   array(
+                'default'           =>  $business_craft_customizer_defaults['business-craft-main-title-text']
+            ),
+            'control'               =>  array(
+                'label'             =>  esc_html__('Main Title Text Here','business-craft'),
+                'section'           =>  'business-craft-our-service-section-page',
+                'type'              =>  'text',
+                'priority'          =>  15,
+                'active_callback'   =>  ''  
+            )
+        );
 
 
 $business_craft_settings_controls['business-craft-number-of-word'] = 
@@ -34,7 +67,7 @@ $business_craft_settings_controls['business-craft-number-of-word'] =
             'section'           =>  'business-craft-our-service-section-page',
             'type'              =>  'number',
             'input_attrs' =>   array( 'min' =>   1, 'max' =>   200),
-            'priority'          =>  10,
+            'priority'          =>  20,
             'active_callback'   =>  ''    
         )
     );
@@ -53,7 +86,7 @@ $business_craft_settings_controls['business-craft-select-number-page'] =
 				2				=>   esc_html__('2','business-craft'),
 				3 				=>  esc_html__('3','business-craft')
 			),
-			'priority'			=>  20,
+			'priority'			=>  25,
 			'active_callback'	=>  ''	
 		)
 	);
@@ -81,7 +114,7 @@ $business_craft_repeated_settings_controls['business-craft-our-service-page'] =
                 'label'                 =>    esc_html__( 'Select Icon Color For Our Page %s', 'business-craft' ),
                 'section'               =>   'business-craft-our-service-section-page',
                 'type'                  =>   'color',
-                'priority'              =>   30,
+                'priority'              =>   35,
                 'description'           =>   ''
             )
         ),
@@ -94,7 +127,7 @@ $business_craft_repeated_settings_controls['business-craft-our-service-page'] =
                 'label'                 =>    esc_html__( 'Select Page For Our Page %s', 'business-craft' ),
                 'section'               =>   'business-craft-our-service-section-page',
                 'type'                  =>   'dropdown-pages',
-                'priority'              =>   30,
+                'priority'              =>   40,
                 'description'           =>   ''
             )
         ),

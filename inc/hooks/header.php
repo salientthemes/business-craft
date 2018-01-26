@@ -234,7 +234,7 @@ function business_craft_header()
                             wp_nav_menu( array(
                             'theme_location' => 'menu-1',
                             'menu_id'        => 'primary-menu',
-                            'fallback_cb'    => '__return_false'
+                            'fallback_cb'    => 'bussiness_craft_primary_menu_callback'
                         ) );
                         ?>                      
                     </nav><!-- #site-navigation -->
@@ -253,7 +253,7 @@ function business_craft_header()
                             wp_nav_menu( array(
                             'theme_location' => 'menu-2',
                             'menu_id'        => 'social-menu',
-                            'fallback_cb'    => '__return_false'
+                            'fallback_cb'    => 'bussiness_craft_social_menu_callback'
                         ) );
                         ?>      
                     </div>
