@@ -2177,7 +2177,7 @@ section#testimonials-section {
 }
 
 .testi-overlay h2 {
-	color: #fff;
+	color: #fff !important;
 }
 
 .testimonials-wrapper h3 {
