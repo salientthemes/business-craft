@@ -1824,8 +1824,7 @@ a.border-btn:after {
 a.border-btn:hover,
 a.border-btn:focus,
 a.border-btn:active {
-	background: #fff;
-	color: #000;
+	color: #fff !important;
 	text-decoration: none;
 	border: 2px solid #0000007d;
 	box-shadow: none;
