@@ -168,44 +168,44 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                 <div class="icon-left">
                                     <?php if ( isset($about_icon_1) && !empty($about_icon_1) ){?> 
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <a href="#tab-1" data-toggle="tab">
+                                        <div data-target="#tab-1" class="tab-heading">
                                             <div class="feature-items clearfix">
                                                 
                                                 <i test style="color: <?php echo $about_icon_color_1;?> " class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
                                                 <div class="texts">                                              
-                                                    <h4><?php echo esc_html($about_title_1); ?></h4>
+                                                    <h4><a href="<?php echo esc_url($about_link_1); ?>"><?php echo esc_html($about_title_1); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_1); ?></p>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div><!-- col-md-4 -->
                                     <?php } ?>
                                     
                                     <?php if ( isset($about_icon_2 ) && !empty($about_icon_2 ) ){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <a href="#tab-2" data-toggle="tab">
+                                        <div data-target="#tab-2" class="tab-heading">
                                             <div class="feature-items clearfix">
                                                 <i style="color: <?php echo ($about_icon_color_2);?>" class="fa <?php echo esc_attr($about_icon_2); ?>"></i>
                                                 <div class="texts">
-                                                    <h4><?php echo esc_html($about_title_2); ?></h4>
+                                                    <h4><a href="<?php echo esc_url($about_link_2); ?>"><?php echo esc_html($about_title_2); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_2); ?></p>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div><!-- col-md-4 -->
                                     <?php } ?>
 
                                     <?php if ( isset($about_icon_3) && !empty($about_icon_3) ){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <a href="#tab-3" data-toggle="tab">
+                                        <div data-target="#tab-3" class="tab-heading">
                                             <div class="feature-items clearfix">
                                                 <i  style="color: <?php echo ($about_icon_color_3);?>" class="fa <?php echo esc_attr($about_icon_3); ?>"></i>
                                                 <div class="texts">
-                                                    <h4><?php echo esc_html($about_title_3); ?></h4>
+                                                    <h4><a href="<?php echo esc_url($about_link_3); ?>"><?php echo esc_html($about_title_3); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_3); ?></p>
                                                 </div>
                                             </div>
-                                        </a>
+                                        </div>
                                     </div><!-- col-md-4 --> 
                                     <?php } ?>                            
                                 </div>
