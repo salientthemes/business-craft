@@ -9,10 +9,7 @@ get_header();
 if ( 'posts' == get_option( 'show_on_front' ) ) {
     include( get_home_template() );    
 } else {
-    /*echo "<pre>";
-     print_r( $business_craft_customizer_all_values) ;
-     echo "</pre>";
-    die();*/
+   
     if ( 1 == $business_craft_customizer_all_values['business-craft-feature-slider-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-feature-enable'] || 1 == $business_craft_customizer_all_values['business-craft-about-us-enable-option'] || 1 == $business_craft_customizer_all_values['business-craft-our-service-enable'] || 1 == $business_craft_customizer_all_values['business-craft-single-button-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-testimonial-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-blog-enable'] ) {
            
         

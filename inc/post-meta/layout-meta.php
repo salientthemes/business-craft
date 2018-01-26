@@ -33,34 +33,34 @@ function business_craft_add_layout_metabox() {
 /* business-craft sidebar layout */
 $business_craft_default_layout_options = array(
     'left-sidebar' => array(
-        'value'     => 'left-sidebar',
+        'value'     => esc_attr( 'left-sidebar' ),
         'thumbnail' => get_template_directory_uri() . '/inc/images/left-sidebar.png'
     ),
     'right-sidebar' => array(
-        'value' => 'right-sidebar',
+        'value' => esc_attr( 'right-sidebar' ),
         'thumbnail' => get_template_directory_uri() . '/inc/images/right-sidebar.png'
     ),
     'no-sidebar' => array(
-        'value'     => 'no-sidebar',
+        'value'     => esc_attr( 'no-sidebar' ),
         'thumbnail' => get_template_directory_uri() . '/inc/images/no-sidebar.png'
     )
 );
 /* business-craft featured layout */
 $business_craft_single_post_image_align_options = array(
     'full' => array(
-        'value' => 'full',
+        'value' => esc_attr( 'full' ),
         'label' => esc_html__( 'Full', 'business-craft' )
     ),
     'right' => array(
-        'value' => 'right',
+        'value' => esc_attr( 'right' ),
         'label' => esc_html__( 'Right ', 'business-craft' ),
     ),
     'left' => array(
-        'value'     => 'left',
+        'value'     => esc_attr( 'left' ),
         'label' => esc_html__( 'Left', 'business-craft' ),
     ),
     'no-image' => array(
-        'value'     => 'no-image',
+        'value'     => esc_attr( 'no-image' ),
         'label' => esc_html__( 'No Image', 'business-craft' )
     )
 );
@@ -81,7 +81,7 @@ function business_craft_layout_options_callback() {
     <table class="form-table page-meta-box">
         <!--Image alignment-->
         <tr>
-            <td colspan="4"><em class="f13"><?php _e( 'Choose Sidebar Template', 'business-craft' ); ?></em></td>
+            <td colspan="4"><em class="f13"><?php esc_html_e( 'Choose Sidebar Template', 'business-craft' ); ?></em></td>
         </tr>
         <tr>
             <td>
@@ -106,11 +106,11 @@ function business_craft_layout_options_callback() {
             </td>
         </tr>
         <tr>
-            <td><em class="f13"><?php _e( 'You can set up the sidebar content', 'business-craft' ); ?> <a href="<?php echo esc_url( admin_url('/widgets.php') ); ?>"><?php _e( 'here', 'business-craft' ); ?></a></em></td>
+            <td><em class="f13"><?php esc_html_e( 'You can set up the sidebar content', 'business-craft' ); ?> <a href="<?php echo esc_url( admin_url('/widgets.php') ); ?>"><?php esc_html_e( 'here', 'business-craft' ); ?></a></em></td>
         </tr>
         <!--Image alignment-->
         <tr>
-            <td colspan="4"><?php _e( 'Featured Image Alignment', 'business-craft' ); ?></td>
+            <td colspan="4"><?php esc_html_e( 'Featured Image Alignment', 'business-craft' ); ?></td>
         </tr>
         <tr>
             <td>
