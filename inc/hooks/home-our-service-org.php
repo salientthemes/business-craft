@@ -168,7 +168,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                 <div class="icon-left">
                                     <?php if ( isset($about_icon_1) && !empty($about_icon_1) ){?> 
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div href="#tab-1" data-toggle="tab">
+                                        <div data-toggle="tab">
                                             <div class="feature-items clearfix">
                                                 
                                                 <i test style="color: <?php echo $about_icon_color_1;?> " class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
@@ -183,7 +183,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                     
                                     <?php if ( isset($about_icon_2 ) && !empty($about_icon_2 ) ){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div href="#tab-2" data-toggle="tab">
+                                        <div data-toggle="tab">
                                             <div class="feature-items clearfix">
                                                 <i style="color: <?php echo ($about_icon_color_2);?>" class="fa <?php echo esc_attr($about_icon_2); ?>"></i>
                                                 <div class="texts">
@@ -197,7 +197,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
 
                                     <?php if ( isset($about_icon_3) && !empty($about_icon_3) ){?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div href="#tab-3" data-toggle="tab">
+                                        <div data-toggle="tab">
                                             <div class="feature-items clearfix">
                                                 <i  style="color: <?php echo ($about_icon_color_3);?>" class="fa <?php echo esc_attr($about_icon_3); ?>"></i>
                                                 <div class="texts">
