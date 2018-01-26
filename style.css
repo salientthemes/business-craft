@@ -1856,7 +1856,7 @@ a.border-btn:active {
 	position: absolute;
 	left: 0px;
 	width: 50px;
-	border-bottom: 2px solid #2a3aff;
+	border-bottom: 2px solid;
 	bottom: 0;
 	margin: auto;
 	right: 0;
