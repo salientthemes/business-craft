@@ -266,7 +266,8 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 			.widget ul li a:active,
 			section#meet-us .meet-us-content h4 a,
 			p.site-title a:hover, p.site-title a:focus, .site-branding h1 a:hover, .site-branding h1 a:focus,
-			.main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active
+			.main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active,
+			body a:hover, body a:focus, body a:active
 	        {
 	        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
 	        }
