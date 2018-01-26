@@ -59,8 +59,12 @@
 
     // chane image on hover tab
     $(document).off('click.bs.tab.data-api', '[data-hover="tab"]');
-    $(document).on('mouseenter.bs.tab.data-api', '[data-toggle="tab"], [data-hover="tab"]', function () {
+    $(document).on('mouseenter.bs.tab.data-api', '[data-hover="tab"]', function () {
       $(this).tab('show');
+    });
+
+    $(document).on( 'hover', '.tab-heading', function () {     
+      jQuery(this).tab('show');
     });
 
     $("#header-search").click(function () {
