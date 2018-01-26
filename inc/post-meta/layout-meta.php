@@ -140,8 +140,12 @@ function business_craft_layout_options_callback() {
  */
 function business_craft_save_sidebar_layout( $post_id ) {
     global $post;
+
+    if ( isset( $_POST['business_craft_layout_options_nonce'] ) ) {
+        $_POST[ 'business_craft_layout_options_nonce' ] = sanitize_text_field( wp_unslash( $_POST[ 'business_craft_layout_options_nonce' ] ) );
+    }
     // Verify the nonce before proceeding.
-    if ( !isset( $_POST[ 'business_craft_layout_options_nonce' ] ) || !wp_verify_nonce( $_POST[ 'business_craft_layout_options_nonce' ], basename( __FILE__ ) ) )  {
+    if ( !isset( $_POST['business_craft_layout_options_nonce'] ) || !wp_verify_nonce( sanitize_key( $_POST[ 'business_craft_layout_options_nonce' ] ), basename( __FILE__ ) ) )  {
         return;
     }
 
@@ -154,24 +158,27 @@ function business_craft_save_sidebar_layout( $post_id ) {
         return $post_id;
     }
     
-    if(isset($_POST['business-craft-default-layout'])){
-        $old = get_post_meta( $post_id, 'business-craft-default-layout', true);
-        $new = sanitize_text_field(wp_unslash($_POST['business-craft-default-layout']));
-        if ($new && $new != $old) {
-            update_post_meta($post_id, 'business-craft-default-layout', $new);
-        } elseif ('' == $new && $old) {
-            delete_post_meta($post_id,'business-craft-default-layout', $old);
+    if ( isset( $_POST['business-craft-default-layout'] ) ) {
+        
+        $old = get_post_meta( $post_id, 'business-craft-default-layout', true );
+        $new = sanitize_text_field( wp_unslash( $_POST['business-craft-default-layout'] ) );
+        
+        if ( $new && $new != $old ) {
+            update_post_meta( $post_id, 'business-craft-default-layout', $new );
+        } elseif ( '' == $new && $old ) {
+            delete_post_meta( $post_id,'business-craft-default-layout', $old );
         }
     }
 
     /*image align*/
-    if(isset($_POST['business-craft-single-post-image-align'])){
-        $old = get_post_meta( $post_id, 'business-craft-single-post-image-align', true);
-        $new = sanitize_text_field(wp_unslash($_POST['business-craft-single-post-image-align']) );
-        if ($new && $new != $old) {
-            update_post_meta($post_id, 'business-craft-single-post-image-align', $new);
-        } elseif ('' == $new && $old) {
-            delete_post_meta($post_id,'business-craft-single-post-image-align', $old);
+    if( isset( $_POST['business-craft-single-post-image-align'] ) ) {
+        $old = get_post_meta( $post_id, 'business-craft-single-post-image-align', true );
+        $new = sanitize_text_field( wp_unslash( $_POST['business-craft-single-post-image-align'] ) );
+        
+        if ( $new && $new != $old ) {
+            update_post_meta( $post_id, 'business-craft-single-post-image-align', $new );
+        } elseif ( '' == $new && $old ) {
+            delete_post_meta( $post_id,'business-craft-single-post-image-align', $old );
         }
     }
 }

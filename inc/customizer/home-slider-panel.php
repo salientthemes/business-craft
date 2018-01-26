@@ -17,8 +17,9 @@ $business_craft_customizer_defaults['business-craft-fs-button-text'] = esc_html_
 
 $business_craft_sections['business-craft-featured-slider'] =
     array(
-        'priority'       =>   250,
-        'title'          =>   esc_html__( 'Home Page Slider Section', 'business-craft' ),
+        'priority'       =>   10,
+        'title'          =>   esc_html__( 'Slider', 'business-craft' ),
+        'panel'             =>'business_craft_home_panel',
    	);
 
 

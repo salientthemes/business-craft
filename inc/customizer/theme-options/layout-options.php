@@ -139,10 +139,10 @@ $business_craft_settings_controls['business-craft-single-post-image-align'] =
             'section'               =>   'business-craft-layout-options',
             'type'                  =>   'select',
             'choices'               =>   array(
-                'full' =>   esc_html__( 'Full', 'business-craft' ),
-                'right' =>   esc_html__( 'Right', 'business-craft' ),
-                'left' =>   esc_html__( 'Left', 'business-craft' ),
-                'no-image' =>   esc_html__( 'No image', 'business-craft' )
+                'full'      =>   esc_html__( 'Full', 'business-craft' ),
+                'right'     =>   esc_html__( 'Right', 'business-craft' ),
+                'left'      =>   esc_html__( 'Left', 'business-craft' ),
+                'no-image'  =>   esc_html__( 'No image', 'business-craft' )
             ),
             'priority'              =>   50,
             'description'           =>    esc_html__( 'Please note that this setting can be override from individual post/page', 'business-craft' ),

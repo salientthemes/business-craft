@@ -266,7 +266,8 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 			.widget ul li a:active,
 			section#meet-us .meet-us-content h4 a,
 			p.site-title a:hover, p.site-title a:focus, .site-branding h1 a:hover, .site-branding h1 a:focus,
-			.main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active
+			.main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active,
+			body a:hover, body a:focus, body a:active
 	        {
 	        	color: <?php echo esc_attr( $business_craft_primary_color_option ) ;?>!important;;
 	        }
@@ -287,9 +288,10 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 	        if( !empty($business_craft_section_header_color_option) )
 	        {
 	        ?>
-	            .sec-title h2
+	            .sec-title h2,
+	            .sec-title h2:after
 	            {
-	                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>;
+	                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>!important;;
 	            }
 	        <?php
 	        } ?>
@@ -299,3 +301,37 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
         </style>       
      <?php }
  endif;
+
+
+if ( ! function_exists( ' bussiness_craft_primary_menu_callback' ) ) :
+	/**
+	 * Fallback menu to primary menu 
+	 * 
+	 * @since  business-craft 1.0.1
+	 */
+	function bussiness_craft_primary_menu_callback() {
+		?>
+		<ul id="menu">
+			<li><a href="<?php echo esc_url( home_url('/') );?>"><?php esc_html_e( 'Home', 'business-craft' );?></a></li>
+			<li><a href="<?php echo esc_url( admin_url('/nav-menus.php' ) );?>"><?php esc_html_e( 'Set primary menu', 'business-craft' );?></a></li>
+		</ul>
+		<?php
+	}
+endif;
+
+if ( ! function_exists( ' bussiness_craft_social_menu_callback' ) ) :
+	/**
+	 * Fallback menu to social menu 
+	 * 
+	 * @since  business-craft 1.0.1
+	 */
+	function bussiness_craft_social_menu_callback(){
+		?>
+		<ul id="menu">
+			<li><a href="<?php echo esc_url( 'https://facebook.com/salientthemes1' );?>" target="_tab"><?php echo esc_html_e('Facebook', 'business-craft' );?></a></li>
+			<li><a href="<?php echo esc_url( 'https://twitter.com/salient_themes' );?>" target="_tab"><?php echo esc_html_e('Twitter', 'business-craft' );?></a></li>
+		</ul>
+		<?php
+	}
+endif;
+

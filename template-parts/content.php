@@ -33,60 +33,44 @@ global $business_craft_customizer_all_values;
 		<?php
 		$business_craft_archive_layout = $business_craft_customizer_all_values['business-craft-archive-layout'];
 		$business_craft_archive_image_align = $business_craft_customizer_all_values['business-craft-archive-image-align'];
-		if( 'excerpt-only' == $business_craft_archive_layout )
-		{
+		$business_craft_single_image_align = $business_craft_customizer_all_values['business-craft-single-post-image-align'];
+		if ( 'excerpt-only' == $business_craft_archive_layout ) {
 			the_excerpt();
-		}
-		elseif( 'full-post' == $business_craft_archive_layout )
-		{
+		} elseif ( 'full-post' == $business_craft_archive_layout ) {
 			the_content( sprintf(
 			/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'business-craft' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
-		}
-		elseif( 'thumbnail-and-full-post' == $business_craft_archive_layout )
-		{
-			if( 'left' == $business_craft_archive_image_align )
-			{
-				echo "<div class='image-left'>";
-				the_post_thumbnail('medium');
-			}
-			elseif( 'right' == $business_craft_archive_image_align )
-			{
-				echo "<div class='image-right'>";
-				the_post_thumbnail('medium');
-			}
-			else
-			{
+		} elseif ( 'thumbnail-and-full-post' == $business_craft_archive_layout ) {
+
+			if ( 'full' == $business_craft_archive_image_align ) {
 				echo "<div class='image-full'>";
 				the_post_thumbnail('full');
+			} else {
+				echo "<div class='image-" . $business_craft_archive_image_align . "'>";
+				the_post_thumbnail('medium');
 			}
+			
 			echo "</div>";/*div end*/
 			the_content( sprintf(
 			/* translators: %s: Name of current post. */
 				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'business-craft' ), array( 'span' => array( 'class' => array() ) ) ),
 				the_title( '<span class="screen-reader-text">"', '"</span>', false )
 			) );
-		}
-		else
-		{
-			if( 'left' == $business_craft_archive_image_align )
-			{
-				echo "<div class='image-left'>";
-				the_post_thumbnail('medium');
-			}
-			elseif( 'right' == $business_craft_archive_image_align )
-			{
-				echo "<div class='image-right'>";
-				the_post_thumbnail('medium');
-			}
-			else
-			{
+		} else {
+			
+			if ( 'full' == $business_craft_single_image_align ) {
 				echo "<div class='image-full'>";
 				the_post_thumbnail('full');
+				echo "</div>";
+			} elseif ( 'left' == $business_craft_single_image_align || 'right' == $business_craft_single_image_align ) {
+				
+				echo "<div class='image-" . $business_craft_single_image_align . "'>";
+				the_post_thumbnail('medium');
+				echo "</div>";
 			}
-			echo "</div>";/*div end*/
+			/*div end*/
 			the_excerpt();
 		}
 		?>

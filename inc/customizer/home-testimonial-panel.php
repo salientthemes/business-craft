@@ -19,8 +19,9 @@ $business_craft_customizer_defaults['business-craft-home-testimonial-image'] = g
 
 $business_craft_sections['business-craft-home-testimonial'] =
     array(
-        'title'          => esc_html__( 'Home Page Testimonial Section', 'business-craft' ),
-        'priority'       => 300
+        'title'          => esc_html__( 'Testimonial', 'business-craft' ),
+        'panel'             =>'business_craft_home_panel',
+        'priority'       => 35
    	);
 
 $business_craft_settings_controls['business-craft-home-testimonial-enable'] =

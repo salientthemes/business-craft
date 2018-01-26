@@ -20,8 +20,9 @@ $business_craft_customizer_defaults['business-craft-icon-color'] = '#401010';
 
 $business_craft_sections['business-craft-home-feature'] =
     array(
-        'title'          =>   esc_html__( 'Home Page Feature Section', 'business-craft' ),
-        'priority'       =>   260
+        'title'          =>   esc_html__( 'Feature', 'business-craft' ),
+        'panel'             =>'business_craft_home_panel',
+        'priority'       =>   15
    	);
 
 $business_craft_settings_controls['business-craft-home-feature-enable'] =
