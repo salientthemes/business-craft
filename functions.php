@@ -293,6 +293,10 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 	            {
 	                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>!important;;
 	            }
+	            .sec-title h2:after
+	            {
+	                border-color: <?php echo esc_attr( $business_craft_section_header_color_option );?>!important;;
+	            }
 	        <?php
 	        } ?>
 	        
