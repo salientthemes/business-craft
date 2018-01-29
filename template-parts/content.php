@@ -33,7 +33,18 @@ global $business_craft_customizer_all_values;
 		<?php
 		$business_craft_archive_layout = $business_craft_customizer_all_values['business-craft-archive-layout'];
 		$business_craft_archive_image_align = $business_craft_customizer_all_values['business-craft-archive-image-align'];
-		$business_craft_single_image_align = $business_craft_customizer_all_values['business-craft-single-post-image-align'];
+
+		$business_craft_single_image_align = get_post_meta( get_the_ID(), 'business-craft-single-post-image-align', true );
+		
+		/**
+		 * condition for checkking image position
+		 * if false then take global theme option value
+		 */ 
+        if( !$business_craft_single_image_align ) {
+
+			$business_craft_single_image_align = $business_craft_customizer_all_values['business-craft-single-post-image-align'];
+        }
+
 		if ( 'excerpt-only' == $business_craft_archive_layout ) {
 			the_excerpt();
 		} elseif ( 'full-post' == $business_craft_archive_layout ) {
