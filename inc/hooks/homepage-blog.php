@@ -76,7 +76,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                                                             $archive_month = get_the_time('m'); 
                                                             $archive_day   = get_the_time('d'); 
                                                             ?>
-                                                            <a href="<?php echo get_day_link($archive_year, $archive_month, $archive_day); ?>"><?php echo get_the_date('M j , Y');?></a>
+                                                            <a href="<?php echo esc_url(get_day_link($archive_year, $archive_month, $archive_day) ); ?>"><?php echo esc_html(get_the_date('M j , Y') );?></a>
                                                         </span>                                                       
                                                     </div>
                                                 </div><!-- text content -->    
