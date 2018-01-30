@@ -332,8 +332,7 @@ if ( ! function_exists( ' bussiness_craft_social_menu_callback' ) ) :
 	function bussiness_craft_social_menu_callback(){
 		?>
 		<ul id="menu">
-			<li><a href="<?php echo esc_url( 'https://facebook.com/salientthemes1' );?>" target="_tab"><?php echo esc_html_e('Facebook', 'business-craft' );?></a></li>
-			<li><a href="<?php echo esc_url( 'https://twitter.com/salient_themes' );?>" target="_tab"><?php echo esc_html_e('Twitter', 'business-craft' );?></a></li>
+			<li><a href="#" target="_tab"><?php echo esc_html_e('WordPress', 'business-craft' );?></a></li>
 		</ul>
 		<?php
 	}

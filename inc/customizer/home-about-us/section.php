@@ -5,9 +5,11 @@ global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defults;
 
+$business_craft_customizer_defaults['business-craft-about-us-enable-option'] = 0;
 $business_craft_customizer_defaults['business-craft-page-selection'] = 2;
 $business_craft_customizer_defaults['business-craft-about-us-page'] = 0;
 $business_craft_customizer_defaults['business-craft-about-us-single-word'] = 30;
+$business_craft_customizer_defaults['business-craft-about-us-main-title-text'] = esc_html__('ABOUT US','business-craft');
 
 
 // crate a panle for baout us

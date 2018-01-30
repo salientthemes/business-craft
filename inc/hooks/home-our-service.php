@@ -171,7 +171,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                         <div data-target="#tab-1" class="tab-heading">
                                             <div class="feature-items clearfix">
                                                 
-                                                <i test style="color: <?php echo $about_icon_color_1;?> " class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
+                                                <i test style="color: <?php echo esc_attr($about_icon_color_1) ;?> " class="fa <?php echo esc_attr($about_icon_1); ?>"></i>
                                                 <div class="texts">                                              
                                                     <h4><a href="<?php echo esc_url($about_link_1); ?>"><?php echo esc_html($about_title_1); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_1); ?></p>
@@ -185,7 +185,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div data-target="#tab-2" class="tab-heading">
                                             <div class="feature-items clearfix">
-                                                <i style="color: <?php echo ($about_icon_color_2);?>" class="fa <?php echo esc_attr($about_icon_2); ?>"></i>
+                                                <i style="color: <?php echo esc_attr($about_icon_color_2);?>" class="fa <?php echo esc_attr($about_icon_2); ?>"></i>
                                                 <div class="texts">
                                                     <h4><a href="<?php echo esc_url($about_link_2); ?>"><?php echo esc_html($about_title_2); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_2); ?></p>
@@ -199,7 +199,7 @@ if ( ! function_exists( 'business_craft_home_service_section' ) ) :
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div data-target="#tab-3" class="tab-heading">
                                             <div class="feature-items clearfix">
-                                                <i  style="color: <?php echo ($about_icon_color_3);?>" class="fa <?php echo esc_attr($about_icon_3); ?>"></i>
+                                                <i  style="color: <?php echo esc_attr($about_icon_color_3);?>" class="fa <?php echo esc_attr($about_icon_3); ?>"></i>
                                                 <div class="texts">
                                                     <h4><a href="<?php echo esc_url($about_link_3); ?>"><?php echo esc_html($about_title_3); ?></a></h4>
                                                     <p><?php echo wp_kses_post($about_content_3); ?></p>
