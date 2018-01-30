@@ -99,7 +99,7 @@ $business_craft_repeated_settings_controls['business-craft-our-service-page'] =
                 'default'              =>   $business_craft_customizer_defaults['business-craft-our-service-icon'],
             ),
             'control' =>   array(
-                'label'                 =>    esc_html__( 'Select Page For Our Page Icon %s', 'business-craft' ),
+                'label'                 =>    esc_html__( 'Select Page For Service Page Icon %s', 'business-craft' ),
                 'description'           =>   sprintf( esc_html__( 'Use font awesome icon: Eg: %1$s . %2$s See more here %3$s', 'business-craft' ), 'fa-desktop','<a href="'.esc_url('http://fontawesome.io/cheatsheet/').'" target="_blank">','</a>' ),
                 'section'               =>   'business-craft-our-service-section-page',
                 'type'                  =>   'text',
