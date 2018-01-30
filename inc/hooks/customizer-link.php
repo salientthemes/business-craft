@@ -2,6 +2,17 @@
 
 if ( ! function_exists('customizer_link') ) : 
 
+
+  /**
+    * customizer link 
+    *
+    * @since business-craft 1.0.0
+    *
+    * @param null
+    * @return null
+    */
+
+
 	function customizer_link()
 	{
 		global $business_craft_customizer_all_values;
