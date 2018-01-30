@@ -74,7 +74,7 @@ $business_craft_settings_controls['business-craft-about-us-single-word'] =
 			'default'			=>$business_craft_customizer_defaults['business-craft-about-us-single-word']
 		),
 		'control'				=>array(
-			'label'				=>esc_html__('Select Number Of Page','business-craft'),
+			'label'				=>esc_html__('Select Number Of Word','business-craft'),
 			'section'			=>'business_craft_about_panel',
 			'type'				=> 'number',
 			'priority'			=> 25,

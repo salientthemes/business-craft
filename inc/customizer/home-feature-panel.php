@@ -31,7 +31,7 @@ $business_craft_settings_controls['business-craft-home-feature-enable'] =
             'default'              =>   $business_craft_customizer_defaults['business-craft-home-feature-enable']
         ),
         'control' =>   array(
-            'label'                 =>    esc_html__( 'Enable Service', 'business-craft' ),
+            'label'                 =>    esc_html__( 'Enable Feature', 'business-craft' ),
             'section'               =>   'business-craft-home-feature',
             'type'                  =>   'checkbox',
             'priority'              =>   10,
@@ -90,7 +90,7 @@ $business_craft_repeated_settings_controls['business-craft-home-feature-font-ico
                 'default'       =>  $business_craft_customizer_defaults['business-craft-icon-color']
             ),
             'control' =>   array(
-                'label'                 =>    esc_html__( 'Select Icon Color For Service %s', 'business-craft' ),
+                'label'                 =>    esc_html__( 'Select Icon Color For Feature %s', 'business-craft' ),
                 'section'               =>   'business-craft-home-feature',
                 'type'                  =>   'color',
                 'priority'              =>   60,
@@ -102,7 +102,7 @@ $business_craft_repeated_settings_controls['business-craft-home-feature-font-ico
                 'default'              =>   $business_craft_customizer_defaults['business-craft-home-feature-pages'],
             ),
             'control' =>   array(
-                'label'                 =>    esc_html__( 'Select Page For Service %s', 'business-craft' ),
+                'label'                 =>    esc_html__( 'Select Page For Feature %s', 'business-craft' ),
                 'section'               =>   'business-craft-home-feature',
                 'type'                  =>   'dropdown-pages',
                 'priority'              =>   60,
