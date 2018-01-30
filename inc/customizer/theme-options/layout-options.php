@@ -5,7 +5,7 @@ global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
 /*defaults values*/
-$business_craft_customizer_defaults['business-craft-enable-static-page'] = 0;
+$business_craft_customizer_defaults['business-craft-enable-static-page'] = 1;
 $business_craft_customizer_defaults['business-craft-default-banner-image'] = get_template_directory_uri().'/assets/images/banner-image.jpg';
 $business_craft_customizer_defaults['business-craft-default-layout'] = 'right-sidebar';
 $business_craft_customizer_defaults['business-craft-number-of-words'] = 30;

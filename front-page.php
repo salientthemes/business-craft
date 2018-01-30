@@ -10,7 +10,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
     include( get_home_template() );    
 } else {
    
-    if ( 1 == $business_craft_customizer_all_values['business-craft-feature-slider-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-feature-enable'] || 1 == $business_craft_customizer_all_values['business-craft-about-us-enable-option'] || 1 == $business_craft_customizer_all_values['business-craft-our-service-enable'] || 1 == $business_craft_customizer_all_values['business-craft-single-button-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-testimonial-enable'] || 1 == $business_craft_customizer_all_values['business-craft-home-blog-enable'] ) {
+    
            
         
         /**
@@ -26,7 +26,7 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
 
         $business_craft_static_page = absint($business_craft_customizer_all_values['business-craft-enable-static-page']);
         // $business_craft_static_page = 1;
-        if ($business_craft_static_page == 1) { ?>
+        if ($business_craft_static_page  == 1) { ?>
             <div id="content" class="site-content container">
                 <div id="primary" class="content-area col-sm-8">
                     <main id="main" class="site-main" role="main">
@@ -48,19 +48,8 @@ if ( 'posts' == get_option( 'show_on_front' ) ) {
                 <?php get_sidebar(); ?>                
             </div>
         <?php }
-    } else {
-        if ( current_user_can( 'edit_theme_options' ) ) { ?>
-            <section class="wrapper display-info">
-                <div class="container">
-                   <?php
-                   
-                    printf(__('All Section are based on page. Enable each Section from customizer for %1$s slider: Home/Front Main Slider -> Setting Options -> Enable. likewise to other sections %2$s %3$s click here %4$s ','business-craft'), '<br />','<br />','<a class="button" href="' . esc_url( admin_url( 'customize.php' ) ) . '">', '</a>');
-                    ?>
+        
+     do_action('business_craft_customizer_link');
 
-                   
-                </div>
-            </section>
-        <?php }        
-    }
 }
 get_footer();
