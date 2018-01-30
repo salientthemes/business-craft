@@ -32,7 +32,7 @@ $business_craft_settings_controls['business-craft-enable-static-page'] =
         ),
         'control' =>   array(
             'label'                 =>    esc_html__( 'Enable Static Front Page', 'business-craft' ),
-            'description'           =>    esc_html__( 'If you disable this the static page will be disappera form the home page and other section from customizer will reamin as it is', 'business-craft' ),
+            'description'           =>    esc_html__( 'If you disable this the static page will be disappear form the home page and other section from customizer will remain as it is', 'business-craft' ),
             'section'               =>   'business-craft-layout-options',
             'type'                  =>   'checkbox',
             'priority'              =>   10,
