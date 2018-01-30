@@ -1,0 +1,824 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-30 18:16+0545\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: 404.php:17 inc/function/inner-head.php:34
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:34
+msgid "Most Used Categories"
+msgstr ""
+
+#: 404.php:51
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:40
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:49 inc/customizer/color/color.php:28
+msgid "Primary"
+msgstr ""
+
+#: functions.php:50
+msgid "social"
+msgstr ""
+
+#: functions.php:319 assets/breadcrumbs/breadcrumbs.php:246
+msgid "Home"
+msgstr ""
+
+#: functions.php:320
+msgid "Set primary menu"
+msgstr ""
+
+#: functions.php:335
+msgid "WordPress"
+msgstr ""
+
+#: search.php:21 inc/function/inner-head.php:41
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:244
+msgid "Browse:"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:245
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:247
+msgid "404 Not Found"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:248
+msgid "Archives"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:250
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:252
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:254
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:256
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:708
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:725
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:742
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:758
+#: assets/breadcrumbs/breadcrumbs.php:787
+#: assets/breadcrumbs/breadcrumbs.php:814
+#: assets/breadcrumbs/breadcrumbs.php:841
+#: assets/breadcrumbs/breadcrumbs.php:1181
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:759
+#: assets/breadcrumbs/breadcrumbs.php:815
+#: assets/breadcrumbs/breadcrumbs.php:1185
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:760
+#: assets/breadcrumbs/breadcrumbs.php:1189
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: assets/breadcrumbs/breadcrumbs.php:788
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/sidebar-widget.php:11
+msgid "Sidebar"
+msgstr ""
+
+#: inc/template-tags.php:32
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:37
+#, php-format
+msgctxt "post author"
+msgid "By %s"
+msgstr ""
+
+#: inc/template-tags.php:54
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:57
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:61
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:64
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:74
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:91
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:10
+msgid "FROM OUR BLOG"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:13
+msgid "Browse more"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:19
+msgid "Latest News"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:29
+msgid "Enable Blog Section"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:30
+msgid "Enable \"Blog Section\" on checked"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:45
+msgid "Blog Section Title"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:61
+msgid "Number Of Words"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:62
+msgid ""
+"Give number of words you wish to be appear on home page blog section sticky "
+"post/ feature post"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:79
+msgid "Select Category For Blog"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:80
+msgid "Blog will only displayed from this category"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:95
+msgid "Browse All Button Text"
+msgstr ""
+
+#: inc/customizer/home-blog-panel.php:109
+msgid "Browse All Button Link"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:10
+msgid "OUR FEATURE"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:23
+msgid "Feature"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:34
+msgid "Enable Feature"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:49
+msgid "Feature Section Title"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:63
+msgid "Number Of Words in Single Column Content"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:64
+#: inc/customizer/home-slider-panel.php:88
+#: inc/customizer/home-testimonial-panel.php:88
+msgid "If you do not have selected from - Custom"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:81
+#, php-format
+msgid "Icon %s"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:85
+#, php-format
+msgid "Use font awesome icon: Eg: %1$s. %2$s See more here %3$s"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:93
+#, php-format
+msgid "Select Icon Color For Feature %s"
+msgstr ""
+
+#: inc/customizer/home-feature-panel.php:105
+#, php-format
+msgid "Select Page For Feature %s"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:15
+msgid "View More"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:21
+msgid "Slider"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:33
+msgid "Enable Feature Slider"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:35
+msgid "Enable \"Feature slider\" on checked"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:49
+msgid "Number Of Slider"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:53
+#: inc/customizer/home-testimonial-panel.php:71
+#: inc/customizer/home-about-us/section.php:63
+#: inc/customizer/home-our-service/from-page.php:85
+#: inc/customizer/theme-options/footer.php:33
+msgid "1"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:54
+#: inc/customizer/home-testimonial-panel.php:72
+#: inc/customizer/home-about-us/section.php:64
+#: inc/customizer/home-our-service/from-page.php:86
+#: inc/customizer/theme-options/footer.php:34
+msgid "2"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:55
+#: inc/customizer/home-testimonial-panel.php:73
+#: inc/customizer/home-our-service/from-page.php:87
+#: inc/customizer/theme-options/footer.php:35
+msgid "3"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:71
+#, php-format
+msgid "Select Page For Slide %s"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:87
+msgid "Single Slider Number Of Words"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:103
+msgid "Enable Button"
+msgstr ""
+
+#: inc/customizer/home-slider-panel.php:117
+msgid "Slider Button Text"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:10
+msgid "Client Testimonials"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:22
+msgid "Testimonial"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:33
+msgid "Enable Testimonial"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:34
+msgid "Enable \"Testimonial selection\" on checked"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:51
+msgid "Testimonial Section Title"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:66
+msgid "Number Of Testimonial/s"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:67
+msgid "Choose number of Testimonial to be displayed"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:87
+msgid "Single Testimonial- Number Of Words"
+msgstr ""
+
+#: inc/customizer/home-testimonial-panel.php:106
+#, php-format
+msgid "Select Page For Testimonial %s"
+msgstr ""
+
+#: inc/customizer/homepage-panel.php:11
+msgid "Home Page"
+msgstr ""
+
+#: inc/customizer/color/color.php:16
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer/color/color.php:29
+msgid "Primary menu text color ( Default value is #37ce9c )"
+msgstr ""
+
+#: inc/customizer/color/color.php:44
+msgid "Section Header Color"
+msgstr ""
+
+#: inc/customizer/color/color.php:45
+msgid ""
+"This color will change in the all section heading.  Please select color "
+"according to your site ( (Default value is #000 )"
+msgstr ""
+
+#: inc/customizer/home-about-us/section.php:12
+msgid "ABOUT US"
+msgstr ""
+
+#: inc/customizer/home-about-us/section.php:18
+msgid "About Us"
+msgstr ""
+
+#: inc/customizer/home-about-us/section.php:29
+msgid "Enable About US "
+msgstr ""
+
+#: inc/customizer/home-about-us/section.php:44
+msgid "Title text "
+msgstr ""
+
+#: inc/customizer/home-about-us/section.php:59
+msgid "Select Number Of Page"
+msgstr ""
+
+#: inc/customizer/home-about-us/section.php:77
+msgid "Select Number Of Word"
+msgstr ""
+
+#: inc/customizer/home-about-us/section.php:94
+#, php-format
+msgid "Select Page  %s"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:14
+msgid "fa fa-desktop"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:18
+msgid "DESIGN. DEVELOP. DEDICATE"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:24
+msgid "Our Service"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:36
+msgid "Enable Our Service "
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:51
+msgid "Main Title Text Here"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:66
+msgid "Number of word"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:81
+msgid "Select Number of pages"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:102
+#, php-format
+msgid "Select Page For Service Page Icon %s"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:103
+#, php-format
+msgid "Use font awesome icon: Eg: %1$s . %2$s See more here %3$s"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:114
+#, php-format
+msgid "Select Icon Color For Our Page %s"
+msgstr ""
+
+#: inc/customizer/home-our-service/from-page.php:127
+#, php-format
+msgid "Select Page For Our Page %s"
+msgstr ""
+
+#: inc/customizer/home-single-button/options.php:10
+msgid "I AM GOING BY THIS PRODUCT"
+msgstr ""
+
+#: inc/customizer/home-single-button/options.php:17
+msgid "Call To Action"
+msgstr ""
+
+#: inc/customizer/home-single-button/options.php:29
+msgid "Enable Single Button"
+msgstr ""
+
+#: inc/customizer/home-single-button/options.php:44
+msgid "Button Text Here"
+msgstr ""
+
+#: inc/customizer/home-single-button/options.php:58
+msgid "Button Link Here"
+msgstr ""
+
+#: inc/customizer/site-identity/site-identity.php:12
+msgid "%$1s If you do not have a logo %$2s"
+msgstr ""
+
+#: inc/customizer/site-identity/site-identity.php:23
+msgid "Logo"
+msgstr ""
+
+#: inc/customizer/site-identity/site-identity.php:27
+msgid "Recommended logo size 165*50"
+msgstr ""
+
+#: inc/customizer/site-identity/site-identity.php:50
+msgid "Enable Title"
+msgstr ""
+
+#: inc/customizer/site-identity/site-identity.php:63
+msgid "Enable Tagline"
+msgstr ""
+
+#: inc/customizer/theme-options/back-to-top.php:13
+msgid "Back To Top Options"
+msgstr ""
+
+#: inc/customizer/theme-options/back-to-top.php:23
+msgid "Enable Back To Top"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:10
+msgid "Copyright © All right reserved"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:16
+msgid "Footer Section"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:28
+msgid "Select Number Of Siderbar In Footer"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:32
+msgid "Disable sidebar footer area"
+msgstr ""
+
+#: inc/customizer/theme-options/footer.php:51
+msgid "Copy Right Footer Text"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:22
+#: inc/customizer/theme-options/top-social-menu-icon.php:13
+msgid "Layout Options"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:34
+msgid "Enable Static Front Page"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:35
+msgid ""
+"If you disable this the static page will be disappear form the home page and "
+"other section from customizer will remain as it is"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:49
+msgid "Default Banner Image"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:50
+msgid ""
+"Please note that if you remove this image default banner image will appear"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:65
+msgid "Default Layout"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:66
+msgid "Layout for all archives, single posts and pages"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:70
+msgid "Content - Primary Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:71
+msgid "Primary Sidebar - Content"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:72
+msgid "No Sidebar"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:85
+msgid "Archive Layout"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:89
+msgid "Excerpt Only"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:90
+msgid "Thumbnail and Excerpt"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:103
+msgid "Archive Image Alignment"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:107
+#: inc/customizer/theme-options/layout-options.php:142
+#: inc/post-meta/layout-meta.php:52
+msgid "Full"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:108
+#: inc/customizer/theme-options/layout-options.php:143
+msgid "Right"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:111
+msgid ""
+"This option only work if you have selected \"Thumbnail and Excerpt\" or "
+"\"Thumbnail and Full Post\" in Archive Layout options"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:121
+msgid "Number Of Words For Excerpt"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:122
+msgid "This will controll the excerpt length on listing page"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:138
+msgid "Alignment Of Image In Single Post/Page"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:144
+#: inc/post-meta/layout-meta.php:60
+msgid "Left"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:145
+msgid "No image"
+msgstr ""
+
+#: inc/customizer/theme-options/layout-options.php:148
+msgid "Please note that this setting can be override from individual post/page"
+msgstr ""
+
+#: inc/customizer/theme-options/panel.php:11
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer/theme-options/top-social-menu-icon.php:25
+msgid "Enable top menu social icon"
+msgstr ""
+
+#: inc/customizer/theme-options/top-social-menu-icon.php:26
+msgid ""
+"If you disable a menu top social icon it will not appear in the top menu bar"
+msgstr ""
+
+#: inc/frameworks/salient-customizer/inc/custom-control/salient-category-control.php:34
+#: inc/frameworks/salient-customizer/inc/custom-control/salient-post-dropdown-control.php:48
+#: inc/frameworks/salient-customizer/inc/custom-control/salient-tags-dropdown-control.php:46
+#: inc/frameworks/salient-customizer/inc/custom-control/salient-user-dropdown-control.php:43
+msgid "Select"
+msgstr ""
+
+#: inc/hooks/customizer-link.php:29
+#, php-format
+msgid ""
+"All Section are based on page. Enable each Section from customizer for %1$s "
+"slider: Home page->slider->Enable feature slider. likewise to other sections "
+"%2$s %3$s click here %4$s "
+msgstr ""
+
+#: inc/hooks/footer.php:121
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: inc/hooks/header.php:160
+msgid "Skip to content"
+msgstr ""
+
+#: inc/hooks/home-aboutus.php:18
+msgid "Ultra Responsive Design"
+msgstr ""
+
+#: inc/hooks/home-aboutus.php:19
+msgid ""
+"WordPress is an award-winning web software, used by millions of webmasters "
+"worldwide for building their website or blog"
+msgstr ""
+
+#: inc/hooks/home-our-service.php:17
+msgid "our-service-title"
+msgstr ""
+
+#: inc/hooks/home-our-service.php:18
+msgid ""
+"Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Lorem "
+"ipsum dolor sit amet, consectetur adipiscing elit."
+msgstr ""
+
+#: inc/hooks/homepage-blog.php:127
+msgid "By: "
+msgstr ""
+
+#: inc/hooks/homepage-feature.php:18
+msgid "Clean Designs"
+msgstr ""
+
+#: inc/hooks/homepage-feature.php:19
+msgid ""
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. "
+"Lorem Ipsum has been the industry's standard dummy text."
+msgstr ""
+
+#: inc/hooks/homepage-feature.php:22 inc/hooks/homepage-feature.php:92
+msgid "Know More"
+msgstr ""
+
+#: inc/hooks/homepage-slider.php:16
+msgid "Welcome to The Digital Media"
+msgstr ""
+
+#: inc/hooks/homepage-slider.php:17
+msgid ""
+"Proin eget tortor risus. Vivamus magna justo, lacinia eget consectetur sed, "
+"convallis at tellus."
+msgstr ""
+
+#: inc/hooks/homepage-testimonial.php:17
+msgid "John Doe"
+msgstr ""
+
+#: inc/post-meta/layout-meta.php:24
+msgid "Layout options"
+msgstr ""
+
+#: inc/post-meta/layout-meta.php:56
+msgid "Right "
+msgstr ""
+
+#: inc/post-meta/layout-meta.php:64
+msgid "No Image"
+msgstr ""
+
+#: inc/post-meta/layout-meta.php:84
+msgid "Choose Sidebar Template"
+msgstr ""
+
+#: inc/post-meta/layout-meta.php:109
+msgid "You can set up the sidebar content"
+msgstr ""
+
+#: inc/post-meta/layout-meta.php:109
+msgid "here"
+msgstr ""
+
+#: inc/post-meta/layout-meta.php:113
+msgid "Featured Image Alignment"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:44 template-parts/content-single.php:38
+#: template-parts/content.php:90
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:55
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: template-parts/content.php:53 template-parts/content.php:69
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: trt-customize-pro/business-craft/class-customize.php:77
+msgid "Business Craft Pro  Buy Now"
+msgstr ""

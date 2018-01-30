@@ -5,7 +5,7 @@ Tags: full-width-template, portfolio, left-sidebar, one-column, custom-header, r
 
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,9 +26,13 @@ Business Craft is distributed under the terms of the GNU GPL
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+Font Icons:
+* Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+
 == Image used in screenshot ==
 
 1)https://www.pexels.com/photo/businesswomen-businesswoman-interview-meeting-70292/
+
 
 == default banner image ==
 
@@ -40,6 +44,9 @@ Business Craft is distributed under the terms of the GNU GPL
 Business Craft includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+= 1.0.2 =
+* issues fixing from reviewer
+
 = 1.0.1 =
 * issues fixing from reviewer
 
