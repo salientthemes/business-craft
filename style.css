@@ -5,7 +5,7 @@ Author: Salient Themes
 Author URI: http://salientthemes.com
 Description: Business Craft is a fresh, clean & feature rich WordPress theme developed specifically for all type of corporate business, finance business and startup company, blogging, etc.  This theme is fully responsive that is perfectly adjust on any small to large devices. No coding required to create a website. In order to build inner pages layout, it supports popular plugins like Jetpack, Elementor Page Builder and other popular ones.
 License: GNU General Public License v3 or later
-version: 1.0.3
+version: 1.0.4
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: business-craft
 Tags: full-width-template, portfolio, left-sidebar, one-column, custom-header, right-sidebar, theme-options, threaded-comments, translation-ready, two-columns, custom-background, custom-menu, flexible-header, editor-style, footer-widgets, custom-logo
@@ -3095,46 +3095,30 @@ div#gotop i {
 
 /* blog listing in default home page */
 
-@media screen and (min-width: 768px) {
-	body.home.blog main#main {
-		column-count: 2;
-		column-gap: 30px;
-	}
-	body.home.blog #primary,
-	body.home.blog #secondary {
-		margin-top: 44px;
-	}
-	body.home.blog article {
-		padding: 10px;
-		border: 1px solid #efefef;
-		transition: all .3s;
-		display: inline-table;
-	}
-	body.home.blog article:hover {
-		box-shadow: 0 0px 3px #dcdcdc;
-	}
-	body.home.blog article h2 {
-		margin-top: 0
-	}
-	body.home.blog.salient-right-sidebar #primary {
-		padding-right: 2%;
-	}
-	body.home.blog.salient-left-sidebar #primary {
-		padding-left: 2%;
-	}
+
+body.home.blog #primary,
+body.home.blog #secondary {
+	margin-top: 44px;
+}	
+
+body.home.blog article {
+    border: 1px solid #efefef;
+    padding: 16px;
+}
+body.home.blog .entry-meta{
+	margin: 6px 0;
 }
 
 body.home.blog .wrapper.page-inner-title {
 	display: none;
 }
 
-article p {
-	margin-top: 15px;
-}
-
 body.home.blog main#main {
 	border: 0;
 	padding-top: 0;
+}
+.home.blog .entry-content{
+	margin: 0 0 0;
 }
 
 body.home.blog header#masthead {
