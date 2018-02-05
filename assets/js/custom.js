@@ -69,14 +69,14 @@
 
     $("#header-search").click(function () {
       $('div#social-header').delay(350).fadeOut('fast'); 
-      $("div#top-search").toggle("1000", function () {
+      $("div#top-search").slideToggle("1000", function () {
         // Animation complete.
       });
     });
 
     $("i#header-share").click(function () {
-      $('div#top-search').delay(350).fadeOut('fast'); 
-      $("div#social-header").toggle("1000", function () {
+      $('div#top-search').fadeOut('fast'); 
+      $("div#social-header").slideToggle("1000", function () {
       });
     });
     // back to top animation

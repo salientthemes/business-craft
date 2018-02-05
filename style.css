@@ -692,8 +692,6 @@ a:active {
 	display: block;
 	text-decoration: none;
 	padding: 34px 8px;
-	-webkit-transition: width 0.5s;
-	transition: width 0.5s;
 	color: #000;
 	font-size: 12px;
 	text-transform: uppercase;
