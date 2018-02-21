@@ -37,11 +37,8 @@
 		?>
 		<?php
 			 
-			if( is_page() ){
-				the_content();				
-			} else {
-				the_excerpt();				
-			}
+			// the_content();
+			the_excerpt();
 
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'business-craft' ),
