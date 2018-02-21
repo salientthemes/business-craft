@@ -79,11 +79,12 @@ if( ! function_exists( 'business_craft_default_layout' ) ) :
 
         if( !is_front_page() ){
             $business_craft_default_layout_meta = get_post_meta( $post_id, 'business-craft-default-layout', true );
-        } 
+        
 
-        if( false != $business_craft_default_layout_meta ) {
-            $business_craft_default_layout = $business_craft_default_layout_meta;
-        }
+            if( false != $business_craft_default_layout_meta ) {
+                $business_craft_default_layout = $business_craft_default_layout_meta;
+            }
+        }    
         return $business_craft_default_layout;
     }
 endif;
