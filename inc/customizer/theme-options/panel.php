@@ -9,7 +9,7 @@ global $business_craft_repeated_settings_controls;
 $business_craft_panels['business-craft-theme-panel'] = 
 	array(
 		'title' 			=>  esc_html__('Theme Options','business-craft'),
-		'priority'			=>  200
+		'priority'			=>  320
 
 	);
 

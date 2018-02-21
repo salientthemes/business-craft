@@ -8,8 +8,8 @@ global $business_craft_customizer_defults;
 // crate a panle for home page
 $business_craft_panels['business_craft_home_panel'] = 
 	array(
-		'title'		=> esc_html__('Home Page Section','business-craft'),
-		'priority'  =>200
+		'title'		=> esc_html__('Home Page','business-craft'),
+		'priority'  =>250
 	);
 
 // require  a slider option

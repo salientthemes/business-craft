@@ -67,24 +67,19 @@ if( ! function_exists( 'business_craft_default_layout' ) ) :
      */
     function business_craft_default_layout( $post_id = null ){
 
-        global $business_craft_customizer_all_values, $post;
+        global $business_craft_customizer_all_values,$post;
         $business_craft_default_layout = $business_craft_customizer_all_values['business-craft-default-layout'];
-       
         if( is_home()){
             $post_id = get_option( 'page_for_posts' );
         }
-        if( is_null( $post_id ) && isset ( $post->ID ) ){
+        if( null == $post_id && isset ( $post->ID ) ){
             $post_id = $post->ID;
         }
+        $business_craft_default_layout_meta = get_post_meta( $post_id, 'business-craft-default-layout', true );
 
-        if( !is_front_page() ){
-            $business_craft_default_layout_meta = get_post_meta( $post_id, 'business-craft-default-layout', true );
-        
-
-            if( false != $business_craft_default_layout_meta ) {
-                $business_craft_default_layout = $business_craft_default_layout_meta;
-            }
-        }    
+        if( false != $business_craft_default_layout_meta ) {
+            $business_craft_default_layout = $business_craft_default_layout_meta;
+        }
         return $business_craft_default_layout;
     }
 endif;
@@ -100,8 +95,7 @@ if ( ! function_exists( 'business_craft_body_class' ) ) :
  *
  */
 function business_craft_body_class( $business_craft_body_classes ) {
-   
-    if( !is_front_page() || ( is_front_page() ) ) {
+    if(!is_front_page() || ( is_front_page())){
         $business_craft_default_layout = business_craft_default_layout();
         if( !empty( $business_craft_default_layout ) ){
             if( 'left-sidebar' == $business_craft_default_layout ){
