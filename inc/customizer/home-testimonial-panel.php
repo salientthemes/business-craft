@@ -12,7 +12,7 @@ $business_craft_customizer_defaults['business-craft-home-testimonial-number'] = 
 $business_craft_customizer_defaults['business-craft-home-testimonial-single-words'] = 30;
 $business_craft_customizer_defaults['business-craft-home-testimonial-selection'] = 'from-page';
 $business_craft_customizer_defaults['business-craft-home-testimonial-pages'] = 0;
-$business_craft_customizer_defaults['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/tt1.jpg";
+$business_craft_customizer_defaults['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/banner-image.jpg";
 
 
 /*creating panel for fonts-setting*/
