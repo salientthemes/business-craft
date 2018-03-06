@@ -52,7 +52,6 @@ $business_craft_settings_controls['business-craft-featured-slider-number'] =
             'choices'               =>   array(
                 1 =>   esc_html__( '1', 'business-craft' ),
                 2 =>   esc_html__( '2', 'business-craft' ),
-                3 =>   esc_html__( '3', 'business-craft' ),
             ),
             'priority'              =>   10,
             'active_callback'       =>   ''
@@ -62,7 +61,7 @@ $business_craft_settings_controls['business-craft-featured-slider-number'] =
 /*creating setting control for business-craft-fs-page start*/
 $business_craft_repeated_settings_controls['business-craft-featured-slider-pages'] =
     array(
-        'repeated' =>   3,
+        'repeated' =>   2,
         'business-craft-fs-pages-ids' =>   array(
             'setting' =>       array(
                 'default'              =>   $business_craft_customizer_defaults['business-craft-featured-slider-pages'],
