@@ -5,7 +5,7 @@ if (!function_exists('business_craft_single_page_title')) :
 	/**
 	* edu_light_inner_head_section
 	
-	* @since edu-light 1.0.0
+	* @since business-craft 1.0.0
 	*
 	* @hooked null
 	*/
@@ -32,17 +32,17 @@ if (!function_exists('business_craft_single_page_title')) :
 											</header><!-- .entry-header -->
 										<?php } }
 										elseif (is_404()) { ?>
-											<h1 class="entry-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'edu-light' ); ?></h1>
+											<h1 class="entry-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'business-craft' ); ?></h1>
 										<?php }
 										elseif (is_archive()) {
 											the_archive_title( '<h1 class="entry-title">', '</h1>' );
 											the_archive_description( '<div class="taxonomy-description">', '</div>' );
 										}
 										elseif (is_search()) { ?>
-											<h1 class="entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'business_craft' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+											<h1 class="entry-title"><?php printf( esc_html__( 'Search Results for: %s', 'business-craft' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 										<?php }
 										else{ ?>
-											<h2 class="entry-title"><?php echo (esc_html__( 'Latest Blog', 'business_craft' )); ?></h2>
+											<h2 class="entry-title"><?php echo (esc_html__( 'Latest Blog', 'business-craft' )); ?></h2>
 									<?php }
 										?>
 									</header><!-- .entry-header -->
