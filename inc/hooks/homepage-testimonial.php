@@ -16,41 +16,30 @@ if (!function_exists('business_craft_home_testimonial_array')) :
         $business_craft_home_testimonial_contents_array = array();
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-title'] = __('John Doe','business-craft');
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-content'] = '';
-        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/tt1.jpg";
+        $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-image'] = get_template_directory_uri()."/assets/images/banner-image.jpg";
         $business_craft_home_testimonial_contents_array[0]['business-craft-home-testimonial-link'] = '#';
         $business_craft_home_testimonial_contents_array[0]['business-craft-testimonial-slider-number'] = 0;
         $repeated_page = array('business-craft-home-testimonial-pages-ids');
 
-        if ('from-category' == $from_testimonial) {
-            $business_craft_home_testimonial_category = $business_craft_customizer_all_values['business-craft-home-testimonial-category'];
-            if( 0 != $business_craft_home_testimonial_category ){
+       
+        $business_craft_home_testimonial_posts = salient_customizer_get_repeated_all_value(3 , $repeated_page);
+        $business_craft_home_testimonial_posts_ids = array();
+        if (null != $business_craft_home_testimonial_posts) {
+            foreach ($business_craft_home_testimonial_posts as $business_craft_home_testimonial_post) {
+                if (0 != $business_craft_home_testimonial_post['business-craft-home-testimonial-pages-ids']) {
+                    $business_craft_home_testimonial_posts_ids[] = $business_craft_home_testimonial_post['business-craft-home-testimonial-pages-ids'];
+                }
+            }
+            if( !empty( $business_craft_home_testimonial_posts_ids )){
                 $business_craft_home_testimonial_args = array(
-                    'post_type' => 'post',
-                    'cat' => absint($business_craft_home_testimonial_category),
+                    'post_type' => 'page',
+                    'post__in' => array_map( 'absint', $business_craft_home_testimonial_posts_ids ),
                     'posts_per_page' => absint($business_craft_home_testimonial_number),
+                    'orderby' => 'post__in'
                 );
             }
-
         }
-        else {
-            $business_craft_home_testimonial_posts = salient_customizer_get_repeated_all_value(3 , $repeated_page);
-            $business_craft_home_testimonial_posts_ids = array();
-            if (null != $business_craft_home_testimonial_posts) {
-                foreach ($business_craft_home_testimonial_posts as $business_craft_home_testimonial_post) {
-                    if (0 != $business_craft_home_testimonial_post['business-craft-home-testimonial-pages-ids']) {
-                        $business_craft_home_testimonial_posts_ids[] = $business_craft_home_testimonial_post['business-craft-home-testimonial-pages-ids'];
-                    }
-                }
-                if( !empty( $business_craft_home_testimonial_posts_ids )){
-                    $business_craft_home_testimonial_args = array(
-                        'post_type' => 'page',
-                        'post__in' => array_map( 'absint', $business_craft_home_testimonial_posts_ids ),
-                        'posts_per_page' => absint($business_craft_home_testimonial_number),
-                        'orderby' => 'post__in'
-                    );
-                }
-            }
-        }
+        
         // the query
         if( !empty( $business_craft_home_testimonial_args )){
             $business_craft_home_testimonial_contents_array = array();

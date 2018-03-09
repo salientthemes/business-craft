@@ -47,7 +47,7 @@ if ( ! function_exists( 'business_craft_home_blog' ) ) :
                                         $url = $thumb['0'];
                                     }
                                     else{
-                                        $url = get_template_directory_uri().'/assets/img/placeholder-banner.png';
+                                        $url = get_template_directory_uri().'/assets/img/banner-image.jpgg';
                                     } ?>
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div class="meet-us-content clearfix"> 

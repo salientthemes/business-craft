@@ -33,7 +33,7 @@ if ( ! function_exists( 'business_craft_featured_slider_array' ) ) :
             }
         }
         else{
-            $business_craft_feature_slider_posts = salient_customizer_get_repeated_all_value(3 , $repeated_page);
+            $business_craft_feature_slider_posts = salient_customizer_get_repeated_all_value(2 , $repeated_page);
             $business_craft_feature_slider_posts_ids = array();
             if( null != $business_craft_feature_slider_posts )
             {
