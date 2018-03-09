@@ -88,7 +88,7 @@ require get_template_directory().'/inc/customizer/color/color.php';
  * Reset color settings to default
  * @param  $input
  *
- * @since chrimbo 1.0
+ * @since Business-craft 1.0
  */
 global $business_craft_customizer_defaults;
 $business_craft_customizer_defaults['business-craft-customizer-reset'] = '';

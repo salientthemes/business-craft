@@ -2,6 +2,22 @@
 (function ($) {
   $(document).ready(function () {
 
+      //nice scroll 
+    jQuery("body").niceScroll({
+      horizrailenabled:false,
+      cursorwidth:"0",
+      cursorborder: "0",
+    });
+
+    //sticky nav only if screensize is > 500px
+  var windowsize = jQuery(window).width();
+    if(windowsize > 500) {
+      jQuery("header#masthead").sticky({topSpacing:0});
+    } else {
+      // do nothing
+    }
+
+
     //slick slider 
     $('.banner-wrapper').slick({
       slidesToShow: 1,

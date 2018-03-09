@@ -691,7 +691,7 @@ a:active {
 .share {
 	display: block;
 	text-decoration: none;
-	padding: 34px 8px;
+	padding: 34px 15px;
 	color: #000;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -1135,9 +1135,7 @@ object {
 header#masthead {
 	background: #fff;
 	position: relative;
-	-webkit-transition: all 3s;
-	transition: all 3s;
-	border-top: 3px solid #2a80b9;
+	z-index: 999999 !important;
 }
 
 p.site-title,
@@ -1177,34 +1175,14 @@ ul#primary-menu {
 
 /* fixed nav */
 
-body header.site-header.fixed {
-	position: fixed !important;
-	top: 0;
+body header.site-header.fixed {	
 	z-index: 999999;
 	width: 100%;
-	box-shadow: 0 0 3px #737373;
-	-webkit-transition: all 3s;
-	transition: all 3s;
+	box-shadow: 0 0 3px #737373;	
 }
 
-body header.site-header.fixed p.site-title,
-body header.site-header.fixed .site-branding h1 {
-	font-size: 24px;
-	padding-top: 0;
-}
-
-body header.site-header.fixed .main-navigation a,
-body header.site-header.fixed #header-search,
-body header.site-header.fixed .share {
-	padding: 22px 10px;
-}
-
-body header.site-header.fixed .main-navigation ul.sub-menu li a {
-	padding: 12px 10px;
-}
 
 @media screen and (max-width: 767px) {
-	body header.site-header.fixed,
 	.main-navigation ul ul {
 		position: inherit !important;
 	}
@@ -2996,7 +2974,6 @@ div#gotop {
 	-moz-transition: all .5s;
 	-webkit-transition: all .5s;
 	transition: all .5s;
-	animation: bounce 6s infinite;
 }
 
 div#gotop i {
@@ -3119,11 +3096,6 @@ body.home.blog main#main {
 	margin: 0 0 0;
 }
 
-body.home.blog header#masthead {
-	background: #f3f3f3;
-}
-
-
 /* Preloader */
 
 body {
@@ -3179,3 +3151,4 @@ section.display-info a.button {
 section.display-info a.button:hover{
 	color: #fff;
 }
+

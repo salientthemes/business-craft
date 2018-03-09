@@ -137,28 +137,37 @@ add_action( 'after_setup_theme', 'business_craft_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function business_craft_scripts() {
+	//root path for style and scripts
+	$assets_url = get_template_directory_uri() .'/assets/';
 	wp_enqueue_style( 'business-craft-style', get_stylesheet_uri() );
+	//google fonts
 	wp_enqueue_style( 'business-craft-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900');
 	//css
-	wp_enqueue_script( 'jquery-modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array('jquery'), '2.8.3', true );
+	wp_enqueue_script( 'jquery-modernizr', $assets_url . '/js/modernizr.min.js', array('jquery'), '2.8.3', true );
 
-	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap/bootstrap.css');/*bootstrap css*/
-	wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/assets/css/bootstrap/slick.css');/*slick css*/
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.css');/*font-awesome css*/
-	wp_enqueue_style( 'lato-font', get_template_directory_uri() . '/assets/font-awesome/css/font-awesome.css');/*font-awesome css*/
+	wp_enqueue_style( 'bootstrap-css', $assets_url . '/css/bootstrap/bootstrap.css');/*bootstrap css*/
+	wp_enqueue_style( 'slick-css', $assets_url . '/css/bootstrap/slick.css');/*slick css*/
+	wp_enqueue_style( 'font-awesome', $assets_url . '/font-awesome/css/font-awesome.css');/*font-awesome css*/
+	wp_enqueue_style( 'lato-font', $assets_url . '/font-awesome/css/font-awesome.css');/*font-awesome css*/
     /* js file */
 
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap/bootstrap.js');
-	wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/js/bootstrap/slick.js');
+	wp_enqueue_script( 'bootstrap-js', $assets_url . '/js/bootstrap/bootstrap.js');
+	wp_enqueue_script( 'slick-js', $assets_url . '/js/bootstrap/slick.js');
 	/* custom js */
-	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/assets/js/custom.js');
+	wp_enqueue_script( 'custom-js', $assets_url . '/js/custom.js');
 
-	wp_enqueue_script( 'business-craft-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'business-craft-navigation', $assets_url . '/js/navigation.js', array(), '20151215', true );
+
+	//jquerysticky
+	wp_enqueue_script( 'jquery-sticky', $assets_url . '/js/jquery.sticky.js', array('jquery'), true );
+
+	//nicescroll
+	wp_enqueue_script( 'nicescroll', $assets_url . '/js/jquery.nicescroll.js', array('jquery'), true );
 
 	// Enqueue  inline
 	wp_add_inline_style( 'business-craft-style', business_craft_inline_style() );
 
-	wp_enqueue_script( 'business-craft-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'business-craft-skip-link-focus-fix', $assets_url . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
