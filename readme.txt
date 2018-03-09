@@ -31,7 +31,7 @@ Font Icons:
 
 == Image used in screenshot ==
 
-1) https://pixabay.com/en/cup-drinks-coffee-shop-business-2752105/
+1) https://www.pexels.com/photo/adult-blog-business-business-woman-508953/
 
 
 == default banner image ==

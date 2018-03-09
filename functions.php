@@ -138,7 +138,7 @@ add_action( 'after_setup_theme', 'business_craft_content_width', 0 );
  */
 function business_craft_scripts() {
 	//root path for style and scripts
-	$assets_url = get_template_directory_uri() .'/assets/';
+	$assets_url = get_template_directory_uri() .'/assets';
 	wp_enqueue_style( 'business-craft-style', get_stylesheet_uri() );
 	//google fonts
 	wp_enqueue_style( 'business-craft-google-fonts', 'https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,700,900');
