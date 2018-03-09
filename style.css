@@ -2600,7 +2600,7 @@ ul.trail-items li:last-child:after {
 }
 
 .thumb-overlay {
-	padding: 60px 0;
+	padding: 140px 0;
 }
 
 .wrapper.page-inner-title:after {
@@ -3082,10 +3082,6 @@ body.home.blog article {
 }
 body.home.blog .entry-meta{
 	margin: 6px 0;
-}
-
-body.home.blog .wrapper.page-inner-title {
-	display: none;
 }
 
 body.home.blog main#main {
