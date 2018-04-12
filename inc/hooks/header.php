@@ -303,6 +303,7 @@ if( ! function_exists( 'business_craft_add_breadcrumb' ) ) :
         echo '<div id="breadcrumb" class="breadcrumb-wrap">';
          business_craft_simple_breadcrumb();
         echo '</div><!-- #breadcrumb -->';
+        return;
     }
 endif;
 add_action( 'business_craft_action_after_title', 'business_craft_add_breadcrumb', 10 );

@@ -22,6 +22,8 @@ require get_template_directory().'/inc/customizer/theme-options/footer.php';
 //for back to up 
 require get_template_directory().'/inc/customizer/theme-options/back-to-top.php';
 
+//breadcrumb optons
+// require get_template_directory().'/inc/customizer/theme-options/breadcrumb.php';
 
 // for top social meanu icon
 require get_template_directory().'/inc/customizer/theme-options/top-social-menu-icon.php';

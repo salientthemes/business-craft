@@ -41,7 +41,7 @@ $business_craft_settings_controls['business-craft-section-header-color']  =
 			'default'		=> $business_craft_customizer_defaults['business-craft-section-header-color']
 		),
 		'control'				=>array(
-			'label'				=>esc_html__('Section Header Color','business-craft'),
+			'label'				=>esc_html__('Section Header-Title Color','business-craft'),
 			'description'		=>esc_html__('This color will change in the all section heading.  Please select color according to your site ( (Default value is #000 )','business-craft'),
 			'section'			=>'business_crfat_color_section',
 			'type'				=>'color',

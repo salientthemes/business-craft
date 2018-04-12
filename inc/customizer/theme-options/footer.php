@@ -5,7 +5,7 @@ global $business_craft_settings_controls;
 global $business_craft_repeated_settings_controls;
 global $business_craft_customizer_defaults;
 
-$business_craft_customizer_defaults['business-craft-enable-breadcrumb'] = 1;
+// $business_craft_customizer_defaults['business-craft-enable-breadcrumb'] = 1;
 $business_craft_customizer_defaults['business-craft-select-number-footer'] = 3;
 $business_craft_customizer_defaults['business-craft-copy-right-text'] = esc_html__('Copyright © All right reserved','business-craft');
 
