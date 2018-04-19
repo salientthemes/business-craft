@@ -172,6 +172,7 @@ function business_craft_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_add_inline_style( 'business-craft-style', business_craft_inline_style() );
 }
 add_action( 'wp_enqueue_scripts', 'business_craft_scripts' );
 
@@ -228,10 +229,13 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
       
         global $business_craft_customizer_all_values;
         global $business_craft_google_fonts;
-        $business_craft_background_color = get_background_color();
-        $business_craft_primary_color_option = $business_craft_customizer_all_values['business-craft-primary-color'];
-        $business_craft_section_header_color_option = $business_craft_customizer_all_values['business-craft-section-header-color'];
-        $business_craft_icon_color = $business_craft_customizer_all_values['business-craft-icon-color'];
+
+        //*color options*/
+       $business_craft_background_color 				= get_background_color();
+       $business_craft_primary_color_option 			= $business_craft_customizer_all_values['business-craft-primary-color'];
+       $business_craft_site_identity_color_option 		= $business_craft_customizer_all_values['business-craft-site-identity-color'];
+       $business_craft_heading_title_color 		= $business_craft_customizer_all_values['business-craft-heading-title-color'];
+
         ?>
         <style type="text/css">
         /*=====COLOR OPTION=====*/
@@ -294,22 +298,30 @@ if( ! function_exists( 'business_craft_inline_style' ) ) :
 
        
        
-	        if( !empty($business_craft_section_header_color_option) )
+	        if( !empty($business_craft_heading_title_color) )
 	        {
 	        ?>
-	            .sec-title h2,
-	            .sec-title h2:after
+	           .sec-title h2
 	            {
-	                color: <?php echo esc_attr( $business_craft_section_header_color_option );?>!important;;
+	                color: <?php echo esc_attr( $business_craft_heading_title_color );?>!important;;
 	            }
-	            .sec-title h2:after
-	            {
-	                border-color: <?php echo esc_attr( $business_craft_section_header_color_option );?>!important;;
-	            }
+	            
 	        <?php
-	        } ?>
-	        
+	        }   
 
+	        if( !empty($business_craft_site_identity_color_option) )
+	        {
+	        ?>
+	           /*Site identity / logo & tagline*/
+            .site-branding a,
+            .site-branding p,
+            .site-branding p a
+	            {
+	                color: <?php echo esc_attr( $business_craft_site_identity_color_option );?>
+	            }
+	            
+	        <?php
+	        } ?>          
 	       
         </style>       
      <?php }

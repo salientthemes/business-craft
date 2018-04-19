@@ -5,7 +5,7 @@ Tags: full-width-template, portfolio, left-sidebar, one-column, custom-header, r
 
 Requires at least: 4.0
 Tested up to: 4.9
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -44,7 +44,10 @@ Font Icons:
 Business Craft includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
-= 1.0.6 =
+= 1.0.8 =
+* add color option and fixed issue.
+
+= 1.0.7 =
 * fixed some issue.
 
 = 1.0.6 =

@@ -33,3 +33,4 @@ require get_template_directory() .'/inc/customizer/home-testimonial-panel.php';
 
 /*customizer homepage blog section*/
 require get_template_directory().'/inc/customizer/home-blog-panel.php';
+
