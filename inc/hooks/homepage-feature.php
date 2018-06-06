@@ -130,11 +130,13 @@ if ( ! function_exists( 'business_craft_home_feature' ) ) :
                                     ?>
                                 <div class="col-md-6 col-sm-12 col-xs-12">
                                     <div class="feature-items clearfix">
-                                        <i style="color : <?php echo $business_craft_feature_array['business-craft-icon-color'];?>" class="fa <?php echo esc_attr( $business_craft_feature_array['business-craft-home-feature-page-icon'] ); ?>"></i>
-                                        <div class="texts">
-                                           <h4><a href="<?php echo esc_url($business_craft_feature_array['business-craft-home-feature-link']);?>"><?php echo esc_html( $business_craft_feature_array['business-craft-home-feature-title'] );?></a></h4>
-                                            <p><?php echo wp_kses_post( $business_craft_feature_array['business-craft-home-feature-content'] );?></p>
-                                        </div>
+                                        <a href="<?php echo esc_url($business_craft_feature_array['business-craft-home-feature-link']);?>">
+                                            <i style="color : <?php echo $business_craft_feature_array['business-craft-icon-color'];?>" class="fa <?php echo esc_attr( $business_craft_feature_array['business-craft-home-feature-page-icon'] ); ?>"></i>
+                                            <div class="texts">
+                                               <h4><?php echo esc_html( $business_craft_feature_array['business-craft-home-feature-title'] );?></h4>
+                                                <p><?php echo wp_kses_post( $business_craft_feature_array['business-craft-home-feature-content'] );?></p>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div><!-- col-md-4 -->
                                 <?php
