@@ -3,11 +3,11 @@
   $(document).ready(function () {
 
       //nice scroll 
-    jQuery("body").niceScroll({
+    /*jQuery("body").niceScroll({
       horizrailenabled:false,
       cursorwidth:"0",
       cursorborder: "0",
-    });
+    });*/
 
     //sticky nav only if screensize is > 500px
   var windowsize = jQuery(window).width();

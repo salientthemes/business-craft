@@ -162,7 +162,7 @@ function business_craft_scripts() {
 	wp_enqueue_script( 'jquery-sticky', $assets_url . '/js/jquery.sticky.js', array('jquery'), true );
 
 	//nicescroll
-	wp_enqueue_script( 'nicescroll', $assets_url . '/js/jquery.nicescroll.js', array('jquery'), true );
+	// wp_enqueue_script( 'nicescroll', $assets_url . '/js/jquery.nicescroll.js', array('jquery'), true );
 
 	// Enqueue  inline
 	wp_add_inline_style( 'business-craft-style', business_craft_inline_style() );
